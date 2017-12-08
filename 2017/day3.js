@@ -1,24 +1,3 @@
-// function manhattanDistance (target) {
-//   const checkpoints = [1]
-//   let location = 1
-//   let layer = 0
-//   while (true) {
-//     layer++
-//     location--
-//     for (let i = 0; i < 4; i++) {
-//       checkpoints.push(location += layer * 2)
-//       if (location >= target) break
-//     }
-//     if (location >= target) break
-//   }
-//   if (checkpoints.length === 1) return 0
-//
-//   const last2 = checkpoints.slice(-2)
-//   const forward = Math.ceil((checkpoints.length - 1) / 4) + last2[1] - target
-//   const backward = Math.ceil((checkpoints.length - 2) / 4) + target - last2[0]
-//   return Math.min(forward, backward)
-// }
-
 function* advance () {
   let step = 1
   let x = 0

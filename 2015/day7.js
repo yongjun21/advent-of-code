@@ -19,6 +19,7 @@ function executeLogic (lines) {
   const signal = {}
 
   lines.forEach(line => {
+    delete line.signal
     signal[line.out] = line
   })
 
@@ -397,5 +398,7 @@ NOT hn -> ho
 he RSHIFT 5 -> hh
 `
 
-console.log(executeLogic(parseInput(test))['a'].signal)
-console.log(executeLogic([...parseInput(test), {out: 'b', signal: 16076}])['a'].signal)
+const lines = parseInput(test)
+console.log(executeLogic(lines)['a'].signal)
+lines.push({out: 'b', in1: '16076', operator: null})
+console.log(executeLogic(lines)['a'].signal)

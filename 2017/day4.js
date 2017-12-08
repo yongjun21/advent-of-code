@@ -1,5 +1,5 @@
 function checkPassphase (doc, tokenizer = word => word) {
-  const rows = doc.trim().split('\n').map(r => r.trim().split(' '))
+  const rows = doc.trim().split('\n').map(r => r.split(' '))
   return rows.reduce((sum, row) => {
     const wordlist = {}
     row.forEach(word => {

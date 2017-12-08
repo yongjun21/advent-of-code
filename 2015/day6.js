@@ -22,8 +22,7 @@ function lightUp (input, actions) {
     for (let x = xMin; x <= xMax; x++) {
       for (let y = yMin; y <= yMax; y++) {
         const key = x + '.' + y
-        state[key] = state[key] || 0
-        state[key] = actions[row.action](state[key])
+        state[key] = actions[row.action](state[key] || 0)
       }
     }
   })

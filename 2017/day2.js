@@ -1,5 +1,5 @@
 function checksum (doc, callback) {
-  const rows = doc.trim().split('\n').map(r => r.trim().split('\t').map(v => +v))
+  const rows = doc.trim().split('\n').map(r => r.split('\t').map(v => +v))
   return rows.reduce((sum, r) => sum + callback(r), 0)
 }
 
