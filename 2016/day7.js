@@ -24,14 +24,14 @@ function extractAbas (str, found = []) {
 
 function supportSSL (input) {
   const ips = input.trim().split('\n')
-    .map(ip => ip.replace(/\[/g, ' [').replace(/]/g, '] ').trim().split(' '))
   return ips.filter((ip, i) => {
     const supernet = []
     const hypernet = []
-    ip.forEach(str => {
-      if (str.match(/^\[[a-z]+]$/)) hypernet.push(str)
-      else supernet.push(str)
-    })
+    ip.replace(/\[/g, ' [').replace(/]/g, '] ').trim().split(' ')
+      .forEach(str => {
+        if (str.match(/^\[[a-z]+]$/)) hypernet.push(str)
+        else supernet.push(str)
+      })
 
     const abas = []
     supernet.forEach(str => {
