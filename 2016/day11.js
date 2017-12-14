@@ -1,3 +1,28 @@
+function parseInput (input) {
+  const pairs = {}
+
+  input.trim().split('\n').forEach((line, i) => {
+    if (line.match(/nothing relevant/)) return
+    const generators = line.match(/[a-z]+ generator/g)
+    const microchips = line.match(/[a-z]+-compatible microchip/g)
+    if (generators) {
+      generators.forEach(g => {
+        const key = g.slice(0, -10)
+        pairs[key] = pairs[key] || {}
+        pairs[key].G = i + 1
+      })
+    }
+    if (microchips) {
+      microchips.forEach(g => {
+        const key = g.slice(0, -21)
+        pairs[key] = pairs[key] || {}
+        pairs[key].M = i + 1
+      })
+    }
+  })
+  return Object.keys(pairs).map(key => pairs[key])
+}
+
 function serialize (current, pairs) {
   const sorted = pairs.map(pair => pair.G * 10 + pair.M).sort()
   return [current, ...sorted].join(',')
@@ -103,12 +128,18 @@ function minimumMoves (state, current = 1) {
   }
 }
 
-const test = [
-  {G: 1, M: 1},
-  {G: 2, M: 3},
-  {G: 2, M: 3},
-  {G: 2, M: 3},
-  {G: 2, M: 3}
-]
+const test = `
+The first floor contains a promethium generator and a promethium-compatible microchip.
+The second floor contains a cobalt generator, a curium generator, a ruthenium generator, and a plutonium generator.
+The third floor contains a cobalt-compatible microchip, a curium-compatible microchip, a ruthenium-compatible microchip, and a plutonium-compatible microchip.
+The fourth floor contains nothing relevant.
+`
 
-console.log(minimumMoves(test, 1))
+const state = parseInput(test)
+
+console.log(minimumMoves(state))
+
+state.push({G: 1, M: 1})
+state.push({G: 1, M: 1})
+
+console.log(minimumMoves(state))
