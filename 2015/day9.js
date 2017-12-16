@@ -11,11 +11,9 @@ function parseInput (input) {
 function enumeratePaths (path, unvisited, list = []) {
   if (unvisited.length > 0) {
     for (let i = 0; i < unvisited.length; i++) {
-      enumeratePaths(
-        [...path, unvisited[i]],
-        [...unvisited.slice(0, i), ...unvisited.slice(i + 1)],
-        list
-      )
+      const next = unvisited.shift()
+      enumeratePaths([...path, next], unvisited, list)
+      unvisited.push(next)
     }
   } else {
     list.push(path)

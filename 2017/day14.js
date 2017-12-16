@@ -1,4 +1,4 @@
-const knotHash = require('./day10')
+const {knotHash} = require('./common')
 
 function generateBitmap (input) {
   const hashes = []

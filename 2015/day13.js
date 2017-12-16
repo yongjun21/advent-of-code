@@ -21,11 +21,9 @@ function parseInput (input) {
 function enumerateArrangements (arrangement, unassigned, list = []) {
   if (unassigned.length > 0) {
     for (let i = 0; i < unassigned.length; i++) {
-      enumerateArrangements(
-        [...arrangement, unassigned[i]],
-        [...unassigned.slice(0, i), ...unassigned.slice(i + 1)],
-        list
-      )
+      const next = unassigned.shift()
+      enumerateArrangements([...arrangement, next], unassigned, list)
+      unassigned.push(next)
     }
   } else {
     list.push(arrangement)
