@@ -26,9 +26,7 @@ function findHouseNumber (input, perHouse, maxHouses = Infinity) {
     }
     for (let elf of elves) elf.next(until)
     const houseNumber = houses.findIndex(house => house >= input)
-    if (houseNumber > -1) {
-      return houseNumber
-    }
+    if (houseNumber > -1) return houseNumber
     until *= 2
   }
 }
