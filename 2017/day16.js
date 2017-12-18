@@ -33,17 +33,14 @@ function dance (input, order = alphabet.slice(0, 16)) {
 function repeatDance (times, input, order = alphabet.slice(0, 16)) {
   const initialOrder = order
   let cycle = 1
+  const cache = []
   while (times - cycle >= 0) {
+    cache.push(order)
     order = dance(input, order)
     if (order === initialOrder) break
     cycle++
   }
-  if (cycle < times) {
-    times = times % cycle
-    while (times-- > 0) {
-      order = dance(input, order)
-    }
-  }
+  if (cycle < times) order = cache[times % cycle]
   return order
 }
 
