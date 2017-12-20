@@ -5,12 +5,7 @@ function lightUp (input, override) {
     .map(row => row.split('').map(v => v === '#' ? 1 : 0))
 
   let state = initialState
-  override['#'].forEach(coord => {
-    state[coord[1]][coord[0]] = 1
-  })
-  override['.'].forEach(coord => {
-    state[coord[1]][coord[0]] = 0
-  })
+  applyOverride(state, override)
 
   const blankRow = Array(100).fill(0)
   for (let steps = 1; steps <= 100; steps++) {
@@ -34,17 +29,21 @@ function lightUp (input, override) {
           : (sumNeighbors === 3 ? 1 : 0)
       })
     })
-    override['#'].forEach(coord => {
-      state[coord[1]][coord[0]] = 1
-    })
-    override['.'].forEach(coord => {
-      state[coord[1]][coord[0]] = 0
-    })
+    applyOverride(state, override)
   }
 
   return state.reduce((sum, row) => {
     return sum + row.reduce((sum, data) => sum + data, 0)
   }, 0)
+}
+
+function applyOverride (state, override) {
+  override['#'].forEach(coord => {
+    state[coord[1]][coord[0]] = 1
+  })
+  override['.'].forEach(coord => {
+    state[coord[1]][coord[0]] = 0
+  })
 }
 
 const test = `

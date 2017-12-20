@@ -1,3 +1,5 @@
+const {getPermutations} = require('../helpers')
+
 function parseInput (input) {
   const matrix = {}
   const members = {}
@@ -18,26 +20,13 @@ function parseInput (input) {
   }
 }
 
-function enumerateArrangements (arrangement, unassigned, list = []) {
-  if (unassigned.length > 0) {
-    for (let i = 0; i < unassigned.length; i++) {
-      const next = unassigned.shift()
-      enumerateArrangements([...arrangement, next], unassigned, list)
-      unassigned.push(next)
-    }
-  } else {
-    list.push(arrangement)
-  }
-  return list
-}
-
 function findMaxHappiness (input, neutral = 0) {
   const matrix = parseInput(input)
   for (let n = 0; n < neutral; n++) {
     matrix.members.push(Symbol())
   }
 
-  const arrangements = enumerateArrangements([], matrix.members.slice(1))
+  const arrangements = getPermutations(matrix.members.slice(1))
 
   const totalHappiness = arrangements.map(arrangement => {
     const arr = [matrix.members[0], ...arrangement, matrix.members[0]]

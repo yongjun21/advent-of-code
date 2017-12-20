@@ -1,18 +1,4 @@
-function generateCombinations (total, items, combinations, division = []) {
-  if (division.length === items - 1) {
-    division = [0, ...division, total]
-    const combination = []
-    for (let i = 1; i < division.length; i++) {
-      combination.push(division[i] - division[i - 1])
-    }
-    combinations.push(combination)
-    return
-  }
-  const lastBreak = division.length > 0 ? division[division.length - 1] : 0
-  for (let i = lastBreak; i <= total; i++) {
-    generateCombinations(total, items, combinations, [...division, i])
-  }
-}
+const {getSplitCombinations} = require('../helpers')
 
 function getCookieProperties (input) {
   const ingredients = input.trim().split('\n').map(line => {
@@ -27,8 +13,7 @@ function getCookieProperties (input) {
     }
   })
 
-  const combinations = []
-  generateCombinations(100, ingredients.length, combinations)
+  const combinations = getSplitCombinations(100, ingredients.length)
 
   return combinations.map(c => {
     const capacity = c.reduce((sum, n, i) => sum + n * ingredients[i].capacity, 0)

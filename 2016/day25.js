@@ -1,4 +1,4 @@
-function setRegister (input, initial) {
+function* clockSignal (input, initial) {
   const instructions = input.trim().split('\n').map(line => {
     const match = line.split(' ')
     return {
@@ -27,37 +27,58 @@ function setRegister (input, initial) {
       case 'dec':
         register[instruction.x]--
         break
+      case 'out':
+        yield instruction.x in register ? register[instruction.x] : instruction.x
     }
   }
 
   return register
 }
 
+function findClockSignal (input) {
+  let n = 1
+  while (true) {
+    console.log(n)
+    let expect = 0
+    for (let signal of clockSignal(input, {a: n})) {
+      if (signal !== expect) break
+      expect = expect === 0 ? 1 : 0
+    }
+    n++
+  }
+}
+
 const test = `
-cpy 1 a
-cpy 1 b
-cpy 26 d
-jnz c 2
-jnz 1 5
-cpy 7 c
+cpy a d
+cpy 4 c
+cpy 633 b
 inc d
-dec c
-jnz c -2
-cpy a c
-inc a
 dec b
 jnz b -2
-cpy c b
-dec d
-jnz d -6
-cpy 13 c
-cpy 14 d
-inc a
-dec d
-jnz d -2
 dec c
 jnz c -5
+cpy d a
+jnz 0 0
+cpy a b
+cpy 0 a
+cpy 2 c
+jnz b 2
+jnz 1 6
+dec b
+dec c
+jnz c -4
+inc a
+jnz 1 -7
+cpy 2 b
+jnz c 2
+jnz 1 4
+dec b
+dec c
+jnz 1 -4
+jnz 0 0
+out b
+jnz a -19
+jnz 1 -21
 `
 
-console.log(setRegister(test))
-console.log(setRegister(test, {c: 1}))
+findClockSignal(test, {a: 1})

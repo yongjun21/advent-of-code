@@ -1,11 +1,7 @@
+const {getAssignments} = require('../helpers')
+
 function findFittingCombi (input, total) {
-  const combinations = []
-  const nCombinations = Math.pow(2, input.length)
-  const zeroPad = '0'.repeat(input.length)
-  for (let i = 0; i < nCombinations; i++) {
-    const combiString = (zeroPad + i.toString(2)).slice(-input.length)
-    combinations.push(combiString.split('').map(v => +v))
-  }
+  const combinations = getAssignments(input.length)
 
   return combinations.filter(combi =>
     combi.reduce((sum, weight, i) => sum + weight * input[i], 0) === total)
