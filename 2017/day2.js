@@ -1,3 +1,5 @@
+const {getCombinations} = require('../lazyHelpers')
+
 function checksum (doc, callback) {
   const rows = doc.trim().split('\n').map(r => r.split('\t').map(v => +v))
   return rows.reduce((sum, r) => sum + callback(r), 0)
@@ -13,14 +15,11 @@ function range (row) {
 function division (row) {
   row.sort((a, b) => b - a)
   let division = 0
-  for (let i = 0; i < row.length - 1; i++) {
-    for (let j = i + 1; j < row.length - 1; j++) {
-      if (row[i] % row[j] === 0) {
-        division = row[i] / row[j]
-        break
-      }
+  for (let pair of getCombinations(row, 2)) {
+    if (pair[0] % pair[1] === 0) {
+      division = pair[0] / pair[1]
+      break
     }
-    if (division > 0) break
   }
   return division
 }

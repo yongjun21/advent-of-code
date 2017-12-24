@@ -1,10 +1,10 @@
 function parseInput (input) {
   return input.trim().split('\n').map(line => {
-    const match = line.match(/^(snd|set|add|mul|mod|rcv|jgz) ([a-z0-9]+)( (\S+))?$/)
+    const match = line.split(' ')
     return {
-      type: match[1],
-      target: parseInt(match[2]) || match[2],
-      source: match[3] && (parseInt(match[4]) || match[4])
+      type: match[0],
+      target: parseInt(match[1]) || match[1],
+      source: parseInt(match[2]) || match[2]
     }
   })
 }
