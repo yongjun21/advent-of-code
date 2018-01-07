@@ -1,6 +1,6 @@
 function getAssignments (items, groups = 2) {
   const combinations = []
-  const nCombinations = Math.pow(2, items)
+  const nCombinations = Math.pow(groups, items)
   const zeroPad = '0'.repeat(items)
   for (let i = 0; i < nCombinations; i++) {
     const combiString = (zeroPad + i.toString(groups)).slice(-items)
