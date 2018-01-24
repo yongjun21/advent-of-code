@@ -5,7 +5,9 @@ function getAssignments (items, groups = 2) {
     [Symbol.iterator]: function* () {
       for (let i = 0; i < nCombinations; i++) {
         const combiString = (zeroPad + i.toString(groups)).slice(-items)
-        yield combiString.split('').map(v => +v)
+        const combination = combiString.split('')
+        if (groups === 2) yield combination.map(v => +v)
+        else yield combination
       }
     }
   }

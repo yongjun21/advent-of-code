@@ -4,7 +4,9 @@ function getAssignments (items, groups = 2) {
   const zeroPad = '0'.repeat(items)
   for (let i = 0; i < nCombinations; i++) {
     const combiString = (zeroPad + i.toString(groups)).slice(-items)
-    combinations.push(combiString.split('').map(v => +v))
+    const combination = combiString.split('')
+    if (groups === 2) combinations.push(combination.map(v => +v))
+    else combinations.push(combination)
   }
   return combinations
 }
