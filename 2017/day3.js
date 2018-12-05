@@ -1,4 +1,4 @@
-function* advance () {
+function * advance () {
   let step = 1
   let x = 0
   let y = 0

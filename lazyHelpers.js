@@ -2,7 +2,7 @@ function getAssignments (items, groups = 2) {
   const nCombinations = Math.pow(groups, items)
   const zeroPad = '0'.repeat(items)
   return {
-    [Symbol.iterator]: function* () {
+    [Symbol.iterator]: function * () {
       for (let i = 0; i < nCombinations; i++) {
         const combiString = (zeroPad + i.toString(groups)).slice(-items)
         const combination = combiString.split('')
@@ -15,7 +15,7 @@ function getAssignments (items, groups = 2) {
 
 function getPermutations (items, required = items.length) {
   return {
-    [Symbol.iterator]: function* () {
+    [Symbol.iterator]: function * () {
       const stack = []
       stack.push([[], items])
       while (stack.length > 0) {
@@ -37,7 +37,7 @@ function getPermutations (items, required = items.length) {
 
 function getCombinations (items, required) {
   return {
-    [Symbol.iterator]: function* () {
+    [Symbol.iterator]: function * () {
       const stack = []
       stack.push([[], items.length - 1])
       while (stack.length > 0) {
@@ -57,7 +57,7 @@ function getCombinations (items, required) {
 
 function getSplitCombinations (total, items) {
   return {
-    [Symbol.iterator]: function* () {
+    [Symbol.iterator]: function * () {
       const stack = []
       stack.push([[], total])
       while (stack.length > 0) {

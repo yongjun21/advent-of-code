@@ -1,4 +1,4 @@
-function* clockSignal (input, initial) {
+function * clockSignal (input, initial) {
   const instructions = input.trim().split('\n').map(line => {
     const match = line.split(' ')
     return {

@@ -1,4 +1,4 @@
-function* disc (positions, start) {
+function * disc (positions, start) {
   let position = start
   while (true) {
     position = (position + 1) % positions

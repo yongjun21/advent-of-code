@@ -1,4 +1,4 @@
-function* scanner (range) {
+function * scanner (range) {
   let y = 0
   let delta = 1
   while (true) {

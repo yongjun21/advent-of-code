@@ -1,4 +1,4 @@
-function* dragonCurve (input) {
+function * dragonCurve (input) {
   let spacers = []
   let spacerIndex = 0
   const original = input.split('').map(char => +char)

@@ -77,25 +77,25 @@ function findLeastMana (input, handicap) {
 }
 
 const spells = [
-  function* recharge () {
+  function * recharge () {
     yield {mana: 229}
     for (let i = 0; i < 4; i++) yield {mana: -101, disabled: spells[0]}
     yield {mana: -101}
   },
-  function* poison () {
+  function * poison () {
     yield {mana: 173}
     for (let i = 0; i < 5; i++) yield {damage: 3, disabled: spells[1]}
     yield {damage: 3}
   },
-  function* shield () {
+  function * shield () {
     yield {mana: 113}
     for (let i = 0; i < 5; i++) yield {armor: 7, disabled: spells[2]}
     yield {armour: 7}
   },
-  function* drain () {
+  function * drain () {
     yield {mana: 73, damage: 2, hp: 2}
   },
-  function* missle () {
+  function * missle () {
     yield {mana: 53, damage: 4}
   }
 ]
