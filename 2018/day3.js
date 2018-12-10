@@ -1,13 +1,11 @@
 function findOverlap (input) {
-  const parsed = parse(input)
-  const claims = getClaims(parsed)
+  const claims = getClaims(input)
   return Object.values(claims).filter(count => count > 1).length
 }
 
 function findNoOverlap (input) {
-  const parsed = parse(input)
-  const claims = getClaims(parsed)
-  return parsed.find(row => {
+  const claims = getClaims(input)
+  return input.find(row => {
     for (let x = row.left + 1; x <= row.left + row.width; x++) {
       for (let y = row.top + 1; y <= row.top + row.height; y++) {
         const key = x + '.' + y
@@ -32,16 +30,14 @@ function getClaims (parsed) {
   return claims
 }
 
-function parse (input) {
-  return input.map(row => {
-    const match = row.match(/^#(\d+) @ (\d+),(\d+): (\d+)x(\d+)$/)
-    const id = match[1]
-    const left = +match[2]
-    const top = +match[3]
-    const width = +match[4]
-    const height = +match[5]
-    return {id, left, top, width, height}
-  })
+function parse (line) {
+  const match = line.match(/^#(\d+) @ (\d+),(\d+): (\d+)x(\d+)$/)
+  const id = match[1]
+  const left = +match[2]
+  const top = +match[3]
+  const width = +match[4]
+  const height = +match[5]
+  return {id, left, top, width, height}
 }
 
 const test = `
@@ -1312,7 +1308,7 @@ const test = `
 #1265 @ 549,947: 11x18
 #1266 @ 850,773: 23x22
 #1267 @ 95,29: 17x28
-`.trim().split('\n')
+`.trim().split('\n').map(parse)
 
 console.log(findOverlap(test))
 console.log(findNoOverlap(test))

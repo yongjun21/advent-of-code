@@ -29,8 +29,12 @@ function findLargestArea (input) {
 }
 
 function findRegionNearAll (input, cutoff = 10000) {
-  const cx = Math.round(input.reduce((sum, coord) => sum + coord[0], 0) / input.length)
-  const cy = Math.round(input.reduce((sum, coord) => sum + coord[1], 0) / input.length)
+  const xs = input.map(coord => coord[0]).sort((a, b) => a - b)
+  const ys = input.map(coord => coord[1]).sort((a, b) => a - b)
+
+  const middle = Math.floor((input.length - 1) / 2)
+  const cx = xs[middle]
+  const cy = ys[middle]
 
   let count = 0
 
@@ -84,6 +88,10 @@ function getDistance (points, x, y) {
   return points.map(coord => Math.abs(coord[0] - x) + Math.abs(coord[1] - y))
 }
 
+function parse (line) {
+  return line.split(', ').map(v => +v)
+}
+
 const test = `
 154, 159
 172, 84
@@ -135,7 +143,7 @@ const test = `
 214, 127
 158, 293
 237, 311
-`.trim().split('\n').map(line => line.split(', ').map(v => +v))
+`.trim().split('\n').map(parse)
 
 console.log(findLargestArea(test))
 console.log(findRegionNearAll(test))
