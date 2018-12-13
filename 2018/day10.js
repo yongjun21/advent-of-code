@@ -2,13 +2,13 @@ function printMessage (input) {
   const points = input.map(row => ([...row.position]))
   points.bbox = bbox
   let timer = 0
-  let last = getArea(points.bbox())
+  let last = entrophy(points.bbox())
   while (true) {
     points.forEach((pt, i) => {
       pt[0] += input[i].velocity[0]
       pt[1] += input[i].velocity[1]
     })
-    const current = getArea(points.bbox())
+    const current = entrophy(points.bbox())
     if (current > last) break
     last = current
     timer++
@@ -52,7 +52,7 @@ function bbox () {
   ]
 }
 
-function getArea (bbox) {
+function entrophy (bbox) {
   return (bbox[2] - bbox[0]) * (bbox[3] - bbox[1])
 }
 
