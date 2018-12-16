@@ -108,7 +108,7 @@ function mapCartsAndTracks (input) {
     Array.prototype.sort.call(this, (a, b) => {
       if (a.location[1] < b.location[1]) return -1
       if (a.location[1] > b.location[1]) return 1
-      return a.location[0] < b.location[0]
+      return a.location[0] - b.location[0]
     })
   }
 
