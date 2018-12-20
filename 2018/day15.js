@@ -35,20 +35,16 @@ function getOutcome (input, attackPower) {
 }
 
 function changeOutcome (input) {
-  const ATK = {
-    E: 4,
-    G: 3
-  }
+  const ATK = {E: 4, G: 3}
 
-  const initialForce = input
-    .reduce((sum, row) => sum + row.filter(type => type === 'E').length, 0)
+  const initialForce = input.reduce((sum, row) =>
+    sum + row.filter(type => type === 'E').length, 0)
 
   let outcome
   do {
     outcome = getOutcome(input, ATK)
     ATK['E']++
   } while (outcome.wins !== 'E' || outcome.unitsLeft < initialForce)
-
   return outcome
 }
 
