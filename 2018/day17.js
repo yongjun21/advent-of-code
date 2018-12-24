@@ -7,7 +7,7 @@ function findTilesReached (input) {
   print(tiles, bbox)
 
   return Object.keys(tiles).reduce((sum, coord) => {
-    const y = +coord.split('.')[1]
+    const y = +coord.split(',')[1]
     if (y < bbox[1]) return sum
     if (tiles[coord] === '|') sum['|']++
     if (tiles[coord] === '~') sum['~']++
@@ -18,15 +18,15 @@ function findTilesReached (input) {
     let [x, y] = source
     do {
       if (y > bbox[3]) return true
-      tiles[x + '.' + y] = '|'
-      const bottom = tiles[x + '.' + (y + 1)]
+      tiles[[x, y]] = '|'
+      const bottom = tiles[[x, y + 1]]
       if (bottom == null) {
         y++
       } else if (bottom === '#' || bottom === '~') {
         const left = flowSideway([x, y], -1)
         const right = flowSideway([x, y], 1)
         if (left == null || right == null) return true
-        for (let x = left; x <= right; x++) tiles[x + '.' + y] = '~'
+        for (let x = left; x <= right; x++) tiles[[x, y]] = '~'
         y--
       } else if (bottom === '|') {
         return true
@@ -37,13 +37,13 @@ function findTilesReached (input) {
   function flowSideway (source, direction) {
     let [x, y] = source
     while (true) {
-      tiles[x + '.' + y] = '|'
+      tiles[[x, y]] = '|'
 
-      const bottom = tiles[x + '.' + (y + 1)]
+      const bottom = tiles[[x, y + 1]]
       if (bottom === '|') return null
       if (bottom == null && flowDown([x, y])) return null
 
-      const next = tiles[(x + direction) + '.' + y]
+      const next = tiles[[x + direction, y]]
       if (next === '#') return x
       else if (next === '|') return null
       else x += direction
@@ -61,7 +61,7 @@ function scan (input) {
     if (row.y[1] > bbox[3]) bbox[3] = row.y[1]
     for (let x = row.x[0]; x <= row.x[1]; x++) {
       for (let y = row.y[0]; y <= row.y[1]; y++) {
-        tiles[x + '.' + y] = '#'
+        tiles[[x, y]] = '#'
       }
     }
   })
@@ -73,7 +73,7 @@ function print (tiles, bbox) {
   for (let y = bbox[1]; y <= bbox[3]; y++) {
     let row = ''
     for (let x = bbox[0] - 1; x <= bbox[2] + 1; x++) {
-      row += tiles[x + '.' + y] || '.'
+      row += tiles[[x, y]] || '.'
     }
     rows.push(row)
   }

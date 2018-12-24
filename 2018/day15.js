@@ -93,9 +93,8 @@ function getUnits (input, attackPower = {E: 3, G: 3}) {
       const trace = unvisited.shift()
       if (trace.length - 1 > nearest) break
       const last = trace[trace.length - 1]
-      const key = last.join('.')
-      if (key in visited) continue
-      visited[key] = true
+      if (last in visited) continue
+      visited[last] = true
       if (_inRange(last, this.type).length > 0) {
         nearest = trace.length - 1
         targets.push({location: last, firstStep: trace[1]})
