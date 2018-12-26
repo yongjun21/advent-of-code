@@ -24,12 +24,9 @@ function fastestWay (target, regionType, maxMoves = Infinity) {
 
   function changeTool (region, tool) {
     switch (regionType(region)) {
-      case 0:
-        return tool === 1 ? 2 : 1
-      case 1:
-        return tool === 2 ? 0 : 2
-      case 2:
-        return tool === 0 ? 1 : 0
+      case 0: return tool === 1 ? 2 : 1
+      case 1: return tool === 2 ? 0 : 2
+      case 2: return tool === 0 ? 1 : 0
     }
   }
 
