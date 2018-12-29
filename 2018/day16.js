@@ -51,7 +51,7 @@ function matchOpcode (input, operations) {
 function matchOperation (sample, operations) {
   const {a, b, c, before, after} = sample
   return Object.keys(operations).filter(key => {
-    return operations[key](before, a, b, c).join(',') === after.join(',')
+    return operations[key]([...before], a, b, c).join(',') === after.join(',')
   })
 }
 
@@ -4023,4 +4023,4 @@ const test = `
 `.trim().split('\n').map(parseInstruction)
 
 console.log(threeOrMore(samples, operations))
-console.log(execute(test, matchOpcode(samples, operations)))
+console.log(execute(test, matchOpcode(samples, operations))[0])

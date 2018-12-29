@@ -37,51 +37,35 @@ function findRegionNearAll (input, cutoff = 10000) {
   const cy = ys[middle]
 
   let count = 0
+  let dx = 0
+  let dy = 0
 
-  const distance = getDistance(input, cx, cy)
-  let repeat = distance.reduce((sum, d) => sum + d, 0) <= cutoff
-  if (repeat) count++
-
-  const traverse = spiral([cx, cy], 1)
-
-  while (true) {
-    const next = traverse.next(repeat)
-    if (next.done) break
-    const distance = getDistance(input, next.value[0], next.value[1])
-    repeat = distance.reduce((sum, d) => sum + d, 0) <= cutoff
-    if (repeat) count++
+  function comb (offset, cb) {
+    const initial = [dx, dy]
+    while (true) {
+      dx += offset[0]
+      dy += offset[1]
+      const distance = getDistance(input, cx + dx, cy + dy)
+      if (distance.reduce((sum, d) => sum + d, 0) <= cutoff) {
+        count++
+        if (cb) cb()
+      } else break
+    }
+    dx = initial[0]
+    dy = initial[1]
   }
 
+  function combHorizontally () {
+    comb([1, 0])
+    comb([-1, 0])
+  }
+
+  combHorizontally()
+  comb([0, 1], combHorizontally)
+  comb([0, -1], combHorizontally)
+
+  if (count > 0) count++
   return count
-}
-
-function * spiral (topleft, length) {
-  let current = [...topleft]
-  let repeat = true
-  while (true) {
-    current[1]++
-    repeat = (yield current) || repeat
-    if (!repeat) break
-    repeat = false
-
-    for (let i = 0; i < length; i++) {
-      current[0]++
-      repeat = (yield current) || repeat
-    }
-    for (let i = 0; i < length + 1; i++) {
-      current[1]--
-      repeat = (yield current) || repeat
-    }
-    for (let i = 0; i < length + 1; i++) {
-      current[0]--
-      repeat = (yield current) || repeat
-    }
-    for (let i = 0; i < length + 1; i++) {
-      current[1]++
-      repeat = (yield current) || repeat
-    }
-    length += 2
-  }
 }
 
 function getDistance (points, x, y) {
