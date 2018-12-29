@@ -1,12 +1,12 @@
-function parseInput (input) {
-  return input.trim().split('\n').map(line => {
-    const match = line.split(' ')
-    return {
-      type: match[0],
-      target: parseInt(match[1]) || match[1],
-      source: parseInt(match[2]) || match[2]
-    }
-  })
+/* eslint-disable no-multi-spaces */
+
+function parse (line) {
+  const match = line.split(' ')
+  return {
+    type: match[0],
+    target: parseInt(match[1]) || match[1],
+    source: parseInt(match[2]) || match[2]
+  }
 }
 
 function invoke (instructions, initial) {
@@ -60,42 +60,48 @@ function shortcut (instructions) {
   return notPrime
 }
 
-const test = `
-set b 99
-set c b
-jnz a 2
-jnz 1 5
-mul b 100
-sub b -100000
-set c b
-sub c -17000
-set f 1
-set d 2
-set e 2
-set g d
-mul g e
-sub g b
-jnz g 2
-set f 0
-sub e -1
-set g e
-sub g b
-jnz g -8
-sub d -1
-set g d
-sub g b
-jnz g -13
-jnz f 2
-sub h -1
-set g b
-sub g c
-jnz g 2
-jnz 1 3
-sub b -17
-jnz 1 -23
-`
+const test = [
+  'set b 99',         // 0  >  b = 99, c = 99
+  'set c b',          // 1  |
+  'jnz a 2',          // 2  >  if (a === 0) goto L8
+  'jnz 1 5',          // 3  |  else goto L4
+  'mul b 100',        // 4  >  b = 109900, c = 126900
+  'sub b -100000',    // 5  |
+  'set c b',          // 6  |
+  'sub c -17000',     // 7  |
+  'set f 1',          // 8  >  f = 1
+  'set d 2',          // 9  >  d = 2
+  'set e 2',          // 10 >  e = 2
+  'set g d',          // 11 >  if (d * e === b) f = 0
+  'mul g e',          // 12 |
+  'sub g b',          // 13 |
+  'jnz g 2',          // 14 |
+  'set f 0',          // 15 |
+  'sub e -1',         // 16 >  e++
+  'set g e',          // 17 >  if (e !== b) goto L11
+  'sub g b',          // 18 |
+  'jnz g -8',         // 19 |
+  'sub d -1',         // 20 >  d++
+  'set g d',          // 21 >  if (d !== b) goto L10
+  'sub g b',          // 22 |
+  'jnz g -13',        // 23 |
+  'jnz f 2',          // 24 >  if (f === 0) h++
+  'sub h -1',         // 25 |
+  'set g b',          // 26 >  if (b === c) exit
+  'sub g c',          // 27 |  else b += 17, goto L8
+  'jnz g 2',          // 28 |
+  'jnz 1 3',          // 29 |
+  'sub b -17',        // 30 |
+  'jnz 1 -23'         // 31 |
+].map(parse)
 
-const instructions = parseInput(test)
+/*
+Additional:
+- L11-19 >  Loop e in range(2, b - 1, 1)
+- L10-23 >  Loop d in range(2, b - 1, 1)
+- L8-31  >  Loop b in range(b, c, 17)
+- L11-15 >  f = 0 if notPrime(b)
+*/
 
-console.log(invoke(instructions).invoked['mul'])
-console.log(shortcut(instructions))
+console.log(invoke(test).invoked['mul'])
+console.log(shortcut(test))
