@@ -1,3 +1,5 @@
+const { getDigits } = require('./common')
+
 function findPasswords (input, meetsCriteria) {
   const passwords = []
   for (let n = input[0]; n <= input[1]; n++) {
@@ -30,17 +32,6 @@ function meetsCriteria2 (digits) {
     prev = digits[i]
   }
   return meet || run === 2
-}
-
-function getDigits (n) {
-  const digits = []
-  while (n >= 1) {
-    const d = n % 10
-    digits.push(d)
-    n = (n - d) / 10
-  }
-  if (digits.length === 0) digits.push(0)
-  return digits
 }
 
 const test = [271973, 785961]
