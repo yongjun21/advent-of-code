@@ -1,15 +1,14 @@
-const INPUT = Symbol('input')
-
 exports.getDigits = getDigits
 
 exports.intcode = program => {
   const generator = intcode(program)
   let pending = generator.next()
   return {
+    mode: pending.value == null ? 'i' : 'o',
     next (value) {
       const next = pending
-      if (next.value === INPUT) next.value = value
       pending = generator.next(value)
+      this.mode = pending.value == null ? 'i' : 'o'
       return next
     },
     [Symbol.iterator] () {
@@ -63,6 +62,24 @@ function * intcode (program) {
       }
       pointer += 4
     }
+  }
+}
+
+exports.printState = function (state, pixels) {
+  const coordinates = Object.keys(state).map(k => k.split(',').map(Number))
+  const bbox = [
+    coordinates.reduce((min, xy) => xy[0] < min ? xy[0] : min, Infinity),
+    coordinates.reduce((min, xy) => xy[1] < min ? xy[1] : min, Infinity),
+    coordinates.reduce((max, xy) => xy[0] > max ? xy[0] : max, -Infinity),
+    coordinates.reduce((max, xy) => xy[1] > max ? xy[1] : max, -Infinity)
+  ]
+  for (let y = bbox[1]; y <= bbox[3]; y++) {
+    let line = ''
+    for (let x = bbox[0]; x <= bbox[2]; x++) {
+      const pixel = state[[x, y]]
+      line += pixel in pixels ? pixels[pixel] : ' '
+    }
+    console.log(line)
   }
 }
 
