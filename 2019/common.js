@@ -1,7 +1,10 @@
-exports.getDigits = getDigits
+const { getDigits } = require('../helpers')
 
-exports.intcode = program => {
-  const generator = intcode(program)
+exports.intcode = intcode
+exports.ascii = ascii
+
+function ascii (program) {
+  const generator = ASCII(program)
   let pending = generator.next()
   return {
     mode: pending.value == null ? 'i' : 'o',
@@ -17,7 +20,55 @@ exports.intcode = program => {
   }
 }
 
-function * intcode (program) {
+function intcode (program) {
+  const generator = Intcode(program)
+  let pending = generator.next()
+  return {
+    mode: pending.value == null ? 'i' : 'o',
+    next (value) {
+      const next = pending
+      pending = generator.next(value)
+      this.mode = pending.value == null ? 'i' : 'o'
+      return next
+    },
+    [Symbol.iterator] () {
+      return this
+    }
+  }
+}
+
+function * ASCII (program) {
+  program = intcode(program)
+  const buffer = []
+  let index = 0
+  while (true) {
+    if (program.mode === 'o') {
+      const next = program.next()
+      buffer.push(next.value)
+    } else if (buffer.length > index) {
+      let message = ''
+      while (buffer.length > index) {
+        const v = buffer[index++]
+        if (v >= 0 && v < 128) {
+          message += String.fromCodePoint(v)
+        } else {
+          if (message.length > 0) yield message
+          message = ''
+          yield v
+        }
+      }
+      if (message.length > 0) yield message
+    } else {
+      const command = yield
+      for (let i = 0; i < command.length; i++) {
+        program.next(command.codePointAt(i))
+      }
+      program.next(10)
+    }
+  }
+}
+
+function * Intcode (program) {
   let pointer = 0
   let base = 0
   while (true) {
@@ -83,13 +134,13 @@ exports.printState = function (state, pixels) {
   }
 }
 
-function getDigits (n) {
-  const digits = []
-  while (n >= 1) {
-    const d = n % 10
-    digits.push(d)
-    n = (n - d) / 10
+exports.runCommands = function (program, commands, verbose) {
+  for (const command of commands) {
+    if (program.mode === 'o') {
+      const output = program.next().value
+      if (verbose) process.stdout.write(output)
+    }
+    if (verbose) console.log(command)
+    program.next(command)
   }
-  if (digits.length === 0) digits.push(0)
-  return digits
 }

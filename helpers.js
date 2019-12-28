@@ -1,3 +1,14 @@
+function getDigits (n, base = 10) {
+  const digits = []
+  while (n >= 1) {
+    const d = n % base
+    digits.push(d)
+    n = (n - d) / base
+  }
+  if (digits.length === 0) digits.push(0)
+  return digits
+}
+
 function getAssignments (items, groups = 2) {
   const combinations = []
   const nCombinations = Math.pow(groups, items)
@@ -66,6 +77,7 @@ function getSplitCombinations (total, items) {
 }
 
 module.exports = {
+  getDigits,
   getAssignments,
   getPermutations,
   getCombinations,

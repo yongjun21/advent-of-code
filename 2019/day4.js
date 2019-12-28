@@ -1,4 +1,4 @@
-const { getDigits } = require('./common')
+const { getDigits } = require('../helpers')
 
 function findPasswords (input, meetsCriteria) {
   const passwords = []

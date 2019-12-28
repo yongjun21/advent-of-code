@@ -1,21 +1,18 @@
 /* eslint-disable no-labels */
-const { intcode } = require('./common')
+const { ascii, runCommands } = require('./common')
 
-const DIRECTIONS = [
+const OFFSETS = [
   [0, -1],
   [1, 0],
   [0, 1],
   [-1, 0]
 ]
 
-function sumAlignmentParameters (input) {
-  const program = intcode([...input])
-  const camera = getCamera(program)
+function sumAlignmentParameters (input, verbose) {
+  const camera = getCamera(ascii([...input]), verbose)
   let sum = 0
   camera.forEach((row, y) => {
-    if (y === 0 || y === camera.length - 1) return
     row.forEach((v, x) => {
-      if (x === 0 || x === row.length - 1) return
       if (v !== '#') return
       if (
         camera[y][x - 1] === '#' &&
@@ -30,8 +27,8 @@ function sumAlignmentParameters (input) {
   return sum
 }
 
-function reportDust (input) {
-  const camera = getCamera(intcode([...input]))
+function reportDust (input, verbose) {
+  const camera = getCamera(ascii([...input]))
   const path = [...trace(camera)]
 
   const freq = {}
@@ -77,29 +74,16 @@ function reportDust (input) {
     if (routines.has(part.key)) return
     routines.set(part.key, ['A', 'B', 'C'][routines.size])
   })
-
   const main = solution.map(part => routines.get(part.key)).join(',')
+  const commands = [main, ...routines.keys(), 'n']
 
   input = [...input]
   input[0] = 2
-  const program = intcode(input)
-  while (program.mode !== 'i') program.next()
-  for (let i = 0; i < main.length; i++) {
-    program.next(main.codePointAt(i))
-  }
-  program.next(10)
-  for (const routine of routines.keys()) {
-    while (program.mode !== 'i') program.next()
-    for (let i = 0; i < routine.length; i++) {
-      program.next(routine.codePointAt(i))
-    }
-    program.next(10)
-  }
-  while (program.mode !== 'i') program.next()
-  program.next('n'.codePointAt(0))
-  program.next(10)
-  const stdOut = [...program]
-  return stdOut[stdOut.length - 1]
+  const program = ascii(input)
+  runCommands(program, commands, verbose)
+  const output = program.next().value
+  if (verbose) process.stdout.write(output)
+  return program.next().value
 }
 
 function * trace (camera) {
@@ -121,14 +105,14 @@ function * trace (camera) {
   const right = d => d === 3 ? 0 : d + 1
 
   while (true) {
-    if (camera[y + DIRECTIONS[d][1]][x + DIRECTIONS[d][0]] === '#') {
+    if (camera[y + OFFSETS[d][1]][x + OFFSETS[d][0]] === '#') {
       yield 1
-      x += DIRECTIONS[d][0]
-      y += DIRECTIONS[d][1]
-    } else if (camera[y + DIRECTIONS[left(d)][1]][x + DIRECTIONS[left(d)][0]] === '#') {
+      x += OFFSETS[d][0]
+      y += OFFSETS[d][1]
+    } else if (camera[y + OFFSETS[left(d)][1]][x + OFFSETS[left(d)][0]] === '#') {
       yield 'L'
       d = left(d)
-    } else if (camera[y + DIRECTIONS[right(d)][1]][x + DIRECTIONS[right(d)][0]] === '#') {
+    } else if (camera[y + OFFSETS[right(d)][1]][x + OFFSETS[right(d)][0]] === '#') {
       yield 'R'
       d = right(d)
     } else {
@@ -138,16 +122,12 @@ function * trace (camera) {
 }
 
 function getCamera (program, print = false) {
-  let stream = ''
-  while (program.mode === 'o') {
-    stream += String.fromCodePoint(program.next().value)
-  }
-  const camera = stream.split('\n')
-    .map(line => {
-      if (print) console.log(line)
-      return ['.', ...line.split(''), '.']
-    })
-    .filter(row => row.length > 0)
+  const camera = []
+  program.next().value.split('\n').forEach(line => {
+    if (line.length === 0) return
+    if (print) console.log(line)
+    camera.push(['.', ...line.split(''), '.'])
+  })
   const ncol = camera[0].length
   camera.unshift(Array(ncol).fill('.'))
   camera.push(Array(ncol).fill('.'))

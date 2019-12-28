@@ -1,6 +1,11 @@
 const { intcode, printState } = require('./common')
 
-const OFFSETS = [[0, -1], [1, 0], [0, 1], [-1, 0]]
+const OFFSETS = [
+  [0, -1],
+  [1, 0],
+  [0, 1],
+  [-1, 0]
+]
 
 function paint (input, state = {}) {
   const location = [0, 0]

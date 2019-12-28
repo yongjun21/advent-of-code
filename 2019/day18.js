@@ -1,5 +1,4 @@
 /* eslint-disable no-labels */
-
 const OFFSETS = [
   [0, -1],
   [1, 0],
