@@ -1,10 +1,9 @@
 function getAssignments (items, groups = 2) {
   const nCombinations = Math.pow(groups, items)
-  const zeroPad = '0'.repeat(items)
   return {
     [Symbol.iterator]: function * () {
       for (let i = 0; i < nCombinations; i++) {
-        const combiString = (zeroPad + i.toString(groups)).slice(-items)
+        const combiString = i.toString(groups).padStart(items, '0')
         const combination = combiString.split('')
         if (groups === 2) yield combination.map(v => +v)
         else yield combination

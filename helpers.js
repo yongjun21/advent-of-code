@@ -12,9 +12,8 @@ function getDigits (n, base = 10) {
 function getAssignments (items, groups = 2) {
   const combinations = []
   const nCombinations = Math.pow(groups, items)
-  const zeroPad = '0'.repeat(items)
   for (let i = 0; i < nCombinations; i++) {
-    const combiString = (zeroPad + i.toString(groups)).slice(-items)
+    const combiString = i.toString(groups).padStart(items, '0')
     const combination = combiString.split('')
     if (groups === 2) combinations.push(combination.map(v => +v))
     else combinations.push(combination)

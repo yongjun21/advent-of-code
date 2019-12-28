@@ -26,7 +26,6 @@ function reportDamage2 (input, verbose) {
     'NOT E T',
     'NOT T T',
     'OR H T',
-    // 'NOT T T',
     'AND T J',
     'NOT A T',
     'OR T J',
