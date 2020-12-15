@@ -7,12 +7,20 @@ function findWeakness (input) {
 function breakEncrypt (input) {
   const weakness = findWeakness(input)
   let first = 0
-  let last = 1
-  let sum = input[0] + input[1]
-  while (first < last) {
-    if (sum < weakness) {
+  let last = 0
+  let sum = input[0]
+  while (first < input.length) {
+    if (last < first) {
       last++
       sum += input[last]
+    } else if (sum < weakness) {
+      if (last < input.length - 1) {
+        last++
+        sum += input[last]
+      } else {
+        sum -= input[first]
+        first++
+      }
     } else if (sum > weakness) {
       sum -= input[first]
       first++
