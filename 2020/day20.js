@@ -19,18 +19,17 @@ function seaMonster (input, target) {
   image.forEach((v, i) => {
     if (stitched[i] === '#') image[i] = 1
   })
-  const sumImage = image.reduce((sum, v) => sum + v, 0)
 
   const filter = new Uint8Array(fDim[0] * fDim[1])
   filter.forEach((v, i) => {
     if (target[i] === '#') filter[i] = 1
   })
-  const sumFilter = filter.reduce((sum, v) => sum + v, 0)
 
   const transforms = getTransforms(Math.sqrt(image.length))
   const convolutions = transforms.map(t => convolve(image, t, filter, fDim))
-  const filtered = convolutions.filter(convo => convo.filter(v => v === sumFilter).length > 0)
-  return sumImage - filtered[0].filter(v => v === sumFilter).length * sumFilter
+  const matched = convolutions.map((convo, i) => scan(filter, convo, transforms[i], fDim))
+  const filtered = matched.filter(m => m.size > 0)
+  return image.reduce((sum, v) => sum + v, 0) - filtered[0].size
 }
 
 function assemble (input) {
@@ -97,11 +96,8 @@ function applyTransform (t) {
   return tile => {
     const dim = Math.sqrt(tile.image.length)
     const transform = getTransforms(dim)[t]
-    let transformedImage = ''
-    for (const index of sequence2D(transform.start, [transform.primary, transform.secondary], [dim, dim])) {
-      transformedImage += tile.image[index]
-    }
-    tile.image = transformedImage
+    const seq = sequence2D(transform.start, [transform.primary, transform.secondary], [dim, dim])
+    tile.image = [...seq].map(index => tile.image[index]).join('')
 
     const inversed = t >= 4
     if (inversed) t -= 4
@@ -146,6 +142,23 @@ function convolve (image, transform, filter, fDim) {
     convolution[start] = filter.reduce((sum, v) => sum + image[seq.next().value] * v, 0)
   }
   return convolution
+}
+
+function scan (filter, convolution, transform, fDim) {
+  const sumFilter = filter.reduce((sum, v) => sum + v, 0)
+  const offset = [transform.primary, transform.secondary]
+
+  const matched = new Set()
+  convolution.forEach((v, i) => {
+    if (v === sumFilter) {
+      const seq = sequence2D(i, offset, fDim)
+      filter.forEach(v => {
+        const i = seq.next()
+        if (v === 1) matched.add(i)
+      })
+    }
+  })
+  return matched
 }
 
 function getTransforms (dim) {
