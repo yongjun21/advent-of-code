@@ -1,4 +1,4 @@
-const { LinkedList } = require('./common')
+const { MinHeap } = require('./common')
 
 const ADJACENTS = [
   [-1, 0],
@@ -10,11 +10,11 @@ const ADJACENTS = [
 function findLowestRisk (input, N = 1, M = 1) {
   const [riskMap, n, m] = getRiskMap(input, N, M)
   const riskGraph = getRiskGraph(n, m)
-  const unvisited = new LinkedList()
+  const unvisited = new MinHeap((a, b) => a[1] - b[1])
   const visited = new Map()
   unvisited.push([0, 0])
-  while (unvisited.next) {
-    const [next, steps] = getMinSteps(unvisited).pop().value
+  while (unvisited.size > 0) {
+    const [next, steps] = unvisited.pop()
     const best = visited.get(next)
     if (best != null && steps >= best) continue
     visited.set(next, steps)
@@ -59,21 +59,6 @@ function getRiskGraph (n, m) {
     }
   }
   return graph
-}
-
-function getMinSteps (linkedList) {
-  let minSteps = Infinity
-  let min
-  let curr = linkedList
-  while (curr.next) {
-    const value = curr.peek()
-    if (value[1] < minSteps) {
-      min = curr
-      minSteps = value[1]
-    }
-    curr = curr.next
-  }
-  return min
 }
 
 const test = `
