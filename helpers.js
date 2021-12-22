@@ -15,7 +15,7 @@ function getAssignments (items, groups = 2) {
   for (let i = 0; i < nCombinations; i++) {
     const combiString = i.toString(groups).padStart(items, '0')
     const combination = combiString.split('')
-    if (groups === 2) combinations.push(combination.map(v => +v))
+    if (groups <= 10) combinations.push(combination.map(v => +v))
     else combinations.push(combination)
   }
   return combinations
