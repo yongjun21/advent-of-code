@@ -6,15 +6,11 @@ function executeMoves (stacks, moves, maxHold = 1) {
     const holdStack = []
     for (let n = 0; n < row.move; n++) {
       if (holdStack.length === maxHold) {
-        for (const item of emptyStack(holdStack)) {
-          toStack.push(item)
-        }
+        for (const item of emptyStack(holdStack)) toStack.push(item)
       }
       holdStack.push(fromStack.pop())
     }
-    for (const item of emptyStack(holdStack)) {
-      toStack.push(item)
-    }
+    for (const item of emptyStack(holdStack)) toStack.push(item)
   })
   return stacks
 }
