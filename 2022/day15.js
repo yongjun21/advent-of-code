@@ -60,7 +60,7 @@ function unionRange (a, b) {
 }
 
 function parse (line) {
-  const matched = line.match(/Sensor at x=(-?\d+), y=(-?\d+): closest beacon is at x=(-?\d+), y=(-?\d+)/)
+  const matched = line.match(/^Sensor at x=(-?\d+), y=(-?\d+): closest beacon is at x=(-?\d+), y=(-?\d+)$/)
   return {
     sensor: [+matched[1], +matched[2]],
     beacon: [+matched[3], +matched[4]]
@@ -93,23 +93,6 @@ Sensor at x=2971747, y=2662873: closest beacon is at x=2677313, y=2951659
 Sensor at x=3213584, y=3463821: closest beacon is at x=3102959, y=3443573
 Sensor at x=37652, y=3969055: closest beacon is at x=-615866, y=3091738
 Sensor at x=1804153, y=1170987: closest beacon is at x=1207332, y=429175
-`.trim().split('\n').map(parse)
-
-const test2 = `
-Sensor at x=2, y=18: closest beacon is at x=-2, y=15
-Sensor at x=9, y=16: closest beacon is at x=10, y=16
-Sensor at x=13, y=2: closest beacon is at x=15, y=3
-Sensor at x=12, y=14: closest beacon is at x=10, y=16
-Sensor at x=10, y=20: closest beacon is at x=10, y=16
-Sensor at x=14, y=17: closest beacon is at x=10, y=16
-Sensor at x=8, y=7: closest beacon is at x=2, y=10
-Sensor at x=2, y=0: closest beacon is at x=2, y=10
-Sensor at x=0, y=11: closest beacon is at x=2, y=10
-Sensor at x=20, y=14: closest beacon is at x=25, y=17
-Sensor at x=17, y=20: closest beacon is at x=21, y=22
-Sensor at x=16, y=7: closest beacon is at x=15, y=3
-Sensor at x=14, y=3: closest beacon is at x=15, y=3
-Sensor at x=20, y=1: closest beacon is at x=15, y=3
 `.trim().split('\n').map(parse)
 
 console.log(countExcluded(test, 2000000))
