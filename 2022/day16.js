@@ -1,39 +1,53 @@
-function maxPressureReleased (input, startTime, extras) {
+function maxPressureReleased (input, startTime) {
+  const score = search(input, startTime)
+  return score[0][1]
+}
+
+function maxPressureReleased2 (input, startTime) {
+  const score = search(input, startTime)
+  let max = 0
+  for (let j = 1; j < score.length; j++) {
+    for (let i = 0; i < j; i++) {
+      if (score[i][1] * 2 < max) break
+      const hashA = score[i][0]
+      const hashB = score[j][0]
+      if (hashA + hashB !== (hashA | hashB)) continue
+      const total = score[i][1] + score[j][1]
+      if (total > max) max = total
+    }
+  }
+  return max
+}
+
+function search (input, startTime) {
   const valves = getValves(input)
   const openable = input.filter(row => row.rate > 0)
   const shortestPath = getShortestPath(valves, openable)
 
-  let max = 0
+  const score = []
   const unvisited = []
-  unvisited.push([['AA'], startTime, 0, extras])
+  unvisited.push([0, 'AA', startTime, 0])
 
   while (unvisited.length > 0) {
-    const [path, time, released, extras] = unvisited.pop()
-    const next = path[path.length - 1]
-    const unvisitedLastCount = unvisited.length
-    if (extras > 0) {
-      unvisited.push([[...path, 'AA'], startTime, released, extras - 1])
-    }
+    const [visited, next, time, released, extras] = unvisited.pop()
     openable.forEach(row => {
-      if (path.includes(row.from)) return
+      if ((visited & row.hash) === row.hash) return
+      score.push([visited, released])
       const distance = shortestPath[next][row.from]
       const nextTime = time - distance - 1
       if (nextTime > 0) {
         unvisited.push([
-          [...path, row.from],
+          visited + row.hash,
+          row.from,
           nextTime,
           released + nextTime * row.rate,
           extras
         ])
       }
     })
-
-    if (unvisited.length === unvisitedLastCount) {
-      if (released > max) max = released
-    }
   }
 
-  return max
+  return score.sort((a, b) => b[1] - a[1])
 }
 
 function getShortestPath (valves, openable) {
@@ -67,8 +81,13 @@ function getShortestPath (valves, openable) {
 
 function getValves (input) {
   const valves = {}
+  let hash = 1
   input.forEach(row => {
     valves[row.from] = row
+    if (row.rate > 0) {
+      row.hash = hash
+      hash *= 2
+    }
   })
 
   function preprocessInputRowTo (row, path = []) {
@@ -165,5 +184,5 @@ Valve RE has flow rate=0; tunnels lead to valves JF, FP
 Valve UI has flow rate=0; tunnels lead to valves AR, CB
 `.trim().split('\n').map(parse)
 
-console.log(maxPressureReleased(test, 30, 0))
-console.log(maxPressureReleased(test, 26, 1))
+console.log(maxPressureReleased(test, 30))
+console.log(maxPressureReleased2(test, 26))
