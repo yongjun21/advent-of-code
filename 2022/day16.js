@@ -11,7 +11,7 @@ function maxPressureReleased2 (input, startTime) {
       if (score[i][1] * 2 < max) break
       const hashA = score[i][0]
       const hashB = score[j][0]
-      if (hashA + hashB !== (hashA | hashB)) continue
+      if (hashA & hashB) continue
       const total = score[i][1] + score[j][1]
       if (total > max) max = total
     }
@@ -31,7 +31,7 @@ function search (input, startTime) {
   while (unvisited.length > 0) {
     const [visited, next, time, released, extras] = unvisited.pop()
     openable.forEach(row => {
-      if ((visited & row.hash) === row.hash) return
+      if (visited & row.hash) return
       score.push([visited, released])
       const distance = shortestPath[next][row.from]
       const nextTime = time - distance - 1
