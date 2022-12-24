@@ -149,15 +149,5 @@ const test = `
 #....#...#..#..##.##.##...####.#.#.#...#.#.#.##.#...#.##.........#.##.#..
 `.trim().split('\n')
 
-const test2 = `
-....#..
-..###.#
-#...#.#
-.#...##
-#.###..
-##.#.##
-.#..#..
-`.trim().split('\n')
-
 console.log(countEmptyGroundTiles(test, 10)[0])
 console.log(countEmptyGroundTiles(test)[1])
