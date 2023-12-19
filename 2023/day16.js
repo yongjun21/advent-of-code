@@ -237,19 +237,6 @@ const test = String.raw`
 .............................\................\.......-.......................|......|........................
 `.trim().split('\n');
 
-const test2 = String.raw`
-.|...\....
-|.-.\.....
-.....|-...
-........|.
-..........
-.........\
-..../.\\..
-.-.-/..|..
-.|....-|.\
-..//.|....
-`.trim().split('\n');
-
 console.log(countEnergizedTiles(test)[0]);
 console.log(maximizeEnergizedTiles(test));
 

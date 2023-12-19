@@ -12,18 +12,18 @@ function countInside(input) {
 
   let count = 0;
   for (let j = 0; j < height; j++) {
-    let inside = false;
-    let open;
+    let color = 'red';
     for (let i = 0; i < width; i++) {
       const index = j * width + i;
       if (visited.has(index)) {
         let type = input[j][i];
         if (type === 'S') type = start;
-        if (type === '|') inside = !inside;
-        if (type === 'L' || type === 'F') open = type;
-        if (type === 'J' && open === 'F') inside = !inside;
-        if (type === '7' && open === 'L') inside = !inside;
-      } else if (inside) {
+        if (type === '|') color = color === 'red' ? 'green' : 'red';
+        if (type === 'L') color = color === 'red' ? 'yellow' : 'green';
+        if (type === 'F') color = color === 'red' ? 'green' : 'yellow'; 
+        if (type === 'J') color = color === 'yellow' ? 'red' : 'green';
+        if (type === '7') color = color === 'yellow' ? 'green' : 'red';
+      } else if (color === 'green') {
         count++;
       }
     }
