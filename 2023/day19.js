@@ -114,8 +114,7 @@ function parsePart(line) {
   );
 }
 
-const test = Object.fromEntries(
-  `
+const test = Object.fromEntries(`
 hlv{x>1142:fgz,snf}
 cjb{s>2194:jl,mrj}
 hzg{m>2989:A,A}
