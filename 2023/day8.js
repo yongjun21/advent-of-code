@@ -1,4 +1,5 @@
 const assert = require('assert');
+const { findLCM } = require('./common');
 
 function getStepsToReach(nodes, instructions) {
   for (const [steps, curr] of getNextZ(nodes, instructions, 'AAA')) {
@@ -48,33 +49,6 @@ function* getNextZ(nodes, instructions, start) {
     cycleIndex++;
     if (cycleIndex >= cycle.length) cycleIndex = 0;
   }
-}
-
-function findLCM(...numbers) {
-  const combined = {};
-  numbers.forEach(n => {
-    const factors = {};
-    getFactors(n).forEach(f => {
-      factors[f] = factors[f] || 0;
-      factors[f]++;
-    });
-    Object.keys(factors).forEach(f => {
-      if (!(f in combined) || factors[f] > combined[f])
-        combined[f] = factors[f];
-    });
-  });
-  return Object.entries(combined).reduce((product, [f, n]) => {
-    return product * Math.pow(+f, n);
-  }, 1);
-}
-
-function getFactors(number) {
-  for (let f = 2; f < number; f++) {
-    if (number % f === 0) {
-      return [f].concat(getFactors(number / f));
-    }
-  }
-  return [number];
 }
 
 function parse(line) {
