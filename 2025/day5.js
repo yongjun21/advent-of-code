@@ -1,3 +1,5 @@
+const { unionRunEnds } = require('./common');
+
 function countFreshAvailable({ fresh, available }) {
   return available.filter(id =>
     fresh.some(range => id >= range[0] && id <= range[1])
@@ -20,54 +22,6 @@ function countFresh(input) {
     }
   }
   return count;
-}
-
-function unionRunEnds(curr, next) {
-  return boolRunEnds(curr, next, 1, 3);
-}
-
-function* boolRunEnds(curr, next, a = 1, b = 3) {
-  /*
-    0: currState, 1: !currState, 2: nextState, 3: !nextState
-    a: condition to yield nextIndex (0 or 1)
-    b: condition to yield currIndex (2 or 3)
-  */
-  const state = [false, true, false, true];
-
-  const nextIter = next[Symbol.iterator]();
-  let nextIndex = nextIter.next();
-  for (const currIndex of curr) {
-    while (!nextIndex.done && nextIndex.value < currIndex) {
-      if (state[a]) yield nextIndex.value;
-      nextIndex = nextIter.next();
-      // flip next state
-      state[2] = !state[2];
-      state[3] = !state[3];
-    }
-
-    if (nextIndex.done && !state[b]) return;
-
-    if (nextIndex.done || nextIndex.value > currIndex) {
-      if (state[b]) yield currIndex;
-      // flip curr state
-      state[0] = !state[0];
-      state[1] = !state[1];
-    } else {
-      if (state[a] === state[b]) yield currIndex;
-      nextIndex = nextIter.next();
-      // flip curr & next state
-      state[0] = !state[0];
-      state[1] = !state[1];
-      state[2] = !state[2];
-      state[3] = !state[3];
-    }
-  }
-  if (state[a]) {
-    while (!nextIndex.done) {
-      yield nextIndex.value;
-      nextIndex = nextIter.next();
-    }
-  }
 }
 
 function parse(input) {
