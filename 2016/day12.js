@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 function setRegister (input, initial) {
   const instructions = input.trim().split('\n').map(line => {
     const match = line.split(' ')
@@ -33,31 +35,7 @@ function setRegister (input, initial) {
   return register
 }
 
-const test = `
-cpy 1 a
-cpy 1 b
-cpy 26 d
-jnz c 2
-jnz 1 5
-cpy 7 c
-inc d
-dec c
-jnz c -2
-cpy a c
-inc a
-dec b
-jnz b -2
-cpy c b
-dec d
-jnz d -6
-cpy 13 c
-cpy 14 d
-inc a
-dec d
-jnz d -2
-dec c
-jnz c -5
-`
+const test = load('day12', __dirname)
 
 console.log(setRegister(test))
 console.log(setRegister(test, {c: 1}))

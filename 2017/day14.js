@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 const {knotHash} = require('./common')
 
 function generateBitmap (input) {
@@ -60,7 +62,7 @@ function findRegions (input) {
   return Object.keys(members).length
 }
 
-const test = 'xlqgujun'
+const test = load('day14', __dirname)
 
 console.log(findUsedSquares(test))
 console.log(findRegions(test))

@@ -1,4 +1,4 @@
-const fs = require('fs')
+const load = require('../loader')
 
 function followRoute (input) {
   const diagram = input.split('\n').map(line => line.split(''))
@@ -29,6 +29,6 @@ function followRoute (input) {
   return {letters: letters.join(''), steps}
 }
 
-const test = fs.readFileSync('2017/input/day19.txt', {encoding: 'utf8'})
+const test = load('day19', __dirname)
 
 console.log(followRoute(test))

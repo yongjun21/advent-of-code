@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 function crackSafe (input, initial) {
   const instructions = input.trim().split('\n').map(line => {
     const match = line.split(' ')
@@ -46,34 +48,7 @@ function crackSafe (input, initial) {
   return register
 }
 
-const test = `
-cpy a b
-dec b
-cpy a d
-cpy 0 a
-cpy b c
-inc a
-dec c
-jnz c -2
-dec d
-jnz d -5
-dec b
-cpy b c
-cpy c d
-dec d
-inc c
-jnz d -2
-tgl c
-cpy -16 c
-jnz 1 c
-cpy 86 c
-jnz 78 d
-inc a
-inc d
-jnz d -2
-inc c
-jnz c -5
-`
+const test = load('day23', __dirname)
 
 console.log(crackSafe(test, {a: 7}))
 console.log(crackSafe(test, {a: 12}))

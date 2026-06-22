@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 const NUMERIC_KEYPAD = {
   '7': [0, 0],
   '8': [1, 0],
@@ -169,13 +171,7 @@ function walk(moves) {
   return keys.join('');
 }
 
-const test = `
-670A
-974A
-638A
-319A
-508A
-`.trim().split("\n");
+const test = load('day21', __dirname).trim().split("\n")
 
 console.log(sumComplexity(test));
 console.log(sumComplexity(test, 26));

@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 function enumeratePaths (input, allowVisitTwice = false) {
   const graph = Object.create(null)
   input.forEach(([src, dest]) => {
@@ -32,33 +34,7 @@ function enumeratePaths (input, allowVisitTwice = false) {
   return paths
 }
 
-const test = `
-end-MY
-MY-xc
-ho-NF
-start-ho
-NF-xc
-NF-yf
-end-yf
-xc-TP
-MY-qo
-yf-TP
-dc-NF
-dc-xc
-start-dc
-yf-MY
-MY-ho
-EM-uh
-xc-yf
-ho-dc
-uh-NF
-yf-ho
-end-uh
-start-NF
-`
-  .trim()
-  .split('\n')
-  .map(line => line.split('-'))
+const test = load('day12', __dirname).trim()  .split('\n')  .map(line => line.split('-'))
 
 console.log(enumeratePaths(test))
 console.log(enumeratePaths(test, true))

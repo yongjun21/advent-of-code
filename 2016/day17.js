@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 const md5 = require('md5')
 
 function findPaths (input) {
@@ -28,7 +30,7 @@ function findLongestPath (input) {
   return paths[paths.length - 1]
 }
 
-const test = 'mmsxrhfx'
+const test = load('day17', __dirname)
 
 console.log(findShortestPath(test))
 console.log(findLongestPath(test).length)

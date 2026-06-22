@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 function findHouseNumber (input, perHouse, maxHouses = Infinity) {
   const houses = []
 
@@ -31,7 +33,7 @@ function findHouseNumber (input, perHouse, maxHouses = Infinity) {
   }
 }
 
-const test = 33100000
+const test = Number(load('day20', __dirname))
 
 console.log(findHouseNumber(test, 10))
 console.log(findHouseNumber(test, 11, 50))

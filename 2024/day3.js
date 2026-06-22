@@ -1,7 +1,4 @@
-const fs = require('fs');
-const path = require('path');
-
-const test = fs.readFileSync(path.join(__dirname, 'day3.txt'), 'utf8');
+const load = require('../loader');
 
 function sumMul(input) {
   const re = /mul\(([1-9][0-9]{0,2}),([1-9][0-9]{0,2})\)/g;
@@ -29,6 +26,8 @@ function sumMul2(input) {
   }
   return sum;
 }
+
+const test = load('day3', __dirname);
 
 console.log(sumMul(test));
 console.log(sumMul2(test));

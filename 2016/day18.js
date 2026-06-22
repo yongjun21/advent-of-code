@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 function findSafeTiles (input, rows) {
   let safe = input.split('').reduce((sum, tile) => sum + (tile === '.' ? 1 : 0), 0)
   let row = 1
@@ -25,7 +27,7 @@ function findSafeTiles (input, rows) {
   return safe
 }
 
-const test = '.^^..^...^..^^.^^^.^^^.^^^^^^.^.^^^^.^^.^^^^^^.^...^......^...^^^..^^^.....^^^^^^^^^....^^...^^^^..^'
+const test = load('day18', __dirname)
 
 console.log(findSafeTiles(test, 40))
 console.log(findSafeTiles(test, 400000))

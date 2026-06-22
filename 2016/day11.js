@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 function parseInput (input) {
   const pairs = {}
 
@@ -128,12 +130,7 @@ function minimumMoves (state, current = 1) {
   }
 }
 
-const test = `
-The first floor contains a promethium generator and a promethium-compatible microchip.
-The second floor contains a cobalt generator, a curium generator, a ruthenium generator, and a plutonium generator.
-The third floor contains a cobalt-compatible microchip, a curium-compatible microchip, a ruthenium-compatible microchip, and a plutonium-compatible microchip.
-The fourth floor contains nothing relevant.
-`
+const test = load('day11', __dirname)
 
 const state = parseInput(test)
 

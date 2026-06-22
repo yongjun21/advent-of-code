@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 function * dragonCurve (input) {
   let spacers = []
   let spacerIndex = 0
@@ -58,7 +60,7 @@ function dragonChecksum (input, diskLength) {
 //   return shrink(dragonCurve(input, diskLength))
 // }
 
-const test = '10111100110001111'
+const test = load('day16', __dirname)
 
 console.log(dragonChecksum(test, 272))
 console.log(dragonChecksum(test, 35651584))

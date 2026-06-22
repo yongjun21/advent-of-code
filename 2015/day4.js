@@ -1,3 +1,4 @@
+const load = require('../loader')
 const md5 = require('md5')
 
 function mineAdventCoins (hash, zeros = 5) {
@@ -8,7 +9,7 @@ function mineAdventCoins (hash, zeros = 5) {
   return n
 }
 
-const test = 'iwrupvqb'
+const test = load('day4', __dirname)
 
 console.log(mineAdventCoins(test))
 console.log(mineAdventCoins(test, 6))

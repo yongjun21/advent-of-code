@@ -1,5 +1,7 @@
 'use strict'
 
+const load = require('../loader')
+
 const alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
 const straights = []
@@ -34,7 +36,7 @@ function nextPassword (current) {
   return nextPassword(next)
 }
 
-const test = 'hepxcrrq'
+const test = load('day11', __dirname)
 
 const reset = nextPassword(test)
 const resetAgain = nextPassword(reset)

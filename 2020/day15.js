@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 function play (input, turns) {
   let prev
   const memo = new Map()
@@ -14,7 +16,7 @@ function play (input, turns) {
   return prev
 }
 
-const test = [11, 18, 0, 20, 1, 7, 16]
+const test = load('day15', __dirname).split('\n').map(Number)
 
 console.log(play(test, 2020))
 console.log(play(test, 30000000))

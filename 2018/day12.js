@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 function advanceGenerations (initial, patterns, generations) {
   let state = initial
   let offset = 0
@@ -42,42 +44,10 @@ function getPatterns (input) {
   }, {})
 }
 
-const initial = '###.#..#..##.##.###.#.....#.#.###.#.####....#.##..#.#.#..#....##..#.##...#.###.#.#..#..####.#.##.#'
-
-const spread = `
-#.... => .
-#.##. => #
-..#.. => .
-#.#.# => .
-.#.## => #
-...## => #
-##... => #
-###.. => #
-#..## => .
-.###. => .
-###.# => #
-..... => .
-#..#. => .
-.#.#. => #
-##..# => #
-.##.. => .
-...#. => .
-#.### => .
-..### => .
-####. => .
-#.#.. => #
-.##.# => #
-.#... => #
-##.#. => #
-....# => .
-..#.# => #
-#...# => #
-..##. => .
-.#..# => #
-.#### => .
-##### => #
-##.## => #
-`.trim().split('\n')
+const test = load('day12', __dirname)
+const parts = test.split('\n\n')
+const initial = parts[0]
+const spread = parts[1].split('\n')
 
 const patterns = getPatterns(spread)
 

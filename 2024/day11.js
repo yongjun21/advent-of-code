@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 function countStones(input, blinks = 25) {
   const memo = new Map();
   function count(start, times = blinks) {
@@ -31,7 +33,7 @@ function countStones(input, blinks = 25) {
   return input.reduce((sum, v) => sum + count(v), 0);
 }
 
-const test = [6571, 0, 5851763, 526746, 23, 69822, 9, 989];
+const test = load('day11', __dirname).split('\n').map(Number);
 
 console.log(countStones(test));
 console.log(countStones(test, 75));

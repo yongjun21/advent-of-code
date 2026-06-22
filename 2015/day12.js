@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 function excludeRed (input) {
   return Object.keys(input).some(key => input[key] === 'red')
 }
@@ -13,7 +15,7 @@ function sumNumbers (input, exclude = v => false) {
   }
 }
 
-const test = require('./input/day12.json')
+const test = JSON.parse(load('day12', __dirname))
 
 console.log(sumNumbers(test))
 console.log(sumNumbers(test, excludeRed))

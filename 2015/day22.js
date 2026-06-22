@@ -25,7 +25,7 @@ function simulate (moves, input, handicap = 0) {
     return {mana, damage, armor, hp, disabled}
   }
 
-  for (let move of moves) {
+  for (const move of moves) {
     player -= handicap
     if (player <= 0) return 'lose'
 

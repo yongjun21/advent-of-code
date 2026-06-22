@@ -1,4 +1,4 @@
-const fs = require('fs')
+const load = require('../loader')
 
 function predictFirstCrash (input) {
   const carts = mapCartsAndTracks(input)
@@ -116,7 +116,7 @@ function mapCartsAndTracks (input) {
   return carts
 }
 
-const test = fs.readFileSync('2018/input/day13.txt', {encoding: 'utf8'})
+const test = load('day13', __dirname)
 
 console.log(predictFirstCrash(test))
 console.log(predictLastCar(test))

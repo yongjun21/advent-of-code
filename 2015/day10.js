@@ -1,5 +1,7 @@
 'use strict'
 
+const load = require('../loader')
+
 // requires tail call optimization, runs only behind --harmony flag
 function lookNsay (str, prefix = '') {
   const match = str.match(/(.)(\1*)/)
@@ -7,7 +9,7 @@ function lookNsay (str, prefix = '') {
   return lookNsay(str.slice(match[0].length), prefix + match[0].length + match[1])
 }
 
-let test = '1321131112'
+const test = load('day10', __dirname)
 
 function playLookNSay (start, round) {
   for (let i = 0; i < round; i++) {

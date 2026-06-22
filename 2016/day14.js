@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 const md5 = require('md5')
 
 function getOTPkey (input, stretch = 0, n = 64) {
@@ -30,7 +32,7 @@ function getHash (str, stretch) {
   return hash
 }
 
-const test = 'yjdafjpo'
+const test = load('day14', __dirname)
 
 console.log(getOTPkey(test))
 console.log(getOTPkey(test, 2016))

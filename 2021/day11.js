@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 const ADJACENTS = [
   [-1, -1],
   [0, -1],
@@ -64,18 +66,7 @@ function step (state, n, m) {
   return flashes
 }
 
-const test = `
-7313511551
-3724855867
-2374331571
-4438213437
-6511566287
-6727245532
-3736868662
-2348138263
-2417483121
-8812617112
-`.trim().split('\n')
+const test = load('day11', __dirname).trim().split('\n')
 
 console.log(countFlashes(test))
 console.log(syncFlash(test))

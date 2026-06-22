@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 function reallocateMemory (arr) {
   arr = [...arr]
   let step = 0
@@ -15,6 +17,6 @@ function reallocateMemory (arr) {
   return {step: step, loop: step - states[arr.join('.')]}
 }
 
-const test = [2, 8, 8, 5, 4, 2, 3, 1, 5, 5, 1, 2, 15, 13, 5, 14]
+const test = load('day6', __dirname).split('\n').map(Number)
 
 console.log(reallocateMemory(test))

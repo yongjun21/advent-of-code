@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 const md5 = require('md5')
 
 function findPassword (str) {
@@ -14,7 +16,7 @@ function findPassword (str) {
 }
 
 function findPassword2 (str) {
-  let password = []
+  const password = []
   let found = 0
   let i = 0
   while (found < 8) {
@@ -31,7 +33,7 @@ function findPassword2 (str) {
   return password.join('')
 }
 
-const test = 'ugkcyxxp'
+const test = load('day5', __dirname)
 
 console.log(findPassword(test))
 console.log(findPassword2(test))

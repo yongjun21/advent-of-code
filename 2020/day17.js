@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 function run (input, dim, cycles) {
   const adjacents = getAdjacents(dim)
 
@@ -69,16 +71,7 @@ function getCoords (bbox) {
   return output
 }
 
-const test = `
-.#.#..##
-..#....#
-##.####.
-...####.
-#.##..##
-#...##..
-...##.##
-#...#.#.
-`.trim().split('\n').map(line => line.trim().split(''))
+const test = load('day17', __dirname).trim().split('\n').map(line => line.trim().split(''))
 
 console.log(run(test, 3, 6))
 console.log(run(test, 4, 6))

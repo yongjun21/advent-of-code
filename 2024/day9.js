@@ -1,6 +1,4 @@
-const fs = require('fs');
-const path = require('path');
-
+const load = require('../loader');
 const { MinHeap } = require('../2022/common');
 
 function getChecksum(input) {
@@ -100,9 +98,7 @@ function getChecksum2(input) {
   return checksum;
 }
 
-const test = fs
-  .readFileSync(path.join(__dirname, 'day9.txt'), { encoding: 'utf-8' })
-  .trim();
+const test = load('day9', __dirname).trim();
 
 console.log(getChecksum(test));
 console.log(getChecksum2(test));

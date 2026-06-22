@@ -1,3 +1,4 @@
+const load = require('../loader')
 const assert = require('assert')
 
 function findEarliest (input, now) {
@@ -30,7 +31,7 @@ function isPrime (n) {
   return true
 }
 
-const test = '19,x,x,x,x,x,x,x,x,x,x,x,x,37,x,x,x,x,x,599,x,29,x,x,x,x,x,x,x,x,x,x,x,x,x,x,17,x,x,x,x,x,23,x,x,x,x,x,x,x,761,x,x,x,x,x,x,x,x,x,41,x,x,13'.split(',')
+const test = load('day13', __dirname).split(',')
 
 console.log(findEarliest(test, 1009310))
 console.log(findEarliest2(test))

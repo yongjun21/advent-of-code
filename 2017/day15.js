@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 function countMatch (input, rounds, validateA = v => true, validateB = v => true) {
   let [valueA, valueB] = input
   let count = 0
@@ -20,7 +22,7 @@ function countMatch (input, rounds, validateA = v => true, validateB = v => true
   return count
 }
 
-const test = [289, 629]
+const test = load('day15', __dirname).split('\n').map(Number)
 
 console.log(countMatch(test, 40000000))
 console.log(countMatch(test, 5000000, v => v % 4 === 0, v => v % 8 === 0))

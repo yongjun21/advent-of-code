@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 function diffMostLeastCommon (seed, rules, steps = 10) {
   let tally = Object.create(null)
   for (let i = 1; i < seed.length; i++) {
@@ -42,113 +44,10 @@ function diffMostLeastCommon (seed, rules, steps = 10) {
   return sorted[sorted.length - 1] - sorted[0]
 }
 
-const seed = 'VFHKKOKKCPBONFHNPHPN'
-
-const rules = `
-VS -> B
-HK -> B
-FO -> P
-NC -> F
-VN -> C
-BS -> O
-HS -> K
-NS -> C
-CV -> P
-NV -> C
-PH -> H
-PB -> B
-PK -> K
-HF -> P
-FV -> C
-NN -> H
-VO -> K
-VP -> P
-BC -> B
-KK -> S
-OK -> C
-PN -> H
-SB -> V
-KO -> P
-KH -> C
-KS -> S
-FP -> B
-PV -> B
-BO -> C
-OS -> H
-NB -> S
-SP -> C
-HN -> N
-FN -> B
-PO -> O
-FS -> O
-NH -> B
-SO -> P
-OB -> S
-KC -> C
-OO -> H
-BB -> V
-SC -> F
-NP -> P
-SH -> C
-BH -> O
-BP -> F
-CC -> S
-BN -> H
-SS -> P
-BF -> B
-VK -> P
-OV -> H
-FC -> S
-VB -> S
-PF -> N
-HH -> O
-HC -> V
-CH -> B
-HP -> H
-FF -> H
-VF -> V
-CS -> F
-KP -> F
-OP -> H
-KF -> F
-PP -> V
-OC -> C
-PS -> F
-ON -> H
-BK -> B
-HV -> S
-CO -> K
-FH -> C
-FB -> F
-OF -> V
-SN -> S
-PC -> K
-NF -> F
-NK -> P
-NO -> P
-CP -> P
-CK -> S
-HB -> H
-BV -> C
-SF -> K
-HO -> H
-OH -> B
-KV -> S
-KN -> F
-SK -> K
-VH -> S
-CN -> S
-VC -> P
-CB -> H
-SV -> S
-VV -> P
-CF -> F
-FK -> F
-KB -> V
-`
-  .trim()
-  .split('\n')
-  .map(line => [line[0], line[1], line[6]])
+const test = load('day14', __dirname)
+const parts = test.split('\n\n')
+const seed = parts[0]
+const rules = parts[1].split('\n').map(line => [line[0], line[1], line[6]])
 
 console.log(diffMostLeastCommon(seed, rules))
 console.log(diffMostLeastCommon(seed, rules, 40))

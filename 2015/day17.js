@@ -1,3 +1,5 @@
+const load = require('../loader')
+
 const {getAssignments} = require('../helpers')
 
 function findFittingCombi (input, total) {
@@ -16,7 +18,7 @@ function findMinimunContainers (input, total) {
   return fittingCombinations.filter((combi, i) => containers[i] === minimum)
 }
 
-const test = [33, 14, 18, 20, 45, 35, 16, 35, 1, 13, 18, 13, 50, 44, 48, 6, 24, 41, 30, 42]
+const test = load('day17', __dirname).split('\n').map(Number)
 
 console.log(findFittingCombi(test, 150).length)
 console.log(findMinimunContainers(test, 150).length)

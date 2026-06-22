@@ -1,5 +1,6 @@
 {
   "dependencies": {
     "md5": "^2.2.1"
-  }
+  },
+  "packageManager": "pnpm@11.8.0"
 }
