@@ -2,5 +2,9 @@
   "dependencies": {
     "md5": "^2.2.1"
   },
-  "packageManager": "pnpm@11.8.0"
+  "packageManager": "pnpm@11.8.0",
+  "devDependencies": {
+    "cheerio": "^1.2.0",
+    "dotenv": "^17.4.2"
+  }
 }
