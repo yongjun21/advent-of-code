@@ -1,11 +1,14 @@
 # Advent of Code 2020 Day 22
 
-Source: https://adventofcode.com/2020/day/22
+<source>
+https://adventofcode.com/2020/day/22
+</source>
 
-Title: --- Day 22: Crab Combat ---
+<title>
+Day 22: Crab Combat
+</title>
 
---- Day 22: Crab Combat ---
-
+<section data-part="1">
 It only takes a few hours of sailing the ocean on a raft for boredom to sink in. Fortunately, you brought a small deck of space cards! You'd like to play a game of Combat, and there's even an opponent available: a small crab that climbed aboard your raft before you left.
 
 Fortunately, it doesn't take long to teach the crab the rules.
@@ -119,6 +122,9 @@ So, once the game ends, the winning player's score is 306.
 
 Play the small crab in a game of Combat using the two decks you just dealt. What is the winning player's score?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You lost to the small crab! Fortunately, crabs aren't very good at recursion. To defend your honor as a Raft Captain, you challenge the small crab to a game of Recursive Combat.
@@ -391,3 +397,5 @@ Player 2's deck: 7, 5, 6, 2, 4, 1, 10, 8, 9, 3
 After the game, the winning player's score is calculated from the cards they have in their original deck using the same rules as regular Combat. In the above game, the winning player's score is 291.
 
 Defend your honor as Raft Captain by playing the small crab in a game of Recursive Combat using the same two decks as before. What is the winning player's score?
+
+</section>

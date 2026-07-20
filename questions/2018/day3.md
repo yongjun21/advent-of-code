@@ -1,11 +1,14 @@
 # Advent of Code 2018 Day 3
 
-Source: https://adventofcode.com/2018/day/3
+<source>
+https://adventofcode.com/2018/day/3
+</source>
 
-Title: --- Day 3: No Matter How You Slice It ---
+<title>
+Day 3: No Matter How You Slice It
+</title>
 
---- Day 3: No Matter How You Slice It ---
-
+<section data-part="1">
 The Elves managed to locate the chimney-squeeze prototype fabric for Santa's suit (thanks to someone who helpfully wrote its box IDs on the wall of the warehouse in the middle of the night). Unfortunately, anomalies are still affecting them - nobody can even agree on how to cut the fabric.
 
 The whole piece of fabric they're working on is a very large square - at least 1000 inches on each side.
@@ -56,6 +59,9 @@ The four square inches marked with X are claimed by both 1 and 2. (Claim 3, whil
 
 If the Elves all proceed with their own plans, none of them will have enough fabric. How many square inches of fabric are within two or more claims?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Amidst the chaos, you notice that exactly one claim doesn't overlap by even a single square inch of fabric with any other claim. If you can somehow draw attention to it, maybe the Elves will be able to make Santa's suit after all!
@@ -63,3 +69,5 @@ Amidst the chaos, you notice that exactly one claim doesn't overlap by even a si
 For example, in the claims above, only claim 3 is intact after all claims are made.
 
 What is the ID of the only claim that doesn't overlap?
+
+</section>

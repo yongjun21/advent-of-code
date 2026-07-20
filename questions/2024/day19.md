@@ -1,11 +1,14 @@
 # Advent of Code 2024 Day 19
 
-Source: https://adventofcode.com/2024/day/19
+<source>
+https://adventofcode.com/2024/day/19
+</source>
 
-Title: --- Day 19: Linen Layout ---
+<title>
+Day 19: Linen Layout
+</title>
 
---- Day 19: Linen Layout ---
-
+<section data-part="1">
 Today, The Historians take you up to the hot springs on Gear Island! Very suspiciously, absolutely nothing goes wrong as they begin their careful search of the vast field of helixes.
 
 Could this finally be your chance to visit the onsen next door? Only one way to find out.
@@ -50,6 +53,9 @@ In this example, 6 of the eight designs are possible with the available towel pa
 
 To get into the onsen as soon as possible, consult your list of towel patterns and desired designs carefully. How many designs are possible?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The staff don't really like some of the towel arrangements you came up with. To avoid an endless cycle of towel rearrangement, maybe you should just give them every possible option.
@@ -85,3 +91,5 @@ ubwu and bbrgwb are still impossible.
 Adding up all of the ways the towels in this example could be arranged into the desired designs yields 16 (2 + 1 + 4 + 6 + 1 + 2).
 
 They'll let you into the onsen as soon as you have the list. What do you get if you add up the number of different ways you could make each design?
+
+</section>

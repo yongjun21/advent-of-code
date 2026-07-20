@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 22
 
-Source: https://adventofcode.com/2017/day/22
+<source>
+https://adventofcode.com/2017/day/22
+</source>
 
-Title: --- Day 22: Sporifica Virus ---
+<title>
+Day 22: Sporifica Virus
+</title>
 
---- Day 22: Sporifica Virus ---
-
+<section data-part="1">
 Diagnostics indicate that the local grid computing cluster has been contaminated with the Sporifica Virus. The grid computing cluster is a seemingly-infinite two-dimensional grid of compute nodes. Each node is either clean or infected by the virus.
 
 To prevent overloading the nodes (which would render them useless to the virus) or detection by system administrators, exactly one virus carrier moves through the network, infecting or cleaning nodes as it moves. The virus carrier is always located on a single node in the network (the current node) and keeps track of the direction it is facing.
@@ -114,6 +117,9 @@ After a total of 10000 bursts of activity, 5587 bursts will have caused an infec
 
 Given your actual map, after 10000 bursts of activity, how many bursts cause a node to become infected? (Do not count nodes that begin infected.)
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 As you go to remove the virus from the infected nodes, it evolves to resist your attempt.
@@ -221,3 +227,5 @@ The weakened node becomes infected, and it continues in the same direction:
 Of the first 100 bursts, 26 will result in infection. Unfortunately, another feature of this evolved virus is speed; of the first 10000000 bursts, 2511944 will result in infection.
 
 Given your actual map, after 10000000 bursts of activity, how many bursts cause a node to become infected? (Do not count nodes that begin infected.)
+
+</section>

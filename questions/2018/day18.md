@@ -1,11 +1,14 @@
 # Advent of Code 2018 Day 18
 
-Source: https://adventofcode.com/2018/day/18
+<source>
+https://adventofcode.com/2018/day/18
+</source>
 
-Title: --- Day 18: Settlers of The North Pole ---
+<title>
+Day 18: Settlers of The North Pole
+</title>
 
---- Day 18: Settlers of The North Pole ---
-
+<section data-part="1">
 On the outskirts of the North Pole base construction project, many Elves are collecting lumber.
 
 The lumber collection area is 50 acres by 50 acres; each acre can be either open ground (.), trees (|), or a lumberyard (#). You take a scan of the area (your puzzle input).
@@ -162,8 +165,13 @@ After 10 minutes, there are 37 wooded acres and 31 lumberyards. Multiplying the 
 
 What will the total resource value of the lumber collection area be after 10 minutes?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 This important natural resource will need to last for at least thousands of years. Are the Elves collecting this lumber sustainably?
 
 What will the total resource value of the lumber collection area be after 1000000000 minutes?
+
+</section>

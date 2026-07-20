@@ -1,11 +1,14 @@
 # Advent of Code 2022 Day 23
 
-Source: https://adventofcode.com/2022/day/23
+<source>
+https://adventofcode.com/2022/day/23
+</source>
 
-Title: --- Day 23: Unstable Diffusion ---
+<title>
+Day 23: Unstable Diffusion
+</title>
 
---- Day 23: Unstable Diffusion ---
-
+<section data-part="1">
 You enter a large crater of gray dirt where the grove is supposed to be. All around you, plants you imagine were expected to be full of fruit are instead withered and broken. A large group of Elves has formed in the middle of the grove.
 
 "...but this volcano has been dormant for months. Without ash, the fruit can't grow!"
@@ -225,6 +228,9 @@ In this region, the number of empty ground tiles is 110.
 
 Simulate the Elves' process and find the smallest rectangle that contains the Elves after 10 rounds. How many empty ground tiles does that rectangle contain?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 It seems you're on the right track. Finish simulating the process and figure out where the Elves need to go. How many rounds did you save them?
@@ -247,3 +253,5 @@ In the example above, the first round where no Elf moved was round 20:
 ```
 
 Figure out where the Elves need to go. What is the number of the first round where no Elf moves?
+
+</section>

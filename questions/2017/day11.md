@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 11
 
-Source: https://adventofcode.com/2017/day/11
+<source>
+https://adventofcode.com/2017/day/11
+</source>
 
-Title: --- Day 11: Hex Ed ---
+<title>
+Day 11: Hex Ed
+</title>
 
---- Day 11: Hex Ed ---
-
+<section data-part="1">
 Crossing the bridge, you've barely reached the other side of the stream when a program comes up to you, clearly in distress. "It's my child process," she says, "he's gotten lost in an infinite grid!"
 
 Fortunately for her, you have plenty of experience with infinite grids.
@@ -33,6 +36,11 @@ For example:
 - ne,ne,s,s is 2 steps away (se,se).
 - se,sw,se,sw,sw is 3 steps away (s,s,sw).
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 How many steps away is the furthest he ever got from his starting position?
+
+</section>

@@ -1,11 +1,14 @@
 # Advent of Code 2023 Day 13
 
-Source: https://adventofcode.com/2023/day/13
+<source>
+https://adventofcode.com/2023/day/13
+</source>
 
-Title: --- Day 13: Point of Incidence ---
+<title>
+Day 13: Point of Incidence
+</title>
 
---- Day 13: Point of Incidence ---
-
+<section data-part="1">
 With your help, the hot springs team locates an appropriate spring which launches you neatly and precisely up to the edge of Lava Island.
 
 There's just one problem: you don't see any lava.
@@ -74,6 +77,9 @@ To summarize your pattern notes, add up the number of columns to the left of eac
 
 Find the line of reflection in each of the patterns in your notes. What number do you get after summarizing all of your notes?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You resume walking through the valley of mirrors and - SMACK! - run directly into one. Hopefully nobody was watching, because that must have been pretty embarrassing.
@@ -133,3 +139,5 @@ Now, the pattern has a different horizontal line of reflection between rows 1 an
 Summarize your notes as before, but instead use the new different reflection lines. In this example, the first pattern's new horizontal line has 3 rows above it and the second pattern's new horizontal line has 1 row above it, summarizing to the value 400.
 
 In each pattern, fix the smudge and find the different line of reflection. What number do you get after summarizing the new reflection line in each pattern in your notes?
+
+</section>

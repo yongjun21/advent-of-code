@@ -1,11 +1,14 @@
 # Advent of Code 2015 Day 3
 
-Source: https://adventofcode.com/2015/day/3
+<source>
+https://adventofcode.com/2015/day/3
+</source>
 
-Title: --- Day 3: Perfectly Spherical Houses in a Vacuum ---
+<title>
+Day 3: Perfectly Spherical Houses in a Vacuum
+</title>
 
---- Day 3: Perfectly Spherical Houses in a Vacuum ---
-
+<section data-part="1">
 Santa is delivering presents to an infinite two-dimensional grid of houses.
 
 He begins by delivering a present to the house at his starting location, and then an elf at the North Pole calls him via radio and tells him where to move next. Moves are always exactly one house to the north (^), south (v), east (>), or west (<). After each move, he delivers another present to the house at his new location.
@@ -18,6 +21,9 @@ For example:
 - ^>v< delivers presents to 4 houses in a square, including twice to the house at his starting/ending location.
 - ^v^v^v^v^v delivers a bunch of presents to some very lucky children at only 2 houses.
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The next year, to speed up the process, Santa creates a robot version of himself, Robo-Santa, to deliver presents with him.
@@ -31,3 +37,5 @@ For example:
 - ^v delivers presents to 3 houses, because Santa goes north, and then Robo-Santa goes south.
 - ^>v< now delivers presents to 3 houses, and Santa and Robo-Santa end up back where they started.
 - ^v^v^v^v^v now delivers presents to 11 houses, with Santa going one direction and Robo-Santa going the other.
+
+</section>

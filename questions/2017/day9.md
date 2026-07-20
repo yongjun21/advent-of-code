@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 9
 
-Source: https://adventofcode.com/2017/day/9
+<source>
+https://adventofcode.com/2017/day/9
+</source>
 
-Title: --- Day 9: Stream Processing ---
+<title>
+Day 9: Stream Processing
+</title>
 
---- Day 9: Stream Processing ---
-
+<section data-part="1">
 A large stream blocks your path. According to the locals, it's not safe to cross the stream at the moment because it's full of garbage. You look down at the stream; rather than water, you discover that it's a stream of characters.
 
 You sit for a while and record part of the stream (your puzzle input). The characters represent groups - sequences that begin with { and end with }. Within a group, there are zero or more other things, separated by commas: either another group or garbage. Since groups can contain other groups, a } only closes the most-recently-opened unclosed group - that is, they are nestable. Your puzzle input represents a single, large group which itself contains many smaller ones.
@@ -50,6 +53,9 @@ Your goal is to find the total score for all groups in your input. Each group is
 
 What is the total score for all groups in your input?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now, you're ready to remove the garbage.
@@ -65,3 +71,5 @@ To prove you've removed it, you need to count all of the characters within the g
 - <{o"i!a,<{i<a>, 10 characters.
 
 How many non-canceled characters are within the garbage in your puzzle input?
+
+</section>

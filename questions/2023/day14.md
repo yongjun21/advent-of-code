@@ -1,11 +1,14 @@
 # Advent of Code 2023 Day 14
 
-Source: https://adventofcode.com/2023/day/14
+<source>
+https://adventofcode.com/2023/day/14
+</source>
 
-Title: --- Day 14: Parabolic Reflector Dish ---
+<title>
+Day 14: Parabolic Reflector Dish
+</title>
 
---- Day 14: Parabolic Reflector Dish ---
-
+<section data-part="1">
 You reach the place where all of the mirrors were pointing: a massive parabolic reflector dish attached to the side of another large mountain.
 
 The dish is made up of many small mirrors, but while the mirrors themselves are roughly in the shape of a parabolic reflector dish, each individual mirror seems to be pointing in slightly the wrong direction. If the dish is meant to focus light, all it's doing right now is sending it in a vague direction.
@@ -65,6 +68,9 @@ The total load is the sum of the load caused by all of the rounded rocks. In thi
 
 Tilt the platform so that the rounded rocks all roll north. Afterward, what is the total load on the north support beams?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The parabolic reflector dish deforms, but not in a way that focuses the beam. To do that, you'll need to move the rocks to the edges of the platform. Fortunately, a button on the side of the control panel labeled "spin cycle" attempts to do just that!
@@ -116,3 +122,5 @@ This process should work if you leave it running long enough, but you're still w
 In the above example, after 1000000000 cycles, the total load on the north support beams is 64.
 
 Run the spin cycle for 1000000000 cycles. Afterward, what is the total load on the north support beams?
+
+</section>

@@ -1,11 +1,14 @@
 # Advent of Code 2022 Day 17
 
-Source: https://adventofcode.com/2022/day/17
+<source>
+https://adventofcode.com/2022/day/17
+</source>
 
-Title: --- Day 17: Pyroclastic Flow ---
+<title>
+Day 17: Pyroclastic Flow
+</title>
 
---- Day 17: Pyroclastic Flow ---
-
+<section data-part="1">
 Your handheld device has located an alternative exit from the cave for you and the elephants. The ground is rumbling almost continuously now, but the strange valves bought you some time. It's definitely getting warmer in here, though.
 
 The tunnels eventually open into a very tall, narrow chamber. Large, oddly-shaped rocks are falling into the chamber from above, presumably due to all the rumbling. If you can't work out where the rocks will fall next, you might be crushed!
@@ -350,6 +353,9 @@ To prove to the elephants your simulation is accurate, they want to know how tal
 
 How many units tall will the tower of rocks be after 2022 rocks have stopped falling?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The elephants are not impressed by your simulation. They demand to know how tall the tower will be after 1000000000000 rocks have stopped! Only then will they feel confident enough to proceed through the cave.
@@ -357,3 +363,5 @@ The elephants are not impressed by your simulation. They demand to know how tall
 In the example above, the tower would be 1514285714288 units tall!
 
 How tall will the tower be after 1000000000000 rocks have stopped?
+
+</section>

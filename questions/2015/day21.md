@@ -1,11 +1,14 @@
 # Advent of Code 2015 Day 21
 
-Source: https://adventofcode.com/2015/day/21
+<source>
+https://adventofcode.com/2015/day/21
+</source>
 
-Title: --- Day 21: RPG Simulator 20XX ---
+<title>
+Day 21: RPG Simulator 20XX
+</title>
 
---- Day 21: RPG Simulator 20XX ---
-
+<section data-part="1">
 Little Henry Case got a new video game for Christmas. It's an RPG, and he's stuck on a boss. He needs to know what equipment to buy at the shop. He hands you the controller.
 
 In this game, the player (you) and the enemy (the boss) take turns attacking. The player always goes first. Each attack reduces the opponent's hit points by at least 1. The first character at or below 0 hit points loses.
@@ -56,8 +59,13 @@ In this scenario, the player wins! (Barely.)
 
 You have 100 hit points. The boss's actual stats are in your puzzle input. What is the least amount of gold you can spend and still win the fight?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Turns out the shopkeeper is working with the boss, and can persuade you to buy whatever items he wants. The other rules still apply, and he still only has one of each item.
 
 What is the most amount of gold you can spend and still lose the fight?
+
+</section>

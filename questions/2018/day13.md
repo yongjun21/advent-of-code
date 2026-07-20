@@ -1,11 +1,14 @@
 # Advent of Code 2018 Day 13
 
-Source: https://adventofcode.com/2018/day/13
+<source>
+https://adventofcode.com/2018/day/13
+</source>
 
-Title: --- Day 13: Mine Cart Madness ---
+<title>
+Day 13: Mine Cart Madness
+</title>
 
---- Day 13: Mine Cart Madness ---
-
+<section data-part="1">
 A crop of this size requires significant logistics to transport produce, soil, fertilizer, and so on. The Elves are very busy pushing things around in carts on some kind of rudimentary system of tracks they've come up with.
 
 Seeing as how cart-and-track systems don't appear in recorded history for another 1000 years, the Elves seem to be making this up as they go along. They haven't even figured out how to avoid collisions yet.
@@ -177,6 +180,9 @@ After following their respective paths for a while, the carts eventually crash. 
 
 In this example, the location of the first crash is 7,3.
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 There isn't much you can do to prevent crashes in this ridiculous system. However, by predicting the crashes, the Elves know where to be in advance and instantly remove the two crashing carts the moment any crash occurs.
@@ -222,3 +228,5 @@ For example:
 After four very expensive crashes, a tick ends with only one cart remaining; its final location is 6,4.
 
 What is the location of the last cart at the end of the first tick where it is the only cart left?
+
+</section>

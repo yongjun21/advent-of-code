@@ -1,11 +1,14 @@
 # Advent of Code 2018 Day 9
 
-Source: https://adventofcode.com/2018/day/9
+<source>
+https://adventofcode.com/2018/day/9
+</source>
 
-Title: --- Day 9: Marble Mania ---
+<title>
+Day 9: Marble Mania
+</title>
 
---- Day 9: Marble Mania ---
-
+<section data-part="1">
 You talk to the Elves while you wait for your navigation system to initialize. To pass the time, they introduce you to their favorite marble game.
 
 The Elves play this game by taking turns arranging the marbles in a circle according to very particular rules. The marbles are numbered starting with 0 and increasing by 1 until every marble has a number.
@@ -59,8 +62,13 @@ Here are a few more examples:
 
 What is the winning Elf's score?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Amused by the speed of your answer, the Elves are curious:
 
 What would the new winning Elf's score be if the number of the last marble were 100 times larger?
+
+</section>

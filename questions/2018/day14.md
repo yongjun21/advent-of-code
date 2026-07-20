@@ -1,11 +1,14 @@
 # Advent of Code 2018 Day 14
 
-Source: https://adventofcode.com/2018/day/14
+<source>
+https://adventofcode.com/2018/day/14
+</source>
 
-Title: --- Day 14: Chocolate Charts ---
+<title>
+Day 14: Chocolate Charts
+</title>
 
---- Day 14: Chocolate Charts ---
-
+<section data-part="1">
 You finally have a chance to look at all of the produce moving around. Chocolate, cinnamon, mint, chili peppers, nutmeg, vanilla... the Elves must be growing these plants to make hot chocolate! As you realize this, you hear a conversation in the distance. When you go to investigate, you discover two Elves in what appears to be a makeshift underground kitchen/laboratory.
 
 The Elves are trying to come up with the ultimate hot chocolate recipe; they're even maintaining a scoreboard which tracks the quality score (0-9) of each recipe.
@@ -48,6 +51,9 @@ The Elves think their skill will improve after making a few recipes (your puzzle
 
 What are the scores of the ten recipes immediately after the number of recipes in your puzzle input?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 As it turns out, you got the Elves' plan backwards. They actually want to know how many recipes appear on the scoreboard to the left of the first recipes whose scores are the digits from your puzzle input.
@@ -58,3 +64,5 @@ As it turns out, you got the Elves' plan backwards. They actually want to know h
 - 59414 first appears after 2018 recipes.
 
 How many recipes appear on the scoreboard to the left of the score sequence in your puzzle input?
+
+</section>

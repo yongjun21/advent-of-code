@@ -1,11 +1,14 @@
 # Advent of Code 2019 Day 1
 
-Source: https://adventofcode.com/2019/day/1
+<source>
+https://adventofcode.com/2019/day/1
+</source>
 
-Title: --- Day 1: The Tyranny of the Rocket Equation ---
+<title>
+Day 1: The Tyranny of the Rocket Equation
+</title>
 
---- Day 1: The Tyranny of the Rocket Equation ---
-
+<section data-part="1">
 Santa has become stranded at the edge of the Solar System while delivering presents to other planets! To accurately calculate his position in space, safely align his warp drive, and return to Earth in time to save Christmas, he needs you to bring him measurements from fifty stars.
 
 Collect stars by solving puzzles. Two puzzles will be made available on each day in the Advent calendar; the second puzzle is unlocked when you complete the first. Each puzzle grants one star. Good luck!
@@ -27,6 +30,9 @@ The Fuel Counter-Upper needs to know the total fuel requirement. To find it, ind
 
 What is the sum of the fuel requirements for all of the modules on your spacecraft?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 During the second Go / No Go poll, the Elf in charge of the Rocket Equation Double-Checker stops the launch sequence. Apparently, you forgot to include additional fuel for the fuel you just added.
@@ -40,3 +46,5 @@ So, for each module mass, calculate its fuel and add it to the total. Then, trea
 - The fuel required by a module of mass 100756 and its fuel is: 33583 + 11192 + 3728 + 1240 + 411 + 135 + 43 + 12 + 2 = 50346.
 
 What is the sum of the fuel requirements for all of the modules on your spacecraft when also taking into account the mass of the added fuel? (Calculate the fuel requirements for each module separately, then add them all up at the end.)
+
+</section>

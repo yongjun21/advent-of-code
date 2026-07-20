@@ -1,11 +1,14 @@
 # Advent of Code 2024 Day 4
 
-Source: https://adventofcode.com/2024/day/4
+<source>
+https://adventofcode.com/2024/day/4
+</source>
 
-Title: --- Day 4: Ceres Search ---
+<title>
+Day 4: Ceres Search
+</title>
 
---- Day 4: Ceres Search ---
-
+<section data-part="1">
 "Looks like the Chief's not here. Next!" One of The Historians pulls out a device and pushes the only button on it. After a brief flash, you recognize the interior of the Ceres monitoring station!
 
 As the search for the Chief continues, a small Elf who lives on the station tugs on your shirt; she'd like to know if you could help her with her word search (your puzzle input). She only has to find one word: XMAS.
@@ -52,6 +55,9 @@ S.S.S.S.SS
 
 Take a look at the little Elf's word search. How many times does XMAS appear?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The Elf looks quizzically at you. Did you misunderstand the assignment?
@@ -84,3 +90,5 @@ M.M.M.M.M.
 In this example, an X-MAS appears 9 times.
 
 Flip the word search from the instructions back over to the word search side and try again. How many times does an X-MAS appear?
+
+</section>

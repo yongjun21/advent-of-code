@@ -1,11 +1,14 @@
 # Advent of Code 2021 Day 16
 
-Source: https://adventofcode.com/2021/day/16
+<source>
+https://adventofcode.com/2021/day/16
+</source>
 
-Title: --- Day 16: Packet Decoder ---
+<title>
+Day 16: Packet Decoder
+</title>
 
---- Day 16: Packet Decoder ---
-
+<section data-part="1">
 As you leave the cave and reach open waters, you receive a transmission from the Elves back on the ship.
 
 The transmission was sent using the Buoyancy Interchange Transmission System (BITS), a method of packing numeric expressions into a binary sequence. Your submarine's computer has saved the transmission in hexadecimal (your puzzle input).
@@ -106,6 +109,9 @@ Here are a few more examples of hexadecimal-encoded transmissions:
 
 Decode the structure of your hexadecimal-encoded BITS transmission; what do you get if you add up the version numbers in all packets?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now that you have the structure of your transmission decoded, you can calculate the value of the expression it represents.
@@ -134,3 +140,5 @@ For example:
 - 9C0141080250320F1802104A08 produces 1, because 1 + 3 = 2 * 2.
 
 What do you get if you evaluate the expression represented by your hexadecimal-encoded BITS transmission?
+
+</section>

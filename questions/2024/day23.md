@@ -1,11 +1,14 @@
 # Advent of Code 2024 Day 23
 
-Source: https://adventofcode.com/2024/day/23
+<source>
+https://adventofcode.com/2024/day/23
+</source>
 
-Title: --- Day 23: LAN Party ---
+<title>
+Day 23: LAN Party
+</title>
 
---- Day 23: LAN Party ---
-
+<section data-part="1">
 As The Historians wander around a secure area at Easter Bunny HQ, you come across posters for a LAN party scheduled for today! Maybe you can find it; you connect to a nearby datalink port and download a map of the local network (your puzzle input).
 
 The network map provides a list of every connection between two computers. For example:
@@ -80,6 +83,9 @@ td,wh,yn
 
 Find all the sets of three inter-connected computers. How many contain at least one computer with a name that starts with t?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 There are still way too many results to go through them all. You'll have to find the LAN party another way and go there yourself.
@@ -100,3 +106,5 @@ ka-de
 The LAN party posters say that the password to get into the LAN party is the name of every computer at the LAN party, sorted alphabetically, then joined together with commas. (The people running the LAN party are clearly a bunch of nerds.) In this example, the password would be co,de,ka,ta.
 
 What is the password to get into the LAN party?
+
+</section>

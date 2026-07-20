@@ -1,11 +1,14 @@
 # Advent of Code 2015 Day 13
 
-Source: https://adventofcode.com/2015/day/13
+<source>
+https://adventofcode.com/2015/day/13
+</source>
 
-Title: --- Day 13: Knights of the Dinner Table ---
+<title>
+Day 13: Knights of the Dinner Table
+</title>
 
---- Day 13: Knights of the Dinner Table ---
-
+<section data-part="1">
 In years past, the holiday feast with your family hasn't gone so well. Not everyone gets along! This year, you resolve, will be different. You're going to find the optimal seating arrangement and avoid all those awkward conversations.
 
 You start by writing up a list of everyone invited and the amount their happiness would increase or decrease if they were to find themselves sitting next to each other person. You have a circular table that will be just big enough to fit everyone comfortably, and so each person will have exactly two neighbors.
@@ -43,6 +46,9 @@ After trying every other seating arrangement in this hypothetical scenario, you 
 
 What is the total change in happiness for the optimal seating arrangement of the actual guest list?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 In all the commotion, you realize that you forgot to seat yourself. At this point, you're pretty apathetic toward the whole thing, and your happiness wouldn't really go up or down regardless of who you sit next to. You assume everyone else would be just as ambivalent about sitting next to you, too.
@@ -50,3 +56,5 @@ In all the commotion, you realize that you forgot to seat yourself. At this poin
 So, add yourself to the list, and give all happiness relationships that involve you a score of 0.
 
 What is the total change in happiness for the optimal seating arrangement that actually includes yourself?
+
+</section>

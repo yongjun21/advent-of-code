@@ -1,11 +1,14 @@
 # Advent of Code 2021 Day 6
 
-Source: https://adventofcode.com/2021/day/6
+<source>
+https://adventofcode.com/2021/day/6
+</source>
 
-Title: --- Day 6: Lanternfish ---
+<title>
+Day 6: Lanternfish
+</title>
 
---- Day 6: Lanternfish ---
-
+<section data-part="1">
 The sea floor is getting steeper. Maybe the sleigh keys got carried this way?
 
 A massive school of glowing lanternfish swims past. They must spawn quickly to reach such large numbers - maybe exponentially quickly? You should model their growth rate to be sure.
@@ -62,6 +65,9 @@ In this example, after 18 days, there are a total of 26 fish. After 80 days, the
 
 Find a way to simulate lanternfish. How many lanternfish would there be after 80 days?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Suppose the lanternfish live forever and have unlimited food and space. Would they take over the entire ocean?
@@ -69,3 +75,5 @@ Suppose the lanternfish live forever and have unlimited food and space. Would th
 After 256 days in the example above, there would be a total of 26984457539 lanternfish!
 
 How many lanternfish would there be after 256 days?
+
+</section>

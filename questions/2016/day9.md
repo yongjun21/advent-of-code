@@ -1,11 +1,14 @@
 # Advent of Code 2016 Day 9
 
-Source: https://adventofcode.com/2016/day/9
+<source>
+https://adventofcode.com/2016/day/9
+</source>
 
-Title: --- Day 9: Explosives in Cyberspace ---
+<title>
+Day 9: Explosives in Cyberspace
+</title>
 
---- Day 9: Explosives in Cyberspace ---
-
+<section data-part="1">
 Wandering around a secure area, you come across a datalink port to a new part of the network. After briefly scanning it for interesting files, you find one file in particular that catches your attention. It's compressed with an experimental format, but fortunately, the documentation for the format is nearby.
 
 The format compresses a sequence of characters. Whitespace is ignored. To indicate that some sequence should be repeated, a marker is added to the file, like (10x2). To decompress this marker, take the subsequent 10 characters and repeat them 2 times. Then, continue reading the file after the repeated data. The marker itself is not included in the decompressed output.
@@ -23,6 +26,9 @@ For example:
 
 What is the decompressed length of the file (your puzzle input)? Don't count whitespace.
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Apparently, the file actually uses version two of the format.
@@ -39,3 +45,5 @@ For example:
 Unfortunately, the computer you brought probably doesn't have enough memory to actually decompress the file; you'll have to come up with another way to get its decompressed length.
 
 What is the decompressed length of the file using this improved format?
+
+</section>

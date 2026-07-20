@@ -1,11 +1,14 @@
 # Advent of Code 2022 Day 19
 
-Source: https://adventofcode.com/2022/day/19
+<source>
+https://adventofcode.com/2022/day/19
+</source>
 
-Title: --- Day 19: Not Enough Minerals ---
+<title>
+Day 19: Not Enough Minerals
+</title>
 
---- Day 19: Not Enough Minerals ---
-
+<section data-part="1">
 Your scans show that the lava did indeed form obsidian!
 
 The wind has changed direction enough to stop sending lava droplets toward you, so you and the elephants exit the cave. As you do, you notice a collection of geodes around the pond. Perhaps you could use the obsidian to create some geode-cracking robots and break them open?
@@ -178,6 +181,9 @@ Determine the quality level of each blueprint by multiplying that blueprint's ID
 
 Determine the quality level of each blueprint using the largest number of geodes it could produce in 24 minutes. What do you get if you add up the quality level of all of the blueprints in your list?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 While you were choosing the best blueprint, the elephants found some food on their own, so you're not in as much of a hurry; you figure you probably have 32 minutes before the wind changes direction again and you'll need to get out of range of the erupting volcano.
@@ -388,3 +394,5 @@ However, blueprint 2 from the example above is still better; using it, the large
 You no longer have enough blueprints to worry about quality levels. Instead, for each of the first three blueprints, determine the largest number of geodes you could open; then, multiply these three values together.
 
 Don't worry about quality levels; instead, just determine the largest number of geodes you could open using each of the first three blueprints. What do you get if you multiply these numbers together?
+
+</section>

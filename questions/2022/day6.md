@@ -1,11 +1,14 @@
 # Advent of Code 2022 Day 6
 
-Source: https://adventofcode.com/2022/day/6
+<source>
+https://adventofcode.com/2022/day/6
+</source>
 
-Title: --- Day 6: Tuning Trouble ---
+<title>
+Day 6: Tuning Trouble
+</title>
 
---- Day 6: Tuning Trouble ---
-
+<section data-part="1">
 The preparations are finally complete; you and the Elves leave camp on foot and begin to make your way toward the star fruit grove.
 
 As you move through the dense undergrowth, one of the Elves gives you a handheld device. He says that it has many fancy features, but the most important one to set up right now is the communication system.
@@ -39,6 +42,9 @@ Here are a few more examples:
 
 How many characters need to be processed before the first start-of-packet marker is detected?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Your device's communication system is correctly detecting packets, but still isn't working. It looks like it also needs to look for messages.
@@ -54,3 +60,5 @@ Here are the first positions of start-of-message markers for all of the above ex
 - zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw: first marker after character 26
 
 How many characters need to be processed before the first start-of-message marker is detected?
+
+</section>

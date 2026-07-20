@@ -1,11 +1,14 @@
 # Advent of Code 2020 Day 21
 
-Source: https://adventofcode.com/2020/day/21
+<source>
+https://adventofcode.com/2020/day/21
+</source>
 
-Title: --- Day 21: Allergen Assessment ---
+<title>
+Day 21: Allergen Assessment
+</title>
 
---- Day 21: Allergen Assessment ---
-
+<section data-part="1">
 You reach the train's last stop and the closest you can get to your vacation island without getting wet. There aren't even any boats here, but nothing can stop you now: you build a raft. You just need a few days' worth of food for your journey.
 
 You don't speak the local language, so you can't read any ingredients lists. However, sometimes, allergens are listed in a language you do understand. You should be able to use this information to determine which ingredient contains which allergen and work out which foods are safe to take with you on your trip.
@@ -29,6 +32,9 @@ The first step is to determine which ingredients can't possibly contain any of t
 
 Determine which ingredients cannot possibly contain any of the allergens in your list. How many times do any of those ingredients appear?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now that you've isolated the inert ingredients, you should have enough information to figure out which ingredient contains which allergen.
@@ -42,3 +48,5 @@ In the above example:
 Arrange the ingredients alphabetically by their allergen and separate them by commas to produce your canonical dangerous ingredient list. (There should not be any spaces in your canonical dangerous ingredient list.) In the above example, this would be mxmxvkd,sqjhc,fvjkl.
 
 Time to stock your raft with supplies. What is your canonical dangerous ingredient list?
+
+</section>

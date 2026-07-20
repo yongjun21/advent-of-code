@@ -1,11 +1,14 @@
 # Advent of Code 2024 Day 24
 
-Source: https://adventofcode.com/2024/day/24
+<source>
+https://adventofcode.com/2024/day/24
+</source>
 
-Title: --- Day 24: Crossed Wires ---
+<title>
+Day 24: Crossed Wires
+</title>
 
---- Day 24: Crossed Wires ---
-
+<section data-part="1">
 You and The Historians arrive at the edge of a large grove somewhere in the jungle. After the last incident, the Elves installed a small device that monitors the fruit. While The Historians search the grove, one of them asks if you can take a look at the monitoring device; apparently, it's been malfunctioning recently.
 
 The device seems to be trying to produce a number through some boolean logic gates. Each gate has two inputs and one output. The gates all operate on values that are either true (1) or false (0).
@@ -138,6 +141,9 @@ Combining the bits from all wires starting with z produces the binary number 001
 
 Simulate the system of gates and wires. What decimal number does it output on the wires starting with z?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 After inspecting the monitoring device more closely, you determine that the system you're simulating is trying to add two binary numbers.
@@ -213,3 +219,5 @@ In this example, two pairs of gates have outputs that are involved in a swap. By
 Of course, your actual system is much more complex than this, and the gates that need their outputs swapped could be anywhere, not just attached to a wire starting with z. If you were to determine that you need to swap output wires aaa with eee, ooo with z99, bbb with ccc, and aoc with z24, your answer would be aaa,aoc,bbb,ccc,eee,ooo,z24,z99.
 
 Your system of gates and wires has four pairs of gates which need their output wires swapped - eight wires in total. Determine which four pairs of gates need their outputs swapped so that your system correctly performs addition; what do you get if you sort the names of the eight wires involved in a swap and then join those names with commas?
+
+</section>

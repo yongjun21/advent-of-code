@@ -1,11 +1,14 @@
 # Advent of Code 2015 Day 11
 
-Source: https://adventofcode.com/2015/day/11
+<source>
+https://adventofcode.com/2015/day/11
+</source>
 
-Title: --- Day 11: Corporate Policy ---
+<title>
+Day 11: Corporate Policy
+</title>
 
---- Day 11: Corporate Policy ---
-
+<section data-part="1">
 Santa's previous password expired, and he needs help choosing a new one.
 
 To help him remember his new password after the old one expires, Santa has devised a method of coming up with a password based on the previous one. Corporate policy dictates that passwords must be exactly eight lowercase letters (for security reasons), so he finds his new password by incrementing his old password string repeatedly until it is valid.
@@ -28,6 +31,11 @@ For example:
 
 Given Santa's current password (your puzzle input), what should his next password be?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Santa's password expired again. What's the next one?
+
+</section>

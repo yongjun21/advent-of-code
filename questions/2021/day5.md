@@ -1,11 +1,14 @@
 # Advent of Code 2021 Day 5
 
-Source: https://adventofcode.com/2021/day/5
+<source>
+https://adventofcode.com/2021/day/5
+</source>
 
-Title: --- Day 5: Hydrothermal Venture ---
+<title>
+Day 5: Hydrothermal Venture
+</title>
 
---- Day 5: Hydrothermal Venture ---
-
+<section data-part="1">
 You come across a field of hydrothermal vents on the ocean floor! These vents constantly produce large, opaque clouds, so it would be best to avoid them if possible.
 
 They tend to form in lines; the submarine helpfully produces a list of nearby lines of vents (your puzzle input) for you to review. For example:
@@ -51,6 +54,9 @@ To avoid the most dangerous areas, you need to determine the number of points wh
 
 Consider only horizontal and vertical lines. At how many points do at least two lines overlap?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Unfortunately, considering only horizontal and vertical lines doesn't give you the full picture; you need to also consider diagonal lines.
@@ -78,3 +84,5 @@ Considering all lines from the above example would now produce the following dia
 You still need to determine the number of points where at least two lines overlap. In the above example, this is still anywhere in the diagram with a 2 or larger - now a total of 12 points.
 
 Consider all of the lines. At how many points do at least two lines overlap?
+
+</section>

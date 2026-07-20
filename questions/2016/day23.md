@@ -1,11 +1,14 @@
 # Advent of Code 2016 Day 23
 
-Source: https://adventofcode.com/2016/day/23
+<source>
+https://adventofcode.com/2016/day/23
+</source>
 
-Title: --- Day 23: Safe Cracking ---
+<title>
+Day 23: Safe Cracking
+</title>
 
---- Day 23: Safe Cracking ---
-
+<section data-part="1">
 This is one of the top floors of the nicest tower in EBHQ. The Easter Bunny's private office is here, complete with a safe hidden behind a painting, and who wouldn't hide a star in a safe behind a painting?
 
 The safe has a digital screen and keypad for code entry. A sticky note attached to the safe has a password hint on it: "eggs". The painting is of a large rabbit coloring some eggs. You see 7.
@@ -53,6 +56,9 @@ The rest of the electronics seem to place the keypad entry (the number of eggs, 
 
 What value should be sent to the safe?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The safe doesn't open, but it does make several angry noises to express its frustration.
@@ -62,3 +68,5 @@ You're quite sure your logic is working correctly, so the only other thing is...
 As you run the program with this new input, the prototype computer begins to overheat. You wonder what's taking so long, and whether the lack of any instruction more powerful than "add one" has anything to do with it. Don't bunnies usually multiply?
 
 Anyway, what value should actually be sent to the safe?
+
+</section>

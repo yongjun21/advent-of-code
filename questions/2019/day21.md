@@ -1,11 +1,14 @@
 # Advent of Code 2019 Day 21
 
-Source: https://adventofcode.com/2019/day/21
+<source>
+https://adventofcode.com/2019/day/21
+</source>
 
-Title: --- Day 21: Springdroid Adventure ---
+<title>
+Day 21: Springdroid Adventure
+</title>
 
---- Day 21: Springdroid Adventure ---
-
+<section data-part="1">
 You lift off from Pluto and start flying in the direction of Santa.
 
 While experimenting further with the tractor beam, you accidentally pull an asteroid directly into your ship! It deals significant damage to your hull and causes your ship to begin tumbling violently.
@@ -97,6 +100,9 @@ However, if the springdroid successfully makes it across, it will use an output 
 
 Program the springdroid with logic that allows it to survey the hull without falling into space. What amount of hull damage does it report?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 There are many areas the springdroid can't reach. You flip through the manual and discover a way to increase its sensor range.
@@ -112,3 +118,5 @@ Instead of ending your springcode program with WALK, use RUN. Doing this will en
 All other functions remain the same.
 
 Successfully survey the rest of the hull by ending your program with RUN. What amount of hull damage does the springdroid now report?
+
+</section>

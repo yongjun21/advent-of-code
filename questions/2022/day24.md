@@ -1,11 +1,14 @@
 # Advent of Code 2022 Day 24
 
-Source: https://adventofcode.com/2022/day/24
+<source>
+https://adventofcode.com/2022/day/24
+</source>
 
-Title: --- Day 24: Blizzard Basin ---
+<title>
+Day 24: Blizzard Basin
+</title>
 
---- Day 24: Blizzard Basin ---
-
+<section data-part="1">
 With everything replanted for next year (and with elephants and monkeys to tend the grove), you and the Elves leave for the extraction point.
 
 Partway up the mountain that shields the grove is a flat, open area that serves as the extraction point. It's a bit of a climb, but nothing the expedition can't handle.
@@ -261,6 +264,9 @@ Minute 18, move down:
 
 What is the fewest number of minutes required to avoid the blizzards and reach the goal?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 As the expedition reaches the far side of the valley, one of the Elves looks especially dismayed:
@@ -272,3 +278,5 @@ Since you're so good at dodging blizzards, the Elves humbly request that you go 
 In the above example, the first trip to the goal takes 18 minutes, the trip back to the start takes 23 minutes, and the trip back to the goal again takes 13 minutes, for a total time of 54 minutes.
 
 What is the fewest number of minutes required to reach the goal, go back to the start, then reach the goal again?
+
+</section>

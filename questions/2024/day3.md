@@ -1,11 +1,14 @@
 # Advent of Code 2024 Day 3
 
-Source: https://adventofcode.com/2024/day/3
+<source>
+https://adventofcode.com/2024/day/3
+</source>
 
-Title: --- Day 3: Mull It Over ---
+<title>
+Day 3: Mull It Over
+</title>
 
---- Day 3: Mull It Over ---
-
+<section data-part="1">
 "Our computers are having issues, so I have no idea if we have any Chief Historians in stock! You're welcome to check the warehouse, though," says the mildly flustered shopkeeper at the North Pole Toboggan Rental Shop. The Historians head out to take a look.
 
 The shopkeeper turns to you. "Any chance you can see why our computers are having issues again?"
@@ -26,6 +29,9 @@ Only the four highlighted sections are real mul instructions. Adding up the resu
 
 Scan the corrupted memory for uncorrupted mul instructions. What do you get if you add up all of the results of the multiplications?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 As you scan through the corrupted memory, you notice that some of the conditional statements are also still intact. If you handle some of the uncorrupted conditional statements in the program, you might be able to get an even more accurate result.
@@ -48,3 +54,5 @@ This corrupted memory is similar to the example from before, but this time the m
 This time, the sum of the results is 48 (2*4 + 8*5).
 
 Handle the new instructions; what do you get if you add up all of the results of just the enabled multiplications?
+
+</section>

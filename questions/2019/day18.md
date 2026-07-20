@@ -1,11 +1,14 @@
 # Advent of Code 2019 Day 18
 
-Source: https://adventofcode.com/2019/day/18
+<source>
+https://adventofcode.com/2019/day/18
+</source>
 
-Title: --- Day 18: Many-Worlds Interpretation ---
+<title>
+Day 18: Many-Worlds Interpretation
+</title>
 
---- Day 18: Many-Worlds Interpretation ---
-
+<section data-part="1">
 As you approach Neptune, a planetary security system detects you and activates a giant tractor beam on Triton! You have no choice but to land.
 
 A scan of the local area reveals only one interesting feature: a massive underground vault. You generate a map of the tunnels (your puzzle input). The tunnels are too narrow to move diagonally.
@@ -121,6 +124,9 @@ Shortest paths are 81 steps; one is: a, c, f, i, d, g, b, e, h
 
 How many steps is the shortest path that collects all of the keys?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You arrive at the vault only to discover that there is not one vault, but four - each with its own entrance.
@@ -283,3 +289,5 @@ One solution with the fewest steps is:
 This example requires at least 72 steps to collect all keys.
 
 After updating your map and using the remote-controlled robots, what is the fewest steps necessary to collect all of the keys?
+
+</section>

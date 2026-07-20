@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 6
 
-Source: https://adventofcode.com/2017/day/6
+<source>
+https://adventofcode.com/2017/day/6
+</source>
 
-Title: --- Day 6: Memory Reallocation ---
+<title>
+Day 6: Memory Reallocation
+</title>
 
---- Day 6: Memory Reallocation ---
-
+<section data-part="1">
 A debugger program here is having an issue: it is trying to repair a memory reallocation routine, but it keeps getting stuck in an infinite loop.
 
 In this area, there are sixteen memory banks; each memory bank can hold any number of blocks. The goal of the reallocation routine is to balance the blocks between the memory banks.
@@ -27,6 +30,9 @@ At this point, we've reached a state we've seen before: 2 4 1 2 was already seen
 
 Given the initial block counts in your puzzle input, how many redistribution cycles must be completed before a configuration is produced that has been seen before?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Out of curiosity, the debugger would also like to know the size of the loop: starting from a state that has already been seen, how many block redistribution cycles must be performed before that same state is seen again?
@@ -34,3 +40,5 @@ Out of curiosity, the debugger would also like to know the size of the loop: sta
 In the example above, 2 4 1 2 is seen again after four cycles, and so the answer in that example would be 4.
 
 How many cycles are in the infinite loop that arises from the configuration in your puzzle input?
+
+</section>

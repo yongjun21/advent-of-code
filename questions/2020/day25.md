@@ -1,11 +1,14 @@
 # Advent of Code 2020 Day 25
 
-Source: https://adventofcode.com/2020/day/25
+<source>
+https://adventofcode.com/2020/day/25
+</source>
 
-Title: --- Day 25: Combo Breaker ---
+<title>
+Day 25: Combo Breaker
+</title>
 
---- Day 25: Combo Breaker ---
-
+<section data-part="1">
 You finally reach the check-in desk. Unfortunately, their registration systems are currently offline, and they cannot check you in. Noticing the look on your face, they quickly add that tech support is already on the way! They even created all the room keys this morning; you can take yours now and give them your room deposit once the registration system comes back online.
 
 The room key is a small RFID card. Your room is on the 25th floor and the elevators are also temporarily out of service, so it takes what little energy you have left to even climb the stairs and navigate the halls. You finally reach the door to your room, swipe your card, and - beep - the light turns red.
@@ -45,6 +48,9 @@ At this point, you can use either device's loop size with the other device's pub
 
 What encryption key is the handshake trying to establish?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The light turns green and the door unlocks. As you collapse onto the bed in your room, your pager goes off!
@@ -58,3 +64,5 @@ The reindeer carefully explores the contents of your room while you figure out h
 "Sorry for the trouble," a note in the pouch reads. Sitting at the bottom of the pouch is a gold coin with a little picture of a starfish on it.
 
 Looks like you only needed 49 stars after all.
+
+</section>

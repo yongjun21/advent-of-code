@@ -1,11 +1,14 @@
 # Advent of Code 2021 Day 8
 
-Source: https://adventofcode.com/2021/day/8
+<source>
+https://adventofcode.com/2021/day/8
+</source>
 
-Title: --- Day 8: Seven Segment Search ---
+<title>
+Day 8: Seven Segment Search
+</title>
 
---- Day 8: Seven Segment Search ---
-
+<section data-part="1">
 You barely reach the safety of the cave when the whale smashes into the cave mouth, collapsing it. Sensors indicate another exit to this cave at a much greater depth, so you have no choice but to press on.
 
 As your submarine slowly makes its way through the cave system, you notice that the four-digit seven-segment displays in your submarine are malfunctioning; they must have been damaged during the escape. You'll be in a lot of trouble without them, so you'd better figure out what's wrong.
@@ -82,6 +85,9 @@ Because the digits 1, 4, 7, and 8 each use a unique number of segments, you shou
 
 In the output values, how many times do digits 1, 4, 7, or 8 appear?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Through a little deduction, you should now be able to determine the remaining digits. Consider again the first example above:
@@ -141,3 +147,5 @@ Following this same process for each entry in the second, larger example above, 
 Adding all of the output values in this larger example produces 61229.
 
 For each entry, determine all of the wire/segment connections and decode the four-digit output values. What do you get if you add up all of the output values?
+
+</section>

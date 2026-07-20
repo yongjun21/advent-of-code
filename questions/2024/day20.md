@@ -1,11 +1,14 @@
 # Advent of Code 2024 Day 20
 
-Source: https://adventofcode.com/2024/day/20
+<source>
+https://adventofcode.com/2024/day/20
+</source>
 
-Title: --- Day 20: Race Condition ---
+<title>
+Day 20: Race Condition
+</title>
 
---- Day 20: Race Condition ---
-
+<section data-part="1">
 The Historians are quite pixelated again. This time, a massive, black building looms over you - you're right outside the CPU!
 
 While The Historians get to work, a nearby program sees that you're idle and challenges you to a race. Apparently, you've arrived just in time for the frequently-held race condition festival!
@@ -138,6 +141,9 @@ In this example, the total number of cheats (grouped by the amount of time they 
 
 You aren't sure what the conditions of the racetrack will be like, so to give yourself as many options as possible, you'll need a list of the best cheats. How many cheats would save you at least 100 picoseconds?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The programs seem perplexed by your list of cheats. Apparently, the two-picosecond cheating rule was deprecated several milliseconds ago! The latest version of the cheating rule permits a single cheat that instead lasts at most 20 picoseconds.
@@ -202,3 +208,5 @@ You'll still need a list of the best cheats, but now there are even more to choo
 - There are 3 cheats that save 76 picoseconds.
 
 Find the best cheats using the updated cheating rules. How many cheats would save you at least 100 picoseconds?
+
+</section>

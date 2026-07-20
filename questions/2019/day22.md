@@ -1,11 +1,14 @@
 # Advent of Code 2019 Day 22
 
-Source: https://adventofcode.com/2019/day/22
+<source>
+https://adventofcode.com/2019/day/22
+</source>
 
-Title: --- Day 22: Slam Shuffle ---
+<title>
+Day 22: Slam Shuffle
+</title>
 
---- Day 22: Slam Shuffle ---
-
+<section data-part="1">
 There isn't much to do while you wait for the droids to repair your ship. At least you're drifting in the right direction. You decide to practice a new card shuffle you've been working on.
 
 Digging through the ship's storage, you find a deck of space cards! Just like any deck of space cards, there are 10007 cards in the deck numbered 0 through 10006. The deck must be new - they're still in factory order, with 0 on the top, then 1, then 2, and so on, all the way through to 10006 on the bottom.
@@ -165,6 +168,9 @@ Positions within the deck count from 0 at the top, then 1 for the card immediate
 
 After shuffling your factory order deck of 10007 cards, what is the position of card 2019?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 After a while, you realize your shuffling skill won't improve much more with merely a single deck of cards. You ask every 3D printer on the ship to make you some more cards while you check on the ship repairs. While reviewing the work the droids have finished so far, you think you see Halley's Comet fly past!
@@ -178,3 +184,5 @@ You decide to apply your complete shuffle process (your puzzle input) to the dec
 You'll need to be careful, though - one wrong move with this many cards and you might overflow your entire ship!
 
 After shuffling your new, giant, factory order deck that many times, what number is on the card that ends up in position 2020?
+
+</section>

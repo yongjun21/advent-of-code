@@ -1,11 +1,14 @@
 # Advent of Code 2019 Day 17
 
-Source: https://adventofcode.com/2019/day/17
+<source>
+https://adventofcode.com/2019/day/17
+</source>
 
-Title: --- Day 17: Set and Forget ---
+<title>
+Day 17: Set and Forget
+</title>
 
---- Day 17: Set and Forget ---
-
+<section data-part="1">
 An early warning system detects an incoming solar flare and automatically activates the ship's electromagnetic shield. Unfortunately, this has cut off the Wi-Fi for many small robots that, unaware of the impending danger, are now trapped on exterior scaffolding on the unsafe side of the shield. To rescue them, you'll have to act quickly!
 
 The only tools at your disposal are some wired cameras and a small vacuum robot currently asleep at its charging station. The video quality is poor, but the vacuum robot has a needlessly bright LED that makes it easy to spot no matter where it is.
@@ -53,6 +56,9 @@ To calibrate the cameras, you need the sum of the alignment parameters. In the a
 
 Run your ASCII program. What is the sum of the alignment parameters for the scaffold intersections?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now for the tricky part: notifying all the other robots about the solar flare. The vacuum robot can do this automatically if it gets into range of a robot. However, you can't see the other robots on the camera, so you need to be thorough instead: you need to make the vacuum robot visit every part of the scaffold at least once.
@@ -132,3 +138,5 @@ Of course, the scaffolding outside your ship is much more complex.
 As the vacuum robot finds other robots and notifies them of the impending solar flare, it also can't help but leave them squeaky clean, collecting any space dust it finds. Once it finishes the programmed set of movements, assuming it hasn't drifted off into space, the cleaning robot will return to its docking station and report the amount of space dust it collected as a large, non-ASCII value in a single output instruction.
 
 After visiting every part of the scaffold at least once, how much dust does the vacuum robot report it has collected?
+
+</section>

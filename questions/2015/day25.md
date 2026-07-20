@@ -1,11 +1,14 @@
 # Advent of Code 2015 Day 25
 
-Source: https://adventofcode.com/2015/day/25
+<source>
+https://adventofcode.com/2015/day/25
+</source>
 
-Title: --- Day 25: Let It Snow ---
+<title>
+Day 25: Let It Snow
+</title>
 
---- Day 25: Let It Snow ---
-
+<section data-part="1">
 Merry Christmas! Santa is booting up his weather machine; looks like you might get a white Christmas after all.
 
 The weather machine beeps! On the console of the machine is a copy protection message asking you to enter a code from the instruction manual. Apparently, it refuses to run unless you give it that code. No problem; you'll just look up the code in the--
@@ -54,8 +57,13 @@ So, to find the second code (which ends up in row 2, column 1), start with the p
 
 Santa looks nervous. Your puzzle input contains the message on the machine's console. What code do you give the machine?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The machine springs to life, then falls silent again. It beeps. "Insufficient fuel", the console reads. "Fifty stars are required before proceeding. One star is available."
 
 ..."one star is available"? You check the fuel tank; sure enough, a lone star sits at the bottom, awaiting its friends. Looks like you need to provide 49 yourself.
+
+</section>

@@ -1,11 +1,14 @@
 # Advent of Code 2016 Day 7
 
-Source: https://adventofcode.com/2016/day/7
+<source>
+https://adventofcode.com/2016/day/7
+</source>
 
-Title: --- Day 7: Internet Protocol Version 7 ---
+<title>
+Day 7: Internet Protocol Version 7
+</title>
 
---- Day 7: Internet Protocol Version 7 ---
-
+<section data-part="1">
 While snooping around the local network of EBHQ, you compile a list of IP addresses (they're IPv7, of course; IPv6 is much too limited). You'd like to figure out which IPs support TLS (transport-layer snooping).
 
 An IP supports TLS if it has an Autonomous Bridge Bypass Annotation, or ABBA. An ABBA is any four-character sequence which consists of a pair of two different characters followed by the reverse of that pair, such as xyyx or abba. However, the IP also must not have an ABBA within any hypernet sequences, which are contained by square brackets.
@@ -19,6 +22,9 @@ For example:
 
 How many IPs in your puzzle input support TLS?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You would also like to know which IPs support SSL (super-secret listening).
@@ -33,3 +39,5 @@ For example:
 - zazbz[bzb]cdb supports SSL (zaz has no corresponding aza, but zbz has a corresponding bzb, even though zaz and zbz overlap).
 
 How many IPs in your puzzle input support SSL?
+
+</section>

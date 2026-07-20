@@ -1,11 +1,14 @@
 # Advent of Code 2020 Day 12
 
-Source: https://adventofcode.com/2020/day/12
+<source>
+https://adventofcode.com/2020/day/12
+</source>
 
-Title: --- Day 12: Rain Risk ---
+<title>
+Day 12: Rain Risk
+</title>
 
---- Day 12: Rain Risk ---
-
+<section data-part="1">
 Your ferry made decent progress toward the island, but the storm came in faster than anyone expected. The ferry needs to take evasive actions!
 
 Unfortunately, the ship's navigation computer seems to be malfunctioning; rather than giving a route directly to safety, it produced extremely circuitous instructions. When the captain uses the PA system to ask if anyone can help, you quickly volunteer.
@@ -44,6 +47,9 @@ At the end of these instructions, the ship's Manhattan distance (sum of the abso
 
 Figure out where the navigation instructions lead. What is the Manhattan distance between that location and the ship's starting position?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Before you can give the destination to the captain, you realize that the actual action meanings were printed on the back of the instructions the whole time.
@@ -71,3 +77,5 @@ For example, using the same instructions as above:
 After these operations, the ship's Manhattan distance from its starting position is 214 + 72 = 286.
 
 Figure out where the navigation instructions actually lead. What is the Manhattan distance between that location and the ship's starting position?
+
+</section>

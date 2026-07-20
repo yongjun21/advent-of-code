@@ -1,11 +1,14 @@
 # Advent of Code 2022 Day 9
 
-Source: https://adventofcode.com/2022/day/9
+<source>
+https://adventofcode.com/2022/day/9
+</source>
 
-Title: --- Day 9: Rope Bridge ---
+<title>
+Day 9: Rope Bridge
+</title>
 
---- Day 9: Rope Bridge ---
-
+<section data-part="1">
 This rope bridge creaks as you walk along it. You aren't sure how old it is, or whether it can even support your weight.
 
 It seems to support the Elves just fine, though. The bridge spans a gorge which was carved out by the massive river far below you.
@@ -264,6 +267,9 @@ So, there are 13 positions the tail visited at least once.
 
 Simulate your complete hypothetical series of motions. How many positions does the tail of the rope visit at least once?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 A rope snaps! Suddenly, the river is getting a lot closer than you remember. The bridge is still there, but some of the ropes that broke are now whipping toward you as you fall through the air!
@@ -707,3 +713,5 @@ Now, the tail (9) visits 36 positions (including s) at least once:
 ```
 
 Simulate your complete series of motions on a larger rope with ten knots. How many positions does the tail of the rope visit at least once?
+
+</section>

@@ -1,11 +1,14 @@
 # Advent of Code 2018 Day 19
 
-Source: https://adventofcode.com/2018/day/19
+<source>
+https://adventofcode.com/2018/day/19
+</source>
 
-Title: --- Day 19: Go With The Flow ---
+<title>
+Day 19: Go With The Flow
+</title>
 
---- Day 19: Go With The Flow ---
-
+<section data-part="1">
 With the Elves well on their way constructing the North Pole base, you turn your attention back to understanding the inner workings of programming the device.
 
 You can't help but notice that the device's opcodes don't contain any flow control like jump instructions. The device's manual goes on to explain:
@@ -54,8 +57,13 @@ In detail, when running this program, the following events occur:
 
 What value is left in register 0 when the background process halts?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 A new background process immediately spins up in its place. It appears identical, but on closer inspection, you notice that this time, register 0 started with the value 1.
 
 What value is left in register 0 when this new background process halts?
+
+</section>

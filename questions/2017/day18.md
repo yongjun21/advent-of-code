@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 18
 
-Source: https://adventofcode.com/2017/day/18
+<source>
+https://adventofcode.com/2017/day/18
+</source>
 
-Title: --- Day 18: Duet ---
+<title>
+Day 18: Duet
+</title>
 
---- Day 18: Duet ---
-
+<section data-part="1">
 You discover a tablet containing some strange assembly code labeled simply "Duet". Rather than bother the sound card with it, you decide to run the code yourself. Unfortunately, you don't see any documentation, so you're left to figure out what the instructions mean on your own.
 
 It seems like the assembly is meant to operate on a set of registers that are each named with a single letter and that can each hold a single integer. You suppose each register should start with a value of 0.
@@ -48,6 +51,9 @@ At the time the recover operation is executed, the frequency of the last sound p
 
 What is the value of the recovered frequency (the value of the most recently played sound) the first time a rcv instruction is executed with a non-zero value?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 As you congratulate yourself for a job well done, you notice that the documentation has been on the back of the tablet this entire time. While you actually got most of the instructions correct, there are a few key differences. This assembly code isn't about sound at all - it's meant to be run twice at the same time.
@@ -78,3 +84,5 @@ Finally, both programs try to rcv a fourth time, but no data is waiting for eith
 It should be noted that it would be equally valid for the programs to run at different speeds; for example, program 0 might have sent all three values and then stopped at the first rcv before program 1 executed even its first instruction.
 
 Once both of your programs have terminated (regardless of what caused them to do so), how many times did program 1 send a value?
+
+</section>

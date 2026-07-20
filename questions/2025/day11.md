@@ -1,11 +1,14 @@
 # Advent of Code 2025 Day 11
 
-Source: https://adventofcode.com/2025/day/11
+<source>
+https://adventofcode.com/2025/day/11
+</source>
 
-Title: --- Day 11: Reactor ---
+<title>
+Day 11: Reactor
+</title>
 
---- Day 11: Reactor ---
-
+<section data-part="1">
 You hear some loud beeping coming from a hatch in the floor of the factory, so you decide to check it out. Inside, you find several large electrical conduits and a ladder.
 
 Climbing down the ladder, you discover the source of the beeping: a large, toroidal reactor which powers the factory above. Some Elves here are hurriedly running between the reactor and a nearby server rack, apparently trying to fix something.
@@ -47,6 +50,9 @@ In total, there are 5 different paths leading from you to out.
 
 How many different paths lead from you to out?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Thanks in part to your analysis, the Elves have figured out a little bit about the issue. They now know that the problematic data path passes through both dac (a digital-to-analog converter) and fft (a device which performs a fast Fourier transform).
@@ -87,3 +93,5 @@ svr,bbb,tty,ccc,eee,dac,fff,hhh,out
 However, only 2 paths from svr to out visit both dac and fft.
 
 Find all of the paths that lead from svr to out. How many of those paths visit both dac and fft?
+
+</section>

@@ -1,11 +1,14 @@
 # Advent of Code 2025 Day 10
 
-Source: https://adventofcode.com/2025/day/10
+<source>
+https://adventofcode.com/2025/day/10
+</source>
 
-Title: --- Day 10: Factory ---
+<title>
+Day 10: Factory
+</title>
 
---- Day 10: Factory ---
-
+<section data-part="1">
 Just across the hall, you find a large factory. Fortunately, the Elves here have plenty of time to decorate. Unfortunately, it's because the factory machines are all offline, and none of the Elves can figure out the initialization procedure.
 
 The Elves do have the manual for the machines, but the section detailing the initialization procedure was eaten by a Shiba Inu. All that remains of the manual are some indicator light diagrams, button wiring schematics, and joltage requirements for each machine.
@@ -64,6 +67,9 @@ So, the fewest button presses required to correctly configure the indicator ligh
 
 Analyze each machine's indicator light diagram and button wiring schematics. What is the fewest button presses required to correctly configure the indicator lights on all of the machines?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 All of the machines are starting to come online! Now, it's time to worry about the joltage requirements.
@@ -97,3 +103,5 @@ Configuring the third machine's counters requires a minimum of 11 button presses
 So, the fewest button presses required to correctly configure the joltage level counters on all of the machines is 10 + 12 + 11 = 33.
 
 Analyze each machine's joltage requirements and button wiring schematics. What is the fewest button presses required to correctly configure the joltage level counters on all of the machines?
+
+</section>

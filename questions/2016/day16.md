@@ -1,11 +1,14 @@
 # Advent of Code 2016 Day 16
 
-Source: https://adventofcode.com/2016/day/16
+<source>
+https://adventofcode.com/2016/day/16
+</source>
 
-Title: --- Day 16: Dragon Checksum ---
+<title>
+Day 16: Dragon Checksum
+</title>
 
---- Day 16: Dragon Checksum ---
-
+<section data-part="1">
 You're done scanning this part of the network, but you've left traces of your presence. You need to overwrite some disks with random-looking data to cover your tracks and update the local security system with a new checksum for those disks.
 
 For the data to not be suspicious, it needs to have certain properties; purely random data will be detected as tampering. To generate appropriate random data, you'll need to use a modified dragon curve.
@@ -54,6 +57,11 @@ In this example, the correct checksum would therefore be 01100.
 
 The first disk you have to fill has length 272. Using the initial state in your puzzle input, what is the correct checksum?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The second disk you have to fill has length 35651584. Again using the initial state in your puzzle input, what is the correct checksum for this disk?
+
+</section>

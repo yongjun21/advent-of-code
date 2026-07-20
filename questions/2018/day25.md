@@ -1,11 +1,14 @@
 # Advent of Code 2018 Day 25
 
-Source: https://adventofcode.com/2018/day/25
+<source>
+https://adventofcode.com/2018/day/25
+</source>
 
-Title: --- Day 25: Four-Dimensional Adventure ---
+<title>
+Day 25: Four-Dimensional Adventure
+</title>
 
---- Day 25: Four-Dimensional Adventure ---
-
+<section data-part="1">
 The reindeer's symptoms are getting worse, and neither you nor the white-bearded man have a solution. At least the reindeer has a warm place to rest: a small bed near where you're sitting.
 
 As you reach down, the reindeer looks up at you, accidentally bumping a button on your wrist-mounted device with its nose in the process - a button labeled "help".
@@ -92,6 +95,9 @@ The portly man nervously strokes his white beard. It's time to get that hot choc
 
 How many constellations are formed by the fixed points in spacetime?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 A small glowing portal opens above the mug you prepared and just enough hot chocolate streams in to fill it. You suspect the reindeer has never encountered hot chocolate before, but seems to enjoy it anyway. You hope it works.
@@ -101,3 +107,5 @@ It's time to start worrying about that integer underflow in time itself you set 
 The reindeer bumps the device with its nose.
 
 "Energy required: 49 stars."
+
+</section>

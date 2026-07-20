@@ -1,11 +1,14 @@
 # Advent of Code 2021 Day 10
 
-Source: https://adventofcode.com/2021/day/10
+<source>
+https://adventofcode.com/2021/day/10
+</source>
 
-Title: --- Day 10: Syntax Scoring ---
+<title>
+Day 10: Syntax Scoring
+</title>
 
---- Day 10: Syntax Scoring ---
-
+<section data-part="1">
 You ask the submarine to determine the best route out of the deep-sea cave, but it only replies:
 
 ```
@@ -65,6 +68,9 @@ In the above example, an illegal ) was found twice (2*3 = 6 points), an illegal 
 
 Find the first illegal character in each corrupted line of the navigation subsystem. What is the total syntax error score for those errors?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now, discard the corrupted lines. The remaining lines are incomplete.
@@ -107,3 +113,5 @@ The five lines' completion strings have total scores as follows:
 Autocomplete tools are an odd bunch: the winner is found by sorting all of the scores and then taking the middle score. (There will always be an odd number of scores to consider.) In this example, the middle score is 288957 because there are the same number of scores smaller and larger than it.
 
 Find the completion string for each incomplete line, score the completion strings, and sort the scores. What is the middle score?
+
+</section>

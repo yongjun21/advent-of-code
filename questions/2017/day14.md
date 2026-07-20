@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 14
 
-Source: https://adventofcode.com/2017/day/14
+<source>
+https://adventofcode.com/2017/day/14
+</source>
 
-Title: --- Day 14: Disk Defragmentation ---
+<title>
+Day 14: Disk Defragmentation
+</title>
 
---- Day 14: Disk Defragmentation ---
-
+<section data-part="1">
 Suddenly, a scheduled job activates the system's disk defragmenter. Were the situation different, you might sit and watch it for a while, but today, you just don't have that kind of time. It's soaking up valuable system resources that are needed elsewhere, and so the only option is to help it finish its task as soon as possible.
 
 The disk in question consists of a 128x128 grid; each square of the grid is either free or used. On this disk, the state of the grid is tracked by the bits in a sequence of knot hashes.
@@ -35,6 +38,9 @@ In this example, 8108 squares are used across the entire 128x128 grid.
 
 Given your actual key string, how many squares are used?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now, all the defragmenter needs to know is the number of regions. A region is a group of used squares that are all adjacent, not including diagonals. Every used square is in exactly one region: lone used squares form their own isolated regions, while several adjacent squares all count as a single region.
@@ -57,3 +63,5 @@ V      V
 Of particular interest is the region marked 8; while it does not appear contiguous in this small view, all of the squares marked 8 are connected when considering the whole 128x128 grid. In total, in this example, 1242 regions are present.
 
 How many regions are present given your key string?
+
+</section>

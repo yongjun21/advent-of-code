@@ -1,11 +1,14 @@
 # Advent of Code 2018 Day 8
 
-Source: https://adventofcode.com/2018/day/8
+<source>
+https://adventofcode.com/2018/day/8
+</source>
 
-Title: --- Day 8: Memory Maneuver ---
+<title>
+Day 8: Memory Maneuver
+</title>
 
---- Day 8: Memory Maneuver ---
-
+<section data-part="1">
 The sleigh is much easier to pull than you'd expect for something its weight. Unfortunately, neither you nor the Elves know which way the North Pole is from here.
 
 You check your wrist device for anything that might help. It seems to have some kind of navigation system! Activating the navigation system produces more bad news: "Failed to start navigation system. Could not read software license file."
@@ -43,6 +46,9 @@ The first check done on the license file is to simply add up all of the metadata
 
 What is the sum of all metadata entries?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The second check is slightly more complicated: you need to find the value of the root node (A in the example above).
@@ -61,3 +67,5 @@ For example, again using the above nodes:
 So, in this example, the value of the root node is 66.
 
 What is the value of the root node?
+
+</section>

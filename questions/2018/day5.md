@@ -1,11 +1,14 @@
 # Advent of Code 2018 Day 5
 
-Source: https://adventofcode.com/2018/day/5
+<source>
+https://adventofcode.com/2018/day/5
+</source>
 
-Title: --- Day 5: Alchemical Reduction ---
+<title>
+Day 5: Alchemical Reduction
+</title>
 
---- Day 5: Alchemical Reduction ---
-
+<section data-part="1">
 You've managed to sneak in to the prototype suit manufacturing lab. The Elves are making decent progress, but are still struggling with the suit's size reduction capabilities.
 
 While the very latest in 1518 alchemical technology might have solved their problem eventually, you can do better. You scan the chemical composition of the suit's material and discover that it is formed by extremely long polymers (one of which is available as your puzzle input).
@@ -32,6 +35,9 @@ After all possible reactions, the resulting polymer contains 10 units.
 
 How many units remain after fully reacting the polymer you scanned? (Note: in this puzzle and others, the input is large; if you copy/paste your input, make sure you get the whole thing.)
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Time to improve the polymer.
@@ -48,3 +54,5 @@ For example, again using the polymer dabAcCaCBAcCcaDA from above:
 In this example, removing all C/c units was best, producing the answer 4.
 
 What is the length of the shortest polymer you can produce by removing all units of exactly one type and fully reacting the result?
+
+</section>

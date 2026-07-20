@@ -1,11 +1,14 @@
 # Advent of Code 2019 Day 23
 
-Source: https://adventofcode.com/2019/day/23
+<source>
+https://adventofcode.com/2019/day/23
+</source>
 
-Title: --- Day 23: Category Six ---
+<title>
+Day 23: Category Six
+</title>
 
---- Day 23: Category Six ---
-
+<section data-part="1">
 The droids have finished repairing as much of the ship as they can. Their report indicates that this was a Category 6 disaster - not because it was that bad, but because it destroyed the stockpile of Category 6 network cables as well as most of the ship's network infrastructure.
 
 You'll need to rebuild the network from scratch.
@@ -22,6 +25,9 @@ Note that these input and output instructions never block. Specifically, output 
 
 Boot up all 50 computers and attach them to your network. What is the Y value of the first packet sent to address 255?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Packets sent to address 255 are handled by a device called a NAT (Not Always Transmitting). The NAT is responsible for managing power consumption of the network by blocking certain packets and watching for idle periods in the computers.
@@ -33,3 +39,5 @@ The NAT also monitors all computers on the network. If all computers have empty 
 Once the network is idle, the NAT sends only the last packet it received to address 0; this will cause the computers on the network to resume activity. In this way, the NAT can throttle power consumption of the network when the ship needs power in other areas.
 
 Monitor packets released to the computer at address 0 by the NAT. What is the first Y value delivered by the NAT to the computer at address 0 twice in a row?
+
+</section>

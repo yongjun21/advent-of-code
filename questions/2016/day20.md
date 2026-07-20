@@ -1,11 +1,14 @@
 # Advent of Code 2016 Day 20
 
-Source: https://adventofcode.com/2016/day/20
+<source>
+https://adventofcode.com/2016/day/20
+</source>
 
-Title: --- Day 20: Firewall Rules ---
+<title>
+Day 20: Firewall Rules
+</title>
 
---- Day 20: Firewall Rules ---
-
+<section data-part="1">
 You'd like to set up a small hidden computer here so you can use it to get back into the network later. However, the corporate firewall only allows communication with certain external IP addresses.
 
 You've retrieved the list of blocked IPs from the firewall, but the list seems to be messy and poorly maintained, and it's not clear which IPs are allowed. Also, rather than being written in dot-decimal notation, they are written as plain 32-bit integers, which can have any value from 0 through 4294967295, inclusive.
@@ -22,6 +25,11 @@ The blacklist specifies ranges of IPs (inclusive of both the start and end value
 
 Given the list of blocked IPs you retrieved from the firewall (your puzzle input), what is the lowest-valued IP that is not blocked?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 How many IPs are allowed by the blacklist?
+
+</section>

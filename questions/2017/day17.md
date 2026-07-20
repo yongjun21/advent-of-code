@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 17
 
-Source: https://adventofcode.com/2017/day/17
+<source>
+https://adventofcode.com/2017/day/17
+</source>
 
-Title: --- Day 17: Spinlock ---
+<title>
+Day 17: Spinlock
+</title>
 
---- Day 17: Spinlock ---
-
+<section data-part="1">
 Suddenly, whirling in the distance, you notice what looks like a massive, pixelated hurricane: a deadly spinlock. This spinlock isn't just consuming computing power, but memory, too; vast, digital mountains are being ripped from the ground and consumed by the vortex.
 
 If you don't move quickly, fixing that printer will be the least of your problems.
@@ -40,6 +43,9 @@ Perhaps, if you can identify the value that will ultimately be after the last va
 
 What is the value after 2017 in your completed circular buffer?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The spinlock does not short-circuit. Instead, it gets more angry. At least, you assume that's what happened; it's spinning significantly faster than it was a moment ago.
@@ -51,3 +57,5 @@ The good news is that you have improved calculations for how to stop the spinloc
 The bad news is that while you were determining this, the spinlock has just finished inserting its fifty millionth value (50000000).
 
 What is the value after 0 the moment 50000000 is inserted?
+
+</section>

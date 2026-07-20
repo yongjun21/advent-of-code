@@ -1,11 +1,14 @@
 # Advent of Code 2020 Day 16
 
-Source: https://adventofcode.com/2020/day/16
+<source>
+https://adventofcode.com/2020/day/16
+</source>
 
-Title: --- Day 16: Ticket Translation ---
+<title>
+Day 16: Ticket Translation
+</title>
 
---- Day 16: Ticket Translation ---
-
+<section data-part="1">
 As you're walking to yet another connecting flight, you realize that one of the legs of your re-routed trip coming up is on a high-speed train. However, the train ticket you were given is in a language you don't understand. You should probably figure out what it says before you get to the train station after the next flight.
 
 Unfortunately, you can't actually read the words on the ticket. You can, however, read the numbers, and so you figure out the fields these tickets must have and the valid ranges for values in those fields.
@@ -50,6 +53,9 @@ It doesn't matter which position corresponds to which field; you can identify in
 
 Consider the validity of the nearby tickets you scanned. What is your ticket scanning error rate?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now that you've identified which tickets contain invalid values, discard those tickets entirely. Use the remaining valid tickets to determine which field is which.
@@ -75,3 +81,5 @@ nearby tickets:
 Based on the nearby tickets in the above example, the first position must be row, the second position must be class, and the third position must be seat; you can conclude that in your ticket, class is 12, row is 11, and seat is 13.
 
 Once you work out which field is which, look for the six fields on your ticket that start with the word departure. What do you get if you multiply those six values together?
+
+</section>

@@ -1,11 +1,14 @@
 # Advent of Code 2015 Day 18
 
-Source: https://adventofcode.com/2015/day/18
+<source>
+https://adventofcode.com/2015/day/18
+</source>
 
-Title: --- Day 18: Like a GIF For Your Yard ---
+<title>
+Day 18: Like a GIF For Your Yard
+</title>
 
---- Day 18: Like a GIF For Your Yard ---
-
+<section data-part="1">
 After the million lights incident, the fire code has gotten stricter: now, at most ten thousand lights are allowed. You arrange them in a 100x100 grid.
 
 Never one to let you down, Santa again mails you instructions on the ideal lighting configuration. With so few lights, he says, you'll have to resort to animation.
@@ -80,6 +83,9 @@ After 4 steps, this example has four lights on.
 
 In your grid of 100x100 lights, given your initial configuration, how many lights are on after 100 steps?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You flip the instructions over; Santa goes on to point out that this is all just an implementation of Conway's Game of Life. At least, it was, until you notice that something's wrong with the grid of lights you bought: four lights, one in each corner, are stuck on and can't be turned off. The example above will actually run like this:
@@ -137,3 +143,5 @@ After 5 steps:
 After 5 steps, this example now has 17 lights on.
 
 In your grid of 100x100 lights, given your initial configuration, but with the four corners always in the on state, how many lights are on after 100 steps?
+
+</section>

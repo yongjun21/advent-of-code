@@ -1,11 +1,14 @@
 # Advent of Code 2025 Day 7
 
-Source: https://adventofcode.com/2025/day/7
+<source>
+https://adventofcode.com/2025/day/7
+</source>
 
-Title: --- Day 7: Laboratories ---
+<title>
+Day 7: Laboratories
+</title>
 
---- Day 7: Laboratories ---
-
+<section data-part="1">
 You thank the cephalopods for the help and exit the trash compactor, finding yourself in the familiar halls of a North Pole research wing.
 
 Based on the large sign that says "teleporter hub", they seem to be researching teleportation; you can't help but try it for yourself and step onto the large yellow teleporter pad.
@@ -146,6 +149,9 @@ To repair the teleporter, you first need to understand the beam-splitting proper
 
 Analyze your manifold diagram. How many times will the beam be split?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 With your analysis of the manifold complete, you begin fixing the teleporter. However, as you open the side of the teleporter to replace the broken manifold, you are surprised to discover that it isn't a classical tachyon manifold - it's a quantum tachyon manifold.
@@ -222,3 +228,5 @@ Or, there's the timeline where the particle ends up at the same point as the alt
 In this example, in total, the particle ends up on 40 different timelines.
 
 Apply the many-worlds interpretation of quantum tachyon splitting to your manifold diagram. In total, how many different timelines would a single tachyon particle end up on?
+
+</section>

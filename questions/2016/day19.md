@@ -1,11 +1,14 @@
 # Advent of Code 2016 Day 19
 
-Source: https://adventofcode.com/2016/day/19
+<source>
+https://adventofcode.com/2016/day/19
+</source>
 
-Title: --- Day 19: An Elephant Named Joseph ---
+<title>
+Day 19: An Elephant Named Joseph
+</title>
 
---- Day 19: An Elephant Named Joseph ---
-
+<section data-part="1">
 The Elves contact you over a highly secure emergency channel. Back at the North Pole, the Elves are busy misunderstanding White Elephant parties.
 
 Each Elf brings a present. They all sit in a circle, numbered starting with position 1. Then, starting with the first Elf, they take turns stealing all the presents from the Elf to their left. An Elf with no presents is removed from the circle and does not take turns.
@@ -30,6 +33,9 @@ So, with five Elves, the Elf that sits starting in position 3 gets all the prese
 
 With the number of Elves given in your puzzle input, which Elf gets all the presents?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Realizing the folly of their present-exchange rules, the Elves agree to instead steal presents from the Elf directly across the circle. If two Elves are across the circle, the one on the left (from the perspective of the stealer) is stolen from. The other rules remain unchanged: Elves with no presents are removed from the circle entirely, and the other elves move in slightly to keep the circle evenly spaced.
@@ -60,3 +66,5 @@ For example, with five Elves (again numbered 1 to 5):
 So, with five Elves, the Elf that sits starting in position 2 gets all the presents.
 
 With the number of Elves given in your puzzle input, which Elf now gets all the presents?
+
+</section>

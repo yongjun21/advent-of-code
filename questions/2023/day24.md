@@ -1,11 +1,14 @@
 # Advent of Code 2023 Day 24
 
-Source: https://adventofcode.com/2023/day/24
+<source>
+https://adventofcode.com/2023/day/24
+</source>
 
-Title: --- Day 24: Never Tell Me The Odds ---
+<title>
+Day 24: Never Tell Me The Odds
+</title>
 
---- Day 24: Never Tell Me The Odds ---
-
+<section data-part="1">
 It seems like something is going wrong with the snow-making process. Instead of forming snow, the water that's been absorbed into the air seems to be forming hail!
 
 Maybe there's something you can do to break up the hailstones?
@@ -78,6 +81,9 @@ However, you'll need to search a much larger test area if you want to see if any
 
 Considering only the X and Y axes, check all pairs of hailstones' future paths for intersections. How many of these intersections occur within the test area?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Upon further analysis, it doesn't seem like any hailstones will naturally collide. It's up to you to fix that!
@@ -117,3 +123,5 @@ After 1 nanosecond, the rock has exactly the same position as one of the hailsto
 So, at time 0, the rock needs to be at X position 24, Y position 13, and Z position 10. Adding these three coordinates together produces 47. (Don't add any coordinates from the rock's velocity.)
 
 Determine the exact position and velocity the rock needs to have at time 0 so that it perfectly collides with every hailstone. What do you get if you add up the X, Y, and Z coordinates of that initial position?
+
+</section>

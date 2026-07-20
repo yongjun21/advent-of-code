@@ -1,11 +1,14 @@
 # Advent of Code 2018 Day 23
 
-Source: https://adventofcode.com/2018/day/23
+<source>
+https://adventofcode.com/2018/day/23
+</source>
 
-Title: --- Day 23: Experimental Emergency Teleportation ---
+<title>
+Day 23: Experimental Emergency Teleportation
+</title>
 
---- Day 23: Experimental Emergency Teleportation ---
-
+<section data-part="1">
 Using your torch to search the darkness of the rocky cavern, you finally locate the man's friend: a small reindeer.
 
 You're not sure how it got so far in this cave. It looks sick - too sick to walk - and too heavy for you to carry all the way back. Sleighs won't be invented for another 1500 years, of course.
@@ -48,6 +51,9 @@ In this example, in total, 7 nanobots are in range of the nanobot with the large
 
 Find the nanobot with the largest signal radius. How many nanobots are in range of its signals?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now, you just need to figure out where to position yourself so that you're actually teleported when the nanobots activate.
@@ -68,3 +74,5 @@ pos=<10,10,10>, r=5
 Many coordinates are in range of some of the nanobots in this formation. However, only the coordinate 12,12,12 is in range of the most nanobots: it is in range of the first five, but is not in range of the nanobot at 10,10,10. (All other coordinates are in range of fewer than five nanobots.) This coordinate's distance from 0,0,0 is 36.
 
 Find the coordinates that are in range of the largest number of nanobots. What is the shortest manhattan distance between any of those points and 0,0,0?
+
+</section>

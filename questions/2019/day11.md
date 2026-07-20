@@ -1,11 +1,14 @@
 # Advent of Code 2019 Day 11
 
-Source: https://adventofcode.com/2019/day/11
+<source>
+https://adventofcode.com/2019/day/11
+</source>
 
-Title: --- Day 11: Space Police ---
+<title>
+Day 11: Space Police
+</title>
 
---- Day 11: Space Police ---
-
+<section data-part="1">
 On the way to Jupiter, you're pulled over by the Space Police.
 
 "Attention, unmarked spacecraft! You are in violation of Space Law! All spacecraft must have a clearly visible registration identifier! You have 24 hours to comply or be sent to Space Jail!"
@@ -79,6 +82,9 @@ Before you deploy the robot, you should probably have an estimate of the area it
 
 Build a new emergency hull painting robot and run the Intcode program on it. How many panels does it paint at least once?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You're not sure what it's trying to paint, but it's definitely not a registration identifier. The Space Police are getting impatient.
@@ -86,3 +92,5 @@ You're not sure what it's trying to paint, but it's definitely not a registratio
 Checking your external ship cameras again, you notice a white panel marked "emergency hull painting robot starting panel". The rest of the panels are still black, but it looks like the robot was expecting to start on a white panel, not a black one.
 
 Based on the Space Law Space Brochure that the Space Police attached to one of your windows, a valid registration identifier is always eight capital letters. After starting the robot on a single white panel instead, what registration identifier does it paint on your hull?
+
+</section>

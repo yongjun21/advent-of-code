@@ -1,11 +1,14 @@
 # Advent of Code 2016 Day 22
 
-Source: https://adventofcode.com/2016/day/22
+<source>
+https://adventofcode.com/2016/day/22
+</source>
 
-Title: --- Day 22: Grid Computing ---
+<title>
+Day 22: Grid Computing
+</title>
 
---- Day 22: Grid Computing ---
-
+<section data-part="1">
 You gain access to a massive storage cluster arranged in a grid; each storage node is only connected to the four nodes directly adjacent to it (three if the node is on an edge, two if it's in a corner).
 
 You can directly access data only on node /dev/grid/node-x0-y0, but you can perform some limited actions on the other nodes:
@@ -25,6 +28,9 @@ To do this, you'd like to count the number of viable pairs of nodes. A viable pa
 
 How many viable pairs of nodes are there?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now that you have a better understanding of the grid, it's time to get to work.
@@ -95,3 +101,5 @@ _ . .
 So, after 7 steps, we've accessed the data we want. Unfortunately, each of these moves takes time, and we need to be efficient:
 
 What is the fewest number of steps required to move your goal data to node-x0-y0?
+
+</section>

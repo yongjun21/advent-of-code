@@ -1,11 +1,14 @@
 # Advent of Code 2018 Day 11
 
-Source: https://adventofcode.com/2018/day/11
+<source>
+https://adventofcode.com/2018/day/11
+</source>
 
-Title: --- Day 11: Chronal Charge ---
+<title>
+Day 11: Chronal Charge
+</title>
 
---- Day 11: Chronal Charge ---
-
+<section data-part="1">
 You watch the Elves and their sleigh fade into the distance as they head toward the North Pole.
 
 Actually, you're the one fading. The falling sensation returns.
@@ -66,6 +69,9 @@ For grid serial number 42, the largest 3x3 square's top-left is 21,61 (with a to
 
 What is the X,Y coordinate of the top-left fuel cell of the 3x3 square with the largest total power?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You discover a dial on the side of the device; it seems to let you select a square of any size, not just 3x3. Sizes from 1x1 to 300x300 are supported.
@@ -78,3 +84,5 @@ For example:
 - For grid serial number 42, the largest total square (with a total power of 119) is 12x12 and has a top-left corner of 232,251, so its identifier is 232,251,12.
 
 What is the X,Y,size identifier of the square with the largest total power?
+
+</section>

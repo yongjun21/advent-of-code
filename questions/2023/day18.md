@@ -1,11 +1,14 @@
 # Advent of Code 2023 Day 18
 
-Source: https://adventofcode.com/2023/day/18
+<source>
+https://adventofcode.com/2023/day/18
+</source>
 
-Title: --- Day 18: Lavaduct Lagoon ---
+<title>
+Day 18: Lavaduct Lagoon
+</title>
 
---- Day 18: Lavaduct Lagoon ---
-
+<section data-part="1">
 Thanks to your efforts, the machine parts factory is one of the first factories up and running since the lavafall came back. However, to catch up with the large backlog of parts requests, the factory will also need a large supply of lava for a while; the Elves have already started creating a large lagoon nearby for this purpose.
 
 However, they aren't sure the lagoon will be big enough; they've asked you to take a look at the dig plan (your puzzle input). For example:
@@ -63,6 +66,9 @@ Now, the lagoon can contain a much more respectable 62 cubic meters of lava. Whi
 
 The Elves are concerned the lagoon won't be large enough; if they follow their dig plan, how many cubic meters of lava could it hold?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The Elves were right to be concerned; the planned lagoon would be much too small.
@@ -91,3 +97,5 @@ So, in the above example, the hexadecimal codes can be converted into the true i
 Digging out this loop and its interior produces a lagoon that can hold an impressive 952408144115 cubic meters of lava.
 
 Convert the hexadecimal color codes into the correct instructions; if the Elves follow this new dig plan, how many cubic meters of lava could the lagoon hold?
+
+</section>

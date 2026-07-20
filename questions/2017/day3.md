@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 3
 
-Source: https://adventofcode.com/2017/day/3
+<source>
+https://adventofcode.com/2017/day/3
+</source>
 
-Title: --- Day 3: Spiral Memory ---
+<title>
+Day 3: Spiral Memory
+</title>
 
---- Day 3: Spiral Memory ---
-
+<section data-part="1">
 You come across an experimental new kind of memory stored on an infinite two-dimensional grid.
 
 Each square on the grid is allocated in a spiral pattern starting at a location marked 1 and then counting up while spiraling outward. For example, the first few squares are allocated like this:
@@ -29,6 +32,9 @@ For example:
 
 How many steps are required to carry the data from the square identified in your puzzle input all the way to the access port?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 As a stress test on the system, the programs here clear the grid and then store the value 1 in square 1. Then, in the same allocation order as shown above, they store the sum of the values in all adjacent squares, including diagonals.
@@ -52,3 +58,5 @@ Once a square is written, its value does not change. Therefore, the first few sq
 ```
 
 What is the first value written that is larger than your puzzle input?
+
+</section>

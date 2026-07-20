@@ -1,11 +1,14 @@
 # Advent of Code 2018 Day 20
 
-Source: https://adventofcode.com/2018/day/20
+<source>
+https://adventofcode.com/2018/day/20
+</source>
 
-Title: --- Day 20: A Regular Map ---
+<title>
+Day 20: A Regular Map
+</title>
 
---- Day 20: A Regular Map ---
-
+<section data-part="1">
 While you were learning about instruction pointers, the Elves made considerable progress. When you look up, you discover that the North Pole base construction project has completely surrounded you.
 
 The area you are in is made up entirely of rooms and doors. The rooms are arranged in a grid, and rooms only connect to adjacent rooms when a door is present between them.
@@ -159,8 +162,13 @@ Furthest room requires passing 31 doors
 
 What is the largest number of doors you would be required to pass through to reach a room? That is, find the room for which the shortest path from your starting location to that room would require passing through the most doors; what is the fewest doors you can pass through to reach it?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Okay, so the facility is big.
 
 How many rooms have a shortest path from your current location that pass through at least 1000 doors?
+
+</section>

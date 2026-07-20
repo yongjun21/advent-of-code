@@ -1,11 +1,14 @@
 # Advent of Code 2022 Day 25
 
-Source: https://adventofcode.com/2022/day/25
+<source>
+https://adventofcode.com/2022/day/25
+</source>
 
-Title: --- Day 25: Full of Hot Air ---
+<title>
+Day 25: Full of Hot Air
+</title>
 
---- Day 25: Full of Hot Air ---
-
+<section data-part="1">
 As the expedition finally reaches the extraction point, several large hot air balloons drift down to meet you. Crews quickly start unloading the equipment the balloons brought: many hot air balloon kits, some fuel tanks, and a fuel heating machine.
 
 The fuel heating machine is a new addition to the process. When this mountain was a volcano, the ambient temperature was more reasonable; now, it's so cold that the fuel won't work at all without being warmed up first.
@@ -108,6 +111,9 @@ Reversing the process, you can determine that for the decimal number 4890, the S
 
 The Elves are starting to get cold. What SNAFU number do you supply to Bob's console?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The hot air balloons quickly carry you to the North Pole. As soon as you land, most of the expedition is escorted directly to a small building attached to the reindeer stables.
@@ -117,3 +123,5 @@ The head smoothie chef has just finished warming up the industrial-grade smoothi
 As you do, a very young Elf - one you recognize from the expedition team - approaches the table and holds up a single star fruit he found. The head smoothie chef places it in the blender.
 
 Only 49 stars to go.
+
+</section>

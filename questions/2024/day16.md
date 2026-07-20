@@ -1,11 +1,14 @@
 # Advent of Code 2024 Day 16
 
-Source: https://adventofcode.com/2024/day/16
+<source>
+https://adventofcode.com/2024/day/16
+</source>
 
-Title: --- Day 16: Reindeer Maze ---
+<title>
+Day 16: Reindeer Maze
+</title>
 
---- Day 16: Reindeer Maze ---
-
+<section data-part="1">
 It's time again for the Reindeer Olympics! This year, the big event is the Reindeer Maze, where the Reindeer compete for the lowest score.
 
 You and The Historians arrive to search for the Chief right as the event is about to start. It wouldn't hurt to watch a little, right?
@@ -101,6 +104,9 @@ Note that the path shown above includes one 90 degree turn as the very first mov
 
 Analyze your map carefully. What is the lowest score a Reindeer could possibly get?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now that you know what the best paths look like, you can figure out the best spot to sit.
@@ -152,3 +158,5 @@ In the second example, there are 64 tiles that are part of at least one of the b
 ```
 
 Analyze your map further. How many tiles are part of at least one of the best paths through the maze?
+
+</section>

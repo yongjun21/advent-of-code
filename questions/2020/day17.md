@@ -1,11 +1,14 @@
 # Advent of Code 2020 Day 17
 
-Source: https://adventofcode.com/2020/day/17
+<source>
+https://adventofcode.com/2020/day/17
+</source>
 
-Title: --- Day 17: Conway Cubes ---
+<title>
+Day 17: Conway Cubes
+</title>
 
---- Day 17: Conway Cubes ---
-
+<section data-part="1">
 As your flight slowly drifts through the sky, the Elves at the Mythical Information Bureau at the North Pole contact you. They'd like some help debugging a malfunctioning experimental energy source aboard one of their super-secret imaging satellites.
 
 The experimental energy source is based on cutting-edge technology: a set of Conway Cubes contained in a pocket dimension! When you hear it's having problems, you can't help but agree to take a look.
@@ -154,6 +157,9 @@ After the full six-cycle boot process completes, 112 cubes are left in the activ
 
 Starting with your given initial configuration, simulate six cycles. How many cubes are left in the active state after the sixth cycle?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 For some reason, your simulated results don't match what the experimental energy source engineers expected. Apparently, the pocket dimension actually has four spatial dimensions, not three.
@@ -406,3 +412,5 @@ z=2, w=2
 After the full six-cycle boot process completes, 848 cubes are left in the active state.
 
 Starting with your given initial configuration, simulate six cycles in a 4-dimensional space. How many cubes are left in the active state after the sixth cycle?
+
+</section>

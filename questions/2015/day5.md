@@ -1,11 +1,14 @@
 # Advent of Code 2015 Day 5
 
-Source: https://adventofcode.com/2015/day/5
+<source>
+https://adventofcode.com/2015/day/5
+</source>
 
-Title: --- Day 5: Doesn't He Have Intern-Elves For This? ---
+<title>
+Day 5: Doesn't He Have Intern-Elves For This?
+</title>
 
---- Day 5: Doesn't He Have Intern-Elves For This? ---
-
+<section data-part="1">
 Santa needs help figuring out which strings in his text file are naughty or nice.
 
 A nice string is one with all of the following properties:
@@ -24,6 +27,9 @@ For example:
 
 How many strings are nice?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Realizing the error of his ways, Santa has switched to a better model of determining whether a string is naughty or nice. None of the old rules apply, as they are all clearly ridiculous.
@@ -41,3 +47,5 @@ For example:
 - ieodomkazucvgmuy is naughty because it has a repeating letter with one between (odo), but no pair that appears twice.
 
 How many strings are nice under these new rules?
+
+</section>

@@ -1,11 +1,14 @@
 # Advent of Code 2023 Day 8
 
-Source: https://adventofcode.com/2023/day/8
+<source>
+https://adventofcode.com/2023/day/8
+</source>
 
-Title: --- Day 8: Haunted Wasteland ---
+<title>
+Day 8: Haunted Wasteland
+</title>
 
---- Day 8: Haunted Wasteland ---
-
+<section data-part="1">
 You're still riding a camel across Desert Island when you spot a sandstorm quickly approaching. When you turn to warn the Elf, she disappears before your eyes! To be fair, she had just finished warning you about ghosts a few minutes ago.
 
 One of the camel's pouches is labeled "maps" - sure enough, it's full of documents (your puzzle input) about how to navigate the desert. At least, you're pretty sure that's what they are; one of the documents contains a list of left/right instructions, and the rest of the documents seem to describe some kind of network of labeled nodes.
@@ -42,6 +45,9 @@ ZZZ = (ZZZ, ZZZ)
 
 Starting at AAA, follow the left/right instructions. How many steps are required to reach ZZZ?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The sandstorm is upon you and you aren't any closer to escaping the wasteland. You had the camel follow the instructions, but you've barely left your starting position. It's going to take significantly more steps to escape!
@@ -78,3 +84,5 @@ Here, there are two starting nodes, 11A and 22A (because they both end with A). 
 So, in this example, you end up entirely on nodes that end in Z after 6 steps.
 
 Simultaneously start on every node that ends with A. How many steps does it take before you're only on nodes that end with Z?
+
+</section>

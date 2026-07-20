@@ -1,11 +1,14 @@
 # Advent of Code 2019 Day 6
 
-Source: https://adventofcode.com/2019/day/6
+<source>
+https://adventofcode.com/2019/day/6
+</source>
 
-Title: --- Day 6: Universal Orbit Map ---
+<title>
+Day 6: Universal Orbit Map
+</title>
 
---- Day 6: Universal Orbit Map ---
-
+<section data-part="1">
 You've landed at the Universal Orbit Map facility on Mercury. Because navigation in space often involves transferring between orbits, the orbit maps here are useful for finding efficient routes between, for example, you and Santa. You download a map of the local orbits (your puzzle input).
 
 Except for the universal Center of Mass (COM), every object in space is in orbit around exactly one other object. An orbit looks roughly like this:
@@ -66,6 +69,9 @@ The total number of direct and indirect orbits in this example is 42.
 
 What is the total number of direct and indirect orbits in your map data?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now, you just need to figure out how many orbital transfers you (YOU) need to take to get to Santa (SAN).
@@ -122,3 +128,5 @@ COM - B - C - D - E - F
 ```
 
 What is the minimum number of orbital transfers required to move from the object YOU are orbiting to the object SAN is orbiting? (Between the objects they are orbiting - not between YOU and SAN.)
+
+</section>

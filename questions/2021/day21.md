@@ -1,11 +1,14 @@
 # Advent of Code 2021 Day 21
 
-Source: https://adventofcode.com/2021/day/21
+<source>
+https://adventofcode.com/2021/day/21
+</source>
 
-Title: --- Day 21: Dirac Dice ---
+<title>
+Day 21: Dirac Dice
+</title>
 
---- Day 21: Dirac Dice ---
-
+<section data-part="1">
 There's not much to do as you slowly descend to the bottom of the ocean. The submarine computer challenges you to a nice game of Dirac Dice.
 
 This game consists of a single die, two pawns, and a game board with a circular track containing ten spaces marked 1 through 10 clockwise. Each player's starting space is chosen randomly (your puzzle input). Player 1 goes first.
@@ -45,6 +48,9 @@ Since player 1 has at least 1000 points, player 1 wins and the game ends. At thi
 
 Play a practice game using the deterministic 100-sided die. The moment either player wins, what do you get if you multiply the score of the losing player by the number of times the die was rolled during the game?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now that you're warmed up, it's time to play the real game.
@@ -58,3 +64,5 @@ The game is played the same as before, although to prevent things from getting t
 Using the same starting positions as in the example above, player 1 wins in 444356092776315 universes, while player 2 merely wins in 341960390180808 universes.
 
 Using your given starting positions, determine every possible outcome. Find the player that wins in more universes; in how many universes does that player win?
+
+</section>

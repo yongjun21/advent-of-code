@@ -1,11 +1,14 @@
 # Advent of Code 2020 Day 20
 
-Source: https://adventofcode.com/2020/day/20
+<source>
+https://adventofcode.com/2020/day/20
+</source>
 
-Title: --- Day 20: Jurassic Jigsaw ---
+<title>
+Day 20: Jurassic Jigsaw
+</title>
 
---- Day 20: Jurassic Jigsaw ---
-
+<section data-part="1">
 The high-speed train leaves the forest and quickly carries you south. You can even see a desert in the distance! Since you have some spare time, you might as well see if there was anything interesting in the image the Mythical Information Bureau satellite captured.
 
 After decoding the satellite messages, you discover that the data actually contains many small images created by the satellite's camera array. The camera array consists of many cameras; rather than produce a single square image, they produce many smaller square image tiles that need to be reassembled back into a single image.
@@ -177,6 +180,9 @@ To check that you've assembled the image correctly, multiply the IDs of the four
 
 Assemble the tiles into an image. What do you get if you multiply together the IDs of the four corner tiles?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now, you're ready to check the image for sea monsters.
@@ -283,3 +289,5 @@ When looking for this pattern in the image, the spaces can be anything; only the
 Determine how rough the waters are in the sea monsters' habitat by counting the number of # that are not part of a sea monster. In the above example, the habitat's water roughness is 273.
 
 How many # are not part of a sea monster?
+
+</section>

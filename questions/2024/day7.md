@@ -1,11 +1,14 @@
 # Advent of Code 2024 Day 7
 
-Source: https://adventofcode.com/2024/day/7
+<source>
+https://adventofcode.com/2024/day/7
+</source>
 
-Title: --- Day 7: Bridge Repair ---
+<title>
+Day 7: Bridge Repair
+</title>
 
---- Day 7: Bridge Repair ---
-
+<section data-part="1">
 The Historians take you to a familiar rope bridge over a river in the middle of a jungle. The Chief isn't on this side of the bridge, though; maybe he's on the other side?
 
 When you go to cross the bridge, you notice a group of engineers trying to repair it. (Apparently, it breaks pretty frequently.) You won't be able to cross until it's fixed.
@@ -40,6 +43,9 @@ The engineers just need the total calibration result, which is the sum of the te
 
 Determine which equations could possibly be true. What is their total calibration result?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The engineers seem concerned; the total calibration result you gave them is nowhere close to being within safety tolerances. Just then, you spot your mistake: some well-hidden elephants are holding a third type of operator.
@@ -55,3 +61,5 @@ Now, apart from the three equations that could be made true using only addition 
 Adding up all six test values (the three that could be made before using only + and * plus the new three that can now be made by also using ||) produces the new total calibration result of 11387.
 
 Using your new knowledge of elephant hiding spots, determine which equations could possibly be true. What is their total calibration result?
+
+</section>

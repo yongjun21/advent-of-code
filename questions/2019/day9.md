@@ -1,11 +1,14 @@
 # Advent of Code 2019 Day 9
 
-Source: https://adventofcode.com/2019/day/9
+<source>
+https://adventofcode.com/2019/day/9
+</source>
 
-Title: --- Day 9: Sensor Boost ---
+<title>
+Day 9: Sensor Boost
+</title>
 
---- Day 9: Sensor Boost ---
-
+<section data-part="1">
 You've just said goodbye to the rebooted rover and left Mars when you receive a faint distress signal coming from the asteroid belt. It must be the Ceres monitoring station!
 
 In order to lock on to the signal, you'll need to boost your sensors. The Elves send up the latest BOOST program - Basic Operation Of System Test.
@@ -43,6 +46,9 @@ The BOOST program will ask for a single input; run it in test mode by providing 
 
 Once your Intcode computer is fully functional, the BOOST program should report no malfunctioning opcodes when run in test mode; it should only output a single value, the BOOST keycode. What BOOST keycode does it produce?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You now have a complete Intcode computer.
@@ -52,3 +58,5 @@ Finally, you can lock on to the Ceres distress signal! You just need to boost yo
 The program runs in sensor boost mode by providing the input instruction the value 2. Once run, it will boost the sensors automatically, but it might take a few seconds to complete the operation on slower hardware. In sensor boost mode, the program will output a single value: the coordinates of the distress signal.
 
 Run the BOOST program in sensor boost mode. What are the coordinates of the distress signal?
+
+</section>

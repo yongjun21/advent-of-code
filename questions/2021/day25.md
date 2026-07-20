@@ -1,11 +1,14 @@
 # Advent of Code 2021 Day 25
 
-Source: https://adventofcode.com/2021/day/25
+<source>
+https://adventofcode.com/2021/day/25
+</source>
 
-Title: --- Day 25: Sea Cucumber ---
+<title>
+Day 25: Sea Cucumber
+</title>
 
---- Day 25: Sea Cucumber ---
-
+<section data-part="1">
 This is it: the bottom of the ocean trench, the last place the sleigh keys could be. Your submarine's experimental antenna still isn't boosted enough to detect the keys, but they must be here. All you need to do is reach the seafloor and find them.
 
 At least, you'd touch down on the seafloor if you could; unfortunately, it's completely covered by two large herds of sea cucumbers, and there isn't an open space large enough for your submarine.
@@ -304,6 +307,9 @@ In this example, the sea cucumbers stop moving after 58 steps.
 
 Find somewhere safe to land your submarine. What is the first step on which no sea cucumbers move?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Suddenly, the experimental antenna control console lights up:
@@ -329,3 +335,5 @@ Boost strength due to matching signal phase: 1 star
 ```
 
 Only 49 stars to go.
+
+</section>

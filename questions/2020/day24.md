@@ -1,11 +1,14 @@
 # Advent of Code 2020 Day 24
 
-Source: https://adventofcode.com/2020/day/24
+<source>
+https://adventofcode.com/2020/day/24
+</source>
 
-Title: --- Day 24: Lobby Layout ---
+<title>
+Day 24: Lobby Layout
+</title>
 
---- Day 24: Lobby Layout ---
-
+<section data-part="1">
 Your raft makes it to the tropical island; it turns out that the small crab was an excellent navigator. You make your way to the resort.
 
 As you enter the lobby, you discover a small problem: the floor is being renovated. You can't even reach the check-in desk until they've finished installing the new tile floor.
@@ -49,6 +52,9 @@ In the above example, 10 tiles are flipped once (to black), and 5 more are flipp
 
 Go through the renovation crew's list and determine which tiles they need to flip. After all of the instructions have been followed, how many tiles are left with the black side up?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The tile floor in the lobby is meant to be a living art exhibit. Every day, the tiles are all flipped according to the following rules:
@@ -88,3 +94,5 @@ Day 100: 2208
 After executing this process a total of 100 times, there would be 2208 black tiles facing up.
 
 How many tiles will be black after 100 days?
+
+</section>

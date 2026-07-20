@@ -1,11 +1,14 @@
 # Advent of Code 2024 Day 14
 
-Source: https://adventofcode.com/2024/day/14
+<source>
+https://adventofcode.com/2024/day/14
+</source>
 
-Title: --- Day 14: Restroom Redoubt ---
+<title>
+Day 14: Restroom Redoubt
+</title>
 
---- Day 14: Restroom Redoubt ---
-
+<section data-part="1">
 One of The Historians needs to use the bathroom; fortunately, you know there's a bathroom near an unvisited location on their list, and so you're all quickly teleported directly to the lobby of Easter Bunny Headquarters.
 
 Unfortunately, EBHQ seems to have "improved" bathroom security again after your last visit. The area outside the bathroom is swarming with robots!
@@ -135,8 +138,13 @@ In this example, the quadrants contain 1, 3, 4, and 1 robot. Multiplying these t
 
 Predict the motion of the robots in your list within a space which is 101 tiles wide and 103 tiles tall. What will the safety factor be after exactly 100 seconds have elapsed?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 During the bathroom break, someone notices that these robots seem awfully similar to ones built and used at the North Pole. If they're the same type of robots, they should have a hard-coded Easter egg: very rarely, most of the robots should arrange themselves into a picture of a Christmas tree.
 
 What is the fewest number of seconds that must elapse for the robots to display the Easter egg?
+
+</section>

@@ -1,11 +1,14 @@
 # Advent of Code 2020 Day 6
 
-Source: https://adventofcode.com/2020/day/6
+<source>
+https://adventofcode.com/2020/day/6
+</source>
 
-Title: --- Day 6: Custom Customs ---
+<title>
+Day 6: Custom Customs
+</title>
 
---- Day 6: Custom Customs ---
-
+<section data-part="1">
 As your flight approaches the regional airport where you'll switch to a much larger plane, customs declaration forms are distributed to the passengers.
 
 The form asks a series of 26 yes-or-no questions marked a through z. All you need to do is identify the questions for which anyone in your group answers "yes". Since your group is just you, this doesn't take very long.
@@ -52,6 +55,9 @@ In this example, the sum of these counts is 3 + 3 + 3 + 1 + 1 = 11.
 
 For each group, count the number of questions to which anyone answered "yes". What is the sum of those counts?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 As you finish the last group's customs declaration, you notice that you misread one word in the instructions:
@@ -89,3 +95,5 @@ This list represents answers from five groups:
 In this example, the sum of these counts is 3 + 0 + 1 + 1 + 1 = 6.
 
 For each group, count the number of questions to which everyone answered "yes". What is the sum of those counts?
+
+</section>

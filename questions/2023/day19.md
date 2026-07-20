@@ -1,11 +1,14 @@
 # Advent of Code 2023 Day 19
 
-Source: https://adventofcode.com/2023/day/19
+<source>
+https://adventofcode.com/2023/day/19
+</source>
 
-Title: --- Day 19: Aplenty ---
+<title>
+Day 19: Aplenty
+</title>
 
---- Day 19: Aplenty ---
-
+<section data-part="1">
 The Elves of Gear Island are thankful for your help and send you on your way. They even have a hang glider that someone stole from Desert Island; since you're already going that direction, it would help them a lot if you would use it to get down there and return it to them.
 
 As you reach the bottom of the relentless avalanche of machine parts, you discover that they're already forming a formidable heap. Don't worry, though - a group of Elves is already here organizing the parts, and they have a system.
@@ -62,6 +65,9 @@ Ultimately, three parts are accepted. Adding up the x, m, a, and s rating for ea
 
 Sort through all of the parts you've been given; what do you get if you add together all of the rating numbers for all of the parts that ultimately get accepted?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Even with your help, the sorting process still isn't fast enough.
@@ -73,3 +79,5 @@ Each of the four ratings (x, m, a, s) can have an integer value ranging from a m
 In the above example, there are 167409079868000 distinct combinations of ratings that will be accepted.
 
 Consider only your list of workflows; the list of part ratings that the Elves wanted you to sort is no longer relevant. How many distinct combinations of ratings will be accepted by the Elves' workflows?
+
+</section>

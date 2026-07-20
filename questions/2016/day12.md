@@ -1,11 +1,14 @@
 # Advent of Code 2016 Day 12
 
-Source: https://adventofcode.com/2016/day/12
+<source>
+https://adventofcode.com/2016/day/12
+</source>
 
-Title: --- Day 12: Leonardo's Monorail ---
+<title>
+Day 12: Leonardo's Monorail
+</title>
 
---- Day 12: Leonardo's Monorail ---
-
+<section data-part="1">
 You finally reach the top floor of this building: a garden with a slanted glass ceiling. Looks like there are no more stars to be had.
 
 While sitting on a nearby bench amidst some tiger lilies, you manage to decrypt some of the files you extracted from the servers downstairs.
@@ -38,8 +41,13 @@ The above code would set register a to 41, increase its value by 2, decrease its
 
 After executing the assembunny code in your puzzle input, what value is left in register a?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 As you head down the fire escape to the monorail, you notice it didn't start; register c needs to be initialized to the position of the ignition key.
 
 If you instead initialize register c to be 1, what value is now left in register a?
+
+</section>

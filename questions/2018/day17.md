@@ -1,11 +1,14 @@
 # Advent of Code 2018 Day 17
 
-Source: https://adventofcode.com/2018/day/17
+<source>
+https://adventofcode.com/2018/day/17
+</source>
 
-Title: --- Day 17: Reservoir Research ---
+<title>
+Day 17: Reservoir Research
+</title>
 
---- Day 17: Reservoir Research ---
-
+<section data-part="1">
 You arrive in the year 18. If it weren't for the coat you got in 1018, you would be very cold: the North Pole base hasn't even been constructed.
 
 Rather, it hasn't been constructed yet. The Elves are making a little progress, but there's not a lot of liquid water in this climate, so they're getting very dehydrated. Maybe there's more underground?
@@ -174,6 +177,9 @@ So, in the example above, counting both water at rest (~) and other sand tiles t
 
 How many tiles can the water reach within the range of y values in your scan?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 After a very long time, the water spring will run dry. How much water will be retained?
@@ -181,3 +187,5 @@ After a very long time, the water spring will run dry. How much water will be re
 In the example above, water that won't eventually drain out is shown as ~, a total of 29 tiles.
 
 How many water tiles are left after the water spring stops producing water and all remaining water not at rest has drained?
+
+</section>

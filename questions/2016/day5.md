@@ -1,11 +1,14 @@
 # Advent of Code 2016 Day 5
 
-Source: https://adventofcode.com/2016/day/5
+<source>
+https://adventofcode.com/2016/day/5
+</source>
 
-Title: --- Day 5: How About a Nice Game of Chess? ---
+<title>
+Day 5: How About a Nice Game of Chess?
+</title>
 
---- Day 5: How About a Nice Game of Chess? ---
-
+<section data-part="1">
 You are faced with a security door designed by Easter Bunny engineers that seem to have acquired most of their security knowledge by watching hacking movies.
 
 The eight-character password for the door is generated one character at a time by finding the MD5 hash of some Door ID (your puzzle input) and an increasing integer index (starting with 0).
@@ -22,6 +25,9 @@ In this example, after continuing this search a total of eight times, the passwo
 
 Given the actual Door ID, what is the password?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 As the door slides open, you are presented with a second door that uses a slightly more inspired security mechanism. Clearly unimpressed by the last version (in what movie is the password decrypted in order?!), the Easter Bunny engineers have worked out a better solution.
@@ -39,3 +45,5 @@ For example, if the Door ID is abc:
 You almost choke on your popcorn as the final character falls into place, producing the password 05ace8e3.
 
 Given the actual Door ID and this new method, what is the password? Be extra proud of your solution if it uses a cinematic "decrypting" animation.
+
+</section>

@@ -1,11 +1,14 @@
 # Advent of Code 2022 Day 14
 
-Source: https://adventofcode.com/2022/day/14
+<source>
+https://adventofcode.com/2022/day/14
+</source>
 
-Title: --- Day 14: Regolith Reservoir ---
+<title>
+Day 14: Regolith Reservoir
+</title>
 
---- Day 14: Regolith Reservoir ---
-
+<section data-part="1">
 The distress signal leads you to a giant waterfall! Actually, hang on - the signal seems like it's coming from the waterfall itself, and that doesn't make any sense. However, you do notice a little path that leads behind the waterfall.
 
 Correction: the distress signal leads you behind a giant waterfall! There seems to be a large cave system here, and the signal definitely leads further inside.
@@ -143,6 +146,9 @@ Once all 24 units of sand shown above have come to rest, all further sand flows 
 
 Using your scan, simulate the falling sand. How many units of sand come to rest before sand starts flowing into the abyss below?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You realize you misread the scan. There isn't an endless void at the bottom of the scan - there's floor, and you're standing on it!
@@ -184,3 +190,5 @@ To find somewhere safe to stand, you'll need to simulate falling sand until a un
 ```
 
 Using your scan, simulate the falling sand until the source of the sand becomes blocked. How many units of sand come to rest?
+
+</section>

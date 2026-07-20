@@ -1,11 +1,14 @@
 # Advent of Code 2021 Day 15
 
-Source: https://adventofcode.com/2021/day/15
+<source>
+https://adventofcode.com/2021/day/15
+</source>
 
-Title: --- Day 15: Chiton ---
+<title>
+Day 15: Chiton
+</title>
 
---- Day 15: Chiton ---
-
+<section data-part="1">
 You've almost reached the exit of the cave, but the walls are getting closer together. Your submarine can barely still fit, though; the main problem is that the walls of the cave are covered in chitons, and it would be best not to bump any of them.
 
 The cavern is large, but has a very low ceiling, restricting your motion to two dimensions. The shape of the cavern resembles a square; a quick scan of chiton density produces a map of risk level throughout the cave (your puzzle input). For example:
@@ -44,6 +47,9 @@ The total risk of this path is 40 (the starting position is never entered, so it
 
 What is the lowest total risk of any path from the top left to the bottom right?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now that you know how to find low-risk paths in the cave, you can try to find your way out.
@@ -173,3 +179,5 @@ Equipped with the full map, you can now find a path from the top left corner to 
 The total risk of this path is 315 (the starting position is still never entered, so its risk is not counted).
 
 Using the full map, what is the lowest total risk of any path from the top left to the bottom right?
+
+</section>

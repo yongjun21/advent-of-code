@@ -1,11 +1,14 @@
 # Advent of Code 2022 Day 21
 
-Source: https://adventofcode.com/2022/day/21
+<source>
+https://adventofcode.com/2022/day/21
+</source>
 
-Title: --- Day 21: Monkey Math ---
+<title>
+Day 21: Monkey Math
+</title>
 
---- Day 21: Monkey Math ---
-
+<section data-part="1">
 The monkeys are back! You're worried they're going to try to steal your stuff again, but it seems like they're just holding their ground and making various monkey noises at you.
 
 Eventually, one of the elephants realizes you don't speak monkey and comes over to interpret. As it turns out, they overheard you talking about trying to find the grove; they can show you a shortcut if you answer their riddle.
@@ -50,6 +53,9 @@ This process continues until root yells a number: 152.
 
 However, your actual situation involves considerably more monkeys. What number will the monkey named root yell?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Due to some kind of monkey-elephant-human mistranslation, you seem to have misunderstood a few key details about the riddle.
@@ -61,3 +67,5 @@ Second, you got the wrong monkey for the job starting with humn:. It isn't a mon
 In the above example, the number you need to yell to pass root's equality test is 301. (This causes root to get the same number, 150, from both of its monkeys.)
 
 What number do you yell to pass root's equality test?
+
+</section>

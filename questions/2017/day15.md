@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 15
 
-Source: https://adventofcode.com/2017/day/15
+<source>
+https://adventofcode.com/2017/day/15
+</source>
 
-Title: --- Day 15: Dueling Generators ---
+<title>
+Day 15: Dueling Generators
+</title>
 
---- Day 15: Dueling Generators ---
-
+<section data-part="1">
 Here, you encounter a pair of dueling generators. The generators, called generator A and generator B, are trying to agree on a sequence of numbers. However, one of them is malfunctioning, and so the sequences don't always match.
 
 As they do this, a judge waits for each of them to generate its next value, compares the lowest 16 bits of both values, and keeps track of the number of times those parts of the values match.
@@ -50,6 +53,9 @@ To get a significant sample, the judge would like to consider 40 million pairs. 
 
 After 40 million pairs, what is the judge's final count?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 In the interest of trying to align a little better, the generators get more picky about the numbers they actually give to the judge.
@@ -106,3 +112,5 @@ Unfortunately, even though this change makes more bits similar on average, none 
 This change makes the generators much slower, and the judge is getting impatient; it is now only willing to consider 5 million pairs. (Using the values from the example above, after five million pairs, the judge would eventually find a total of 309 pairs that match in their lowest 16 bits.)
 
 After 5 million pairs, but using this new generator logic, what is the judge's final count?
+
+</section>

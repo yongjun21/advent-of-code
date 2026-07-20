@@ -1,11 +1,14 @@
 # Advent of Code 2023 Day 12
 
-Source: https://adventofcode.com/2023/day/12
+<source>
+https://adventofcode.com/2023/day/12
+</source>
 
-Title: --- Day 12: Hot Springs ---
+<title>
+Day 12: Hot Springs
+</title>
 
---- Day 12: Hot Springs ---
-
+<section data-part="1">
 You finally reach the hot springs! You can see steam rising from secluded areas attached to the primary, ornate building.
 
 As you turn to enter, the researcher stops you. "Wait - I thought you were looking for the hot springs, weren't you?" You indicate that this definitely looks like hot springs to you.
@@ -85,6 +88,9 @@ Adding all of the possible arrangement counts together produces a total of 21 ar
 
 For each row, count all of the different arrangements of operational and broken springs that meet the given criteria. What is the sum of those counts?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 As you look out at the field of springs, you feel like there are way more springs than the condition records list. When you examine the records, you discover that they were actually folded up this whole time!
@@ -121,3 +127,5 @@ In the above example, after unfolding, the number of possible arrangements for s
 After unfolding, adding all of the possible arrangement counts together produces 525152.
 
 Unfold your condition records; what is the new sum of possible arrangement counts?
+
+</section>

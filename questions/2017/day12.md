@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 12
 
-Source: https://adventofcode.com/2017/day/12
+<source>
+https://adventofcode.com/2017/day/12
+</source>
 
-Title: --- Day 12: Digital Plumber ---
+<title>
+Day 12: Digital Plumber
+</title>
 
---- Day 12: Digital Plumber ---
-
+<section data-part="1">
 Walking along the memory banks of the stream, you find a small village that is experiencing a little confusion: some programs can't communicate with each other.
 
 Programs in this village communicate using a fixed system of pipes. Messages are passed between programs using these pipes, but most programs aren't connected to each other directly. Instead, programs pass messages between each other until the message reaches the intended recipient.
@@ -41,6 +44,9 @@ Therefore, a total of 6 programs are in this group; all but program 1, which has
 
 How many programs are in the group that contains program ID 0?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 There are more programs than just the ones in the group containing program ID 0. The rest of them have no way of reaching that group, and still might have no way of reaching each other.
@@ -50,3 +56,5 @@ A group is a collection of programs that can all communicate via pipes either di
 In the example above, there were 2 groups: one consisting of programs 0,2,3,4,5,6, and the other consisting solely of program 1.
 
 How many groups are there in total?
+
+</section>

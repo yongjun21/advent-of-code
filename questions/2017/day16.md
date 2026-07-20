@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 16
 
-Source: https://adventofcode.com/2017/day/16
+<source>
+https://adventofcode.com/2017/day/16
+</source>
 
-Title: --- Day 16: Permutation Promenade ---
+<title>
+Day 16: Permutation Promenade
+</title>
 
---- Day 16: Permutation Promenade ---
-
+<section data-part="1">
 You come upon a very unusual sight; a group of programs here appear to be dancing.
 
 There are sixteen programs in total, named a through p. They start by standing in a line: a stands in position 0, b stands in position 1, and so on until p, which stands in position 15.
@@ -26,6 +29,9 @@ After finishing their dance, the programs end up in order baedc.
 
 You watch the dance for a while and record their dance moves (your puzzle input). In what order are the programs standing after their dance?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now that you're starting to get a feel for the dance moves, you turn your attention to the dance as a whole.
@@ -39,3 +45,5 @@ In the example above, their second dance would begin with the order baedc, and u
 - pe/b, swapping programs e and b: ceadb.
 
 In what order are the programs standing after their billion dances?
+
+</section>

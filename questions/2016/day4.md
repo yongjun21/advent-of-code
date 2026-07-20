@@ -1,11 +1,14 @@
 # Advent of Code 2016 Day 4
 
-Source: https://adventofcode.com/2016/day/4
+<source>
+https://adventofcode.com/2016/day/4
+</source>
 
-Title: --- Day 4: Security Through Obscurity ---
+<title>
+Day 4: Security Through Obscurity
+</title>
 
---- Day 4: Security Through Obscurity ---
-
+<section data-part="1">
 Finally, you come across an information kiosk with a list of rooms. Of course, the list is encrypted and full of decoy data, but the instructions to decode the list are barely hidden nearby. Better remove the decoy data first.
 
 Each room consists of an encrypted name (lowercase letters separated by dashes) followed by a dash, a sector ID, and a checksum in square brackets.
@@ -21,6 +24,9 @@ Of the real rooms from the list above, the sum of their sector IDs is 1514.
 
 What is the sum of the sector IDs of the real rooms?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 With all the decoy data out of the way, it's time to decrypt this list and get moving.
@@ -32,3 +38,5 @@ To decrypt a room name, rotate each letter forward through the alphabet a number
 For example, the real name for qzmt-zixmtkozy-ivhz-343 is very encrypted name.
 
 What is the sector ID of the room where North Pole objects are stored?
+
+</section>

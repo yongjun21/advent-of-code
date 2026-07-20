@@ -1,11 +1,14 @@
 # Advent of Code 2024 Day 12
 
-Source: https://adventofcode.com/2024/day/12
+<source>
+https://adventofcode.com/2024/day/12
+</source>
 
-Title: --- Day 12: Garden Groups ---
+<title>
+Day 12: Garden Groups
+</title>
 
---- Day 12: Garden Groups ---
-
+<section data-part="1">
 Why not search for the Chief Historian near the gardener and his massive farm? There's plenty of food, so The Historians grab something to eat while they search.
 
 You're about to settle near a complex arrangement of garden plots when some Elves ask if you can lend a hand. They'd like to set up fences around each region of garden plots, but they can't figure out how much fence they need to order or how much it will cost. They hand you a map (your puzzle input) of the garden plots.
@@ -98,6 +101,9 @@ So, it has a total price of 1930.
 
 What is the total price of fencing all regions on your map?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Fortunately, the Elves are trying to order so much fence that they qualify for a bulk discount!
@@ -161,3 +167,5 @@ The larger example from before now has the following updated prices:
 Adding these together produces its new total price of 1206.
 
 What is the new total price of fencing all regions on your map?
+
+</section>

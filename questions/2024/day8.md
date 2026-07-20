@@ -1,11 +1,14 @@
 # Advent of Code 2024 Day 8
 
-Source: https://adventofcode.com/2024/day/8
+<source>
+https://adventofcode.com/2024/day/8
+</source>
 
-Title: --- Day 8: Resonant Collinearity ---
+<title>
+Day 8: Resonant Collinearity
+</title>
 
---- Day 8: Resonant Collinearity ---
-
+<section data-part="1">
 You find yourselves on the roof of a top-secret Easter Bunny installation.
 
 While The Historians do their thing, you take a look at the familiar huge antenna. Much to your surprise, it seems to have been reconfigured to emit a signal that makes people 0.1% more likely to buy Easter Bunny brand Imitation Mediocre Chocolate as a Christmas gift! Unthinkable!
@@ -95,6 +98,9 @@ Because the topmost A-frequency antenna overlaps with a 0-frequency antinode, th
 
 Calculate the impact of the signal. How many unique locations within the bounds of the map contain an antinode?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Watching over your shoulder as you work, one of The Historians asks if you took the effects of resonant harmonics into your calculations.
@@ -138,3 +144,5 @@ The original example now has 34 antinodes, including the antinodes that appear o
 ```
 
 Calculate the impact of the signal using this updated model. How many unique locations within the bounds of the map contain an antinode?
+
+</section>

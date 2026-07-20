@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 25
 
-Source: https://adventofcode.com/2017/day/25
+<source>
+https://adventofcode.com/2017/day/25
+</source>
 
-Title: --- Day 25: The Halting Problem ---
+<title>
+Day 25: The Halting Problem
+</title>
 
---- Day 25: The Halting Problem ---
-
+<section data-part="1">
 Following the twisty passageways deeper and deeper into the CPU, you finally reach the core of the computer. Here, in the expansive central chamber, you find a grand apparatus that fills the entire room, suspended nanometers above your head.
 
 You had always imagined CPUs to be noisy, chaotic places, bustling with activity. Instead, the room is quiet, motionless, and dark.
@@ -69,6 +72,9 @@ The CPU can confirm that the Turing machine is working by taking a diagnostic ch
 
 Recreate the Turing machine and save the computer! What is the diagnostic checksum it produces once it's working again?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The Turing machine, and soon the entire computer, springs back to life. A console glows dimly nearby, awaiting your command.
@@ -87,3 +93,5 @@ You must deposit 49 stars to increase your priority to the required level.
 ```
 
 The garbage collector winks at you, then continues sweeping.
+
+</section>

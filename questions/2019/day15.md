@@ -1,11 +1,14 @@
 # Advent of Code 2019 Day 15
 
-Source: https://adventofcode.com/2019/day/15
+<source>
+https://adventofcode.com/2019/day/15
+</source>
 
-Title: --- Day 15: Oxygen System ---
+<title>
+Day 15: Oxygen System
+</title>
 
---- Day 15: Oxygen System ---
-
+<section data-part="1">
 Out here in deep space, many things can go wrong. Fortunately, many of those things have indicator lights. Unfortunately, one of those lights is lit: the oxygen system for part of the ship has failed!
 
 According to the readouts, the oxygen system must have failed days ago after a rupture in oxygen tank two; that section of the ship was automatically sealed once oxygen levels went dangerously low. A single remotely-operated repair droid is your only option for fixing the oxygen system.
@@ -93,6 +96,9 @@ Now, because of the reply of 2, you know you've found the oxygen system! In this
 
 What is the fewest number of movement commands required to move the repair droid from its starting position to the location of the oxygen system?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You quickly repair the oxygen system; oxygen gradually fills the area.
@@ -152,3 +158,5 @@ And finally, the whole region is full of oxygen after a total of four minutes:
 So, in this example, all locations contain oxygen after 4 minutes.
 
 Use the repair droid to get a complete map of the area. How many minutes will it take to fill with oxygen?
+
+</section>

@@ -1,11 +1,14 @@
 # Advent of Code 2016 Day 21
 
-Source: https://adventofcode.com/2016/day/21
+<source>
+https://adventofcode.com/2016/day/21
+</source>
 
-Title: --- Day 21: Scrambled Letters and Hash ---
+<title>
+Day 21: Scrambled Letters and Hash
+</title>
 
---- Day 21: Scrambled Letters and Hash ---
-
+<section data-part="1">
 The computer system you're breaking into uses a weird scrambling function to store its passwords. It shouldn't be much trouble to create your own scrambled password so you can add it to the system; you just have to implement the scrambler.
 
 The scrambling function is a series of operations (the exact list is provided in your puzzle input). Starting with the password to be scrambled, apply each operation in succession to the string. The individual operations behave as follows:
@@ -32,8 +35,13 @@ After these steps, the resulting scrambled password is decab.
 
 Now, you just need to generate a new scrambled password and you can access the system. Given the list of scrambling operations in your puzzle input, what is the result of scrambling abcdefgh?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You scrambled the password correctly, but you discover that you can't actually modify the password file on the system. You'll need to un-scramble one of the existing passwords by reversing the scrambling process.
 
 What is the un-scrambled version of the scrambled password fbgdceah?
+
+</section>

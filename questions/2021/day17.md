@@ -1,11 +1,14 @@
 # Advent of Code 2021 Day 17
 
-Source: https://adventofcode.com/2021/day/17
+<source>
+https://adventofcode.com/2021/day/17
+</source>
 
-Title: --- Day 17: Trick Shot ---
+<title>
+Day 17: Trick Shot
+</title>
 
---- Day 17: Trick Shot ---
-
+<section data-part="1">
 You finally decode the Elves' message. HI, the message says. You continue searching for the sleigh keys.
 
 Ahead of you is what appears to be a large ocean trench. Could the keys have fallen into it? You'd better send a probe to investigate.
@@ -122,6 +125,9 @@ In the above example, using an initial velocity of 6,9 is the best you can do, c
 
 Find the initial velocity that causes the probe to reach the highest y position and still eventually be within the target area after any step. What is the highest y position it reaches on this trajectory?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Maybe a fancy trick shot isn't the best idea; after all, you only have one probe, so you had better not miss.
@@ -147,3 +153,5 @@ In the above example, there are 112 different initial velocity values that meet 
 ```
 
 How many distinct initial velocity values cause the probe to be within the target area after any step?
+
+</section>

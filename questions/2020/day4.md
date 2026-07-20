@@ -1,11 +1,14 @@
 # Advent of Code 2020 Day 4
 
-Source: https://adventofcode.com/2020/day/4
+<source>
+https://adventofcode.com/2020/day/4
+</source>
 
-Title: --- Day 4: Passport Processing ---
+<title>
+Day 4: Passport Processing
+</title>
 
---- Day 4: Passport Processing ---
-
+<section data-part="1">
 You arrive at the airport only to realize that you grabbed your North Pole Credentials instead of your passport. While these documents are extremely similar, North Pole Credentials aren't issued by a country and therefore aren't actually valid documentation for travel in most of the world.
 
 It seems like you're not the only one having problems, though; a very long line has formed for the automatic passport scanners, and the delay could upset your travel itinerary.
@@ -53,6 +56,9 @@ According to the above rules, your improved system would report 2 valid passport
 
 Count the number of valid passports - those that have all required fields. Treat cid as optional. In your batch file, how many passports are valid?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The line is moving more quickly now, but you overhear airport security talking about how passports with invalid data are getting through. Better add some data validation, quick!
@@ -129,3 +135,5 @@ iyr:2010 hgt:158cm hcl:#b6652a ecl:blu byr:1944 eyr:2021 pid:093154719
 ```
 
 Count the number of valid passports - those that have all required fields and valid values. Continue to treat cid as optional. In your batch file, how many passports are valid?
+
+</section>

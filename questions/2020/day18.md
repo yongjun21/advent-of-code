@@ -1,11 +1,14 @@
 # Advent of Code 2020 Day 18
 
-Source: https://adventofcode.com/2020/day/18
+<source>
+https://adventofcode.com/2020/day/18
+</source>
 
-Title: --- Day 18: Operation Order ---
+<title>
+Day 18: Operation Order
+</title>
 
---- Day 18: Operation Order ---
-
+<section data-part="1">
 As you look out the window and notice a heavily-forested continent slowly appear over the horizon, you are interrupted by the child sitting next to you. They're curious if you could help them with their math homework.
 
 Unfortunately, it seems like this "math" follows different rules than you remember.
@@ -45,6 +48,9 @@ Here are a few more examples:
 
 Before you can help with the homework, you need to understand it yourself. Evaluate the expression on each line of the homework; what is the sum of the resulting values?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You manage to answer the child's questions and they finish part 1 of their homework, but get stuck when they reach the next section: advanced math.
@@ -71,3 +77,5 @@ Here are the other examples from above:
 - ((2 + 4 * 9) * (6 + 9 * 8 + 6) + 6) + 2 + 4 * 2 becomes 23340.
 
 What do you get if you add up the results of evaluating the homework problems using these new rules?
+
+</section>

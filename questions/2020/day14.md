@@ -1,11 +1,14 @@
 # Advent of Code 2020 Day 14
 
-Source: https://adventofcode.com/2020/day/14
+<source>
+https://adventofcode.com/2020/day/14
+</source>
 
-Title: --- Day 14: Docking Data ---
+<title>
+Day 14: Docking Data
+</title>
 
---- Day 14: Docking Data ---
-
+<section data-part="1">
 As your ferry approaches the sea port, the captain asks for your help again. The computer system that runs this port isn't compatible with the docking program on the ferry, so the docking parameters aren't being correctly initialized in the docking program's memory.
 
 After a brief inspection, you discover that the sea port's computer system uses a strange bitmask system in its initialization program. Although you don't have the correct decoder chip handy, you can emulate it in software!
@@ -55,6 +58,9 @@ To initialize your ferry's docking program, you need the sum of all values left 
 
 Execute the initialization program. What is the sum of all values left in memory after it completes? (Do not truncate the sum to 36 bits.)
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 For some reason, the sea port's computer system still can't communicate with your ferry's docking program. It must be using version 2 of the decoder chip!
@@ -117,3 +123,5 @@ This results in an address with three floating bits, causing writes to eight mem
 The entire 36-bit address space still begins initialized to the value 0 at every address, and you still need the sum of all values left in memory at the end of the program. In this example, the sum is 208.
 
 Execute the initialization program using an emulator for a version 2 decoder chip. What is the sum of all values left in memory after it completes?
+
+</section>

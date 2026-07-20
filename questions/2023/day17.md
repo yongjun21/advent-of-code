@@ -1,11 +1,14 @@
 # Advent of Code 2023 Day 17
 
-Source: https://adventofcode.com/2023/day/17
+<source>
+https://adventofcode.com/2023/day/17
+</source>
 
-Title: --- Day 17: Clumsy Crucible ---
+<title>
+Day 17: Clumsy Crucible
+</title>
 
---- Day 17: Clumsy Crucible ---
-
+<section data-part="1">
 The lava starts flowing rapidly once the Lava Production Facility is operational. As you leave, the reindeer offers you a parachute, allowing you to quickly reach Gear Island.
 
 As you descend, your bird's-eye view of Gear Island reveals why you had trouble finding anyone on your way up: half of Gear Island is empty, but the half below you is a giant factory city!
@@ -62,6 +65,9 @@ This path never moves more than three consecutive blocks in the same direction a
 
 Directing the crucible from the lava pool to the machine parts factory, but not moving more than three consecutive blocks in the same direction, what is the least heat loss it can incur?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The crucibles of lava simply aren't large enough to provide an adequate supply of lava to the machine parts factory. Instead, the Elves are going to upgrade to ultra crucibles.
@@ -113,3 +119,5 @@ Sadly, an ultra crucible would need to take an unfortunate path like this one:
 This route causes the ultra crucible to incur the minimum possible heat loss of 71.
 
 Directing the ultra crucible from the lava pool to the machine parts factory, what is the least heat loss it can incur?
+
+</section>

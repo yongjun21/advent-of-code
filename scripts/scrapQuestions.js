@@ -93,7 +93,7 @@ function renderArticle($, article) {
 
 function parseAoCPage(html) {
   const $ = cheerio.load(html)
-  const title = $('article.day-desc h2').first().text().trim()
+  const title = $('article.day-desc h2').first().text().trim().replace(/^---\s*/, '').replace(/\s*---$/, '')
   const articles = $('article.day-desc').toArray().map((article, index) => {
     const $article = $(article)
     const heading = $article.find('h2').first().text().trim()
@@ -124,15 +124,20 @@ function toMarkdown(year, day, result) {
   const lines = []
   lines.push(`# Advent of Code ${year} Day ${day}`)
   lines.push('')
-  lines.push(`Source: https://adventofcode.com/${year}/day/${day}`)
+  lines.push(`<source>`)
+  lines.push(`https://adventofcode.com/${year}/day/${day}`)
+  lines.push(`</source>`)
   lines.push('')
-  lines.push(`Title: ${result.title}`)
+  lines.push(`<title>`)
+  lines.push(result.title)
+  lines.push(`</title>`)
   lines.push('')
 
   for (const article of result.articles) {
-    lines.push(article.heading)
-    lines.push('')
+    lines.push(`<section data-part="${article.index}">`)
     lines.push(article.text)
+    lines.push('')
+    lines.push(`</section>`)
     lines.push('')
   }
 

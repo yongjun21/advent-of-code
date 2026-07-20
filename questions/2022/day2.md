@@ -1,11 +1,14 @@
 # Advent of Code 2022 Day 2
 
-Source: https://adventofcode.com/2022/day/2
+<source>
+https://adventofcode.com/2022/day/2
+</source>
 
-Title: --- Day 2: Rock Paper Scissors ---
+<title>
+Day 2: Rock Paper Scissors
+</title>
 
---- Day 2: Rock Paper Scissors ---
-
+<section data-part="1">
 The Elves begin to set up camp on the beach. To decide whose tent gets to be closest to the snack storage, a giant Rock Paper Scissors tournament is already in progress.
 
 Rock Paper Scissors is a game between two players. Each game contains many rounds; in each round, the players each simultaneously choose one of Rock, Paper, or Scissors using a hand shape. Then, a winner for that round is selected: Rock defeats Scissors, Scissors defeats Paper, and Paper defeats Rock. If both players choose the same shape, the round instead ends in a draw.
@@ -36,6 +39,9 @@ In this example, if you were to follow the strategy guide, you would get a total
 
 What would your total score be if everything goes exactly according to your strategy guide?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The Elf finishes helping with the tent and sneaks back over to you. "Anyway, the second column says how the round needs to end: X means you need to lose, Y means you need to end the round in a draw, and Z means you need to win. Good luck!"
@@ -49,3 +55,5 @@ The total score is still calculated in the same way, but now you need to figure 
 Now that you're correctly decrypting the ultra top secret strategy guide, you would get a total score of 12.
 
 Following the Elf's instructions for the second column, what would your total score be if everything goes exactly according to your strategy guide?
+
+</section>

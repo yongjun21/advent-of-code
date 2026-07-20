@@ -1,11 +1,14 @@
 # Advent of Code 2024 Day 17
 
-Source: https://adventofcode.com/2024/day/17
+<source>
+https://adventofcode.com/2024/day/17
+</source>
 
-Title: --- Day 17: Chronospatial Computer ---
+<title>
+Day 17: Chronospatial Computer
+</title>
 
---- Day 17: Chronospatial Computer ---
-
+<section data-part="1">
 The Historians push the button on their strange device, but this time, you all just feel like you're falling.
 
 "Situation critical", the device announces in a familiar voice. "Bootstrapping process failed. Initializing debugger...."
@@ -68,6 +71,9 @@ Your first task is to determine what the program is trying to output. To do this
 
 Using the information provided by the debugger, initialize the registers to the given values, then run the program. Once it halts, what do you get if you use commas to join the values it output into a single string?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Digging deeper in the device's manual, you discover the problem: this program is supposed to output another copy of the program! Unfortunately, the value in register A seems to have been corrupted. You'll need to find a new value to which you can initialize register A so that the program's output instructions produce an exact copy of the program itself.
@@ -85,3 +91,5 @@ Program: 0,3,5,4,3,0
 This program outputs a copy of itself if register A is instead initialized to 117440. (The original initial value of register A, 2024, is ignored.)
 
 What is the lowest positive initial value for register A that causes the program to output a copy of itself?
+
+</section>

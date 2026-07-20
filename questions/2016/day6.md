@@ -1,11 +1,14 @@
 # Advent of Code 2016 Day 6
 
-Source: https://adventofcode.com/2016/day/6
+<source>
+https://adventofcode.com/2016/day/6
+</source>
 
-Title: --- Day 6: Signals and Noise ---
+<title>
+Day 6: Signals and Noise
+</title>
 
---- Day 6: Signals and Noise ---
-
+<section data-part="1">
 Something is jamming your communications with Santa. Fortunately, your signal is only partially jammed, and protocol in situations like this is to switch to a simple repetition code to get the message through.
 
 In this model, the same message is sent repeatedly. You've recorded the repeating message signal (your puzzle input), but the data seems quite corrupted - almost too badly to recover. Almost.
@@ -35,6 +38,9 @@ The most common character in the first column is e; in the second, a; in the thi
 
 Given the recording in your puzzle input, what is the error-corrected version of the message being sent?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Of course, that would be the message - if you hadn't agreed to use a modified repetition code instead.
@@ -44,3 +50,5 @@ In this modified code, the sender instead transmits what looks like random data,
 In the above example, the least common character in the first column is a; in the second, d, and so on. Repeating this process for the remaining characters produces the original message, advent.
 
 Given the recording in your puzzle input and this new decoding methodology, what is the original message that Santa is trying to send?
+
+</section>

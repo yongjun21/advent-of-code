@@ -1,11 +1,14 @@
 # Advent of Code 2019 Day 24
 
-Source: https://adventofcode.com/2019/day/24
+<source>
+https://adventofcode.com/2019/day/24
+</source>
 
-Title: --- Day 24: Planet of Discord ---
+<title>
+Day 24: Planet of Discord
+</title>
 
---- Day 24: Planet of Discord ---
-
+<section data-part="1">
 You land on Eris, your last stop before reaching Santa. As soon as you do, your sensors start picking up strange life forms moving around: Eris is infested with bugs! With an over 24-hour roundtrip for messages between you and Earth, you'll have to deal with this problem on your own.
 
 Eris isn't a very large place; a scan of the entire area fits into a 5x5 grid (your puzzle input). The scan shows bugs (#) and empty spaces (.).
@@ -70,6 +73,9 @@ To calculate the biodiversity rating for this layout, consider each tile left-to
 
 What is the biodiversity rating for the first layout that appears twice?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 After careful analysis, one thing is certain: you have no idea where all these bugs are coming from.
@@ -243,3 +249,5 @@ Depth 5:
 In this example, after 10 minutes, a total of 99 bugs are present.
 
 Starting with your scan, how many bugs are present after 200 minutes?
+
+</section>

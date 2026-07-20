@@ -1,11 +1,14 @@
 # Advent of Code 2024 Day 5
 
-Source: https://adventofcode.com/2024/day/5
+<source>
+https://adventofcode.com/2024/day/5
+</source>
 
-Title: --- Day 5: Print Queue ---
+<title>
+Day 5: Print Queue
+</title>
 
---- Day 5: Print Queue ---
-
+<section data-part="1">
 Satisfied with their search on Ceres, the squadron of scholars suggests subsequently scanning the stationery stacks of sub-basement 17.
 
 The North Pole printing department is busier than ever this close to Christmas, and while The Historians continue their search of this historically significant facility, an Elf operating a very familiar printer beckons you over.
@@ -87,6 +90,9 @@ Of course, you'll need to be careful: the actual list of page ordering rules is 
 
 Determine which updates are already in the correct order. What do you get if you add up the middle page number from those correctly-ordered updates?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 While the Elves get to work printing the correctly-ordered updates, you have a little time to fix the rest of them.
@@ -100,3 +106,5 @@ For each of the incorrectly-ordered updates, use the page ordering rules to put 
 After taking only the incorrectly-ordered updates and ordering them correctly, their middle page numbers are 47, 29, and 47. Adding these together produces 123.
 
 Find the updates which are not in the correct order. What do you get if you add up the middle page numbers after correctly ordering just those updates?
+
+</section>

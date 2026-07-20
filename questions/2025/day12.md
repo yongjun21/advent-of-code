@@ -1,11 +1,14 @@
 # Advent of Code 2025 Day 12
 
-Source: https://adventofcode.com/2025/day/12
+<source>
+https://adventofcode.com/2025/day/12
+</source>
 
-Title: --- Day 12: Christmas Tree Farm ---
+<title>
+Day 12: Christmas Tree Farm
+</title>
 
---- Day 12: Christmas Tree Farm ---
-
+<section data-part="1">
 You're almost out of time, but there can't be much left to decorate. Although there are no stairs, elevators, escalators, tunnels, chutes, teleporters, firepoles, or conduits here that would take you deeper into the North Pole base, there is a ventilation duct. You jump in.
 
 After bumping around for a few minutes, you emerge into a large, well-lit cavern full of Christmas trees!
@@ -104,6 +107,9 @@ So, in this example, 2 regions can fit all of their listed presents.
 
 Consider the regions beneath each tree and the presents the Elves would like to fit into each of them. How many of the regions can fit all of the presents listed?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The Elves thank you profusely for the help and start rearranging the oddly-shaped presents. As you look up, you notice that a lot more Elves have arrived here at the Christmas tree farm.
@@ -113,3 +119,5 @@ In fact, many of these new arrivals look familiar: they're the Elves you helped 
 Before any of them can find a ladder, a particularly large Christmas tree suddenly flashes brightly when a large star magically appears above it! As your eyes readjust, you think you notice a portly man with a white beard disappear into the crowd.
 
 You go look for a ladder; only 23 stars to go.
+
+</section>

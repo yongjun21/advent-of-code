@@ -1,11 +1,14 @@
 # Advent of Code 2022 Day 7
 
-Source: https://adventofcode.com/2022/day/7
+<source>
+https://adventofcode.com/2022/day/7
+</source>
 
-Title: --- Day 7: No Space Left On Device ---
+<title>
+Day 7: No Space Left On Device
+</title>
 
---- Day 7: No Space Left On Device ---
-
+<section data-part="1">
 You can hear birds chirping and raindrops hitting leaves as the expedition proceeds. Occasionally, you can even hear much louder sounds in the distance; how big do the animals get out here, anyway?
 
 The device the Elves gave you has problems with more than just its communication system. You try to run a system update:
@@ -93,6 +96,9 @@ To begin, find all of the directories with a total size of at most 100000, then 
 
 Find all of the directories with a total size of at most 100000. What is the sum of the total sizes of those directories?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now, you're ready to choose a directory to delete.
@@ -111,3 +117,5 @@ To achieve this, you have the following options:
 Directories e and a are both too small; deleting them would not free up enough space. However, directories d and / are both big enough! Between these, choose the smallest: d, increasing unused space by 24933642.
 
 Find the smallest directory that, if deleted, would free up enough space on the filesystem to run the update. What is the total size of that directory?
+
+</section>

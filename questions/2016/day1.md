@@ -1,11 +1,14 @@
 # Advent of Code 2016 Day 1
 
-Source: https://adventofcode.com/2016/day/1
+<source>
+https://adventofcode.com/2016/day/1
+</source>
 
-Title: --- Day 1: No Time for a Taxicab ---
+<title>
+Day 1: No Time for a Taxicab
+</title>
 
---- Day 1: No Time for a Taxicab ---
-
+<section data-part="1">
 Santa's sleigh uses a very high-precision clock to guide its movements, and the clock's oscillator is regulated by stars. Unfortunately, the stars have been stolen... by the Easter Bunny. To save Christmas, Santa needs you to retrieve all fifty stars by December 25th.
 
 Collect stars by solving puzzles. Two puzzles will be made available on each day in the Advent calendar; the second puzzle is unlocked when you complete the first. Each puzzle grants one star. Good luck!
@@ -24,6 +27,9 @@ For example:
 
 How many blocks away is Easter Bunny HQ?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Then, you notice the instructions continue on the back of the Recruiting Document. Easter Bunny HQ is actually at the first location you visit twice.
@@ -31,3 +37,5 @@ Then, you notice the instructions continue on the back of the Recruiting Documen
 For example, if your instructions are R8, R4, R4, R8, the first location you visit twice is 4 blocks away, due East.
 
 How many blocks away is the first location you visit twice?
+
+</section>

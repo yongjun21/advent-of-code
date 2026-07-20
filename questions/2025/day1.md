@@ -1,11 +1,14 @@
 # Advent of Code 2025 Day 1
 
-Source: https://adventofcode.com/2025/day/1
+<source>
+https://adventofcode.com/2025/day/1
+</source>
 
-Title: --- Day 1: Secret Entrance ---
+<title>
+Day 1: Secret Entrance
+</title>
 
---- Day 1: Secret Entrance ---
-
+<section data-part="1">
 The Elves have good news and bad news.
 
 The good news is that they've discovered project management! This has given them the tools they need to prevent their usual Christmas emergency. For example, they now know that the North Pole decorations need to be finished soon so that other critical tasks can start on time.
@@ -67,6 +70,9 @@ Because the dial points at 0 a total of three times during this process, the pas
 
 Analyze the rotations in your attached document. What's the actual password to open the door?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You're sure that's the right password, but the door won't open. You knock, but nobody answers. You build a snowman while you think.
@@ -96,3 +102,5 @@ In this example, the dial points at 0 three times at the end of a rotation, plus
 Be careful: if the dial were pointing at 50, a single rotation like R1000 would cause the dial to point at 0 ten times before returning back to 50!
 
 Using password method 0x434C49434B, what is the password to open the door?
+
+</section>

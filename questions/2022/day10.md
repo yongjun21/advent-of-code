@@ -1,11 +1,14 @@
 # Advent of Code 2022 Day 10
 
-Source: https://adventofcode.com/2022/day/10
+<source>
+https://adventofcode.com/2022/day/10
+</source>
 
-Title: --- Day 10: Cathode-Ray Tube ---
+<title>
+Day 10: Cathode-Ray Tube
+</title>
 
---- Day 10: Cathode-Ray Tube ---
-
+<section data-part="1">
 You avoid the ropes, plunge into the river, and swim to shore.
 
 The Elves yell something about meeting back up with them upriver, but the river is too loud to tell exactly what they're saying. They finish crossing the bridge and disappear from view.
@@ -203,6 +206,9 @@ The sum of these signal strengths is 13140.
 
 Find the signal strength during the 20th, 60th, 100th, 140th, 180th, and 220th cycles. What is the sum of these six signal strengths?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 It seems like the X register controls the horizontal position of a sprite. Specifically, the sprite is 3 pixels wide, and the X register sets the horizontal position of the middle of that sprite. (In this system, there is no such thing as "vertical position": if the sprite's horizontal position puts its pixels where the CRT is currently drawing, then those pixels will be drawn.)
@@ -335,3 +341,5 @@ Allowing the program to run to completion causes the CRT to produce the followin
 ```
 
 Render the image given by your program. What eight capital letters appear on your CRT?
+
+</section>

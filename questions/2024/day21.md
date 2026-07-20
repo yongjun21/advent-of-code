@@ -1,11 +1,14 @@
 # Advent of Code 2024 Day 21
 
-Source: https://adventofcode.com/2024/day/21
+<source>
+https://adventofcode.com/2024/day/21
+</source>
 
-Title: --- Day 21: Keypad Conundrum ---
+<title>
+Day 21: Keypad Conundrum
+</title>
 
---- Day 21: Keypad Conundrum ---
-
+<section data-part="1">
 As you teleport onto Santa's Reindeer-class starship, The Historians begin to panic: someone from their search party is missing. A quick life-form scan by the ship's computer reveals that when the missing Historian teleported, he arrived in another part of the ship.
 
 The door to that area is locked, but the computer can't open it; it can only be opened by physically typing the door codes (your puzzle input) on the numeric keypad on the door.
@@ -110,6 +113,9 @@ In the above example, complexity of the five codes can be found by calculating 6
 
 Find the fewest number of button presses you'll need to perform in order to cause the robot in front of the door to type each code. What is the sum of the complexities of the five codes on your list?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Just as the missing Historian is released, The Historians realize that a second member of their search party has also been missing this entire time!
@@ -127,3 +133,5 @@ The keypads form a chain, just like before: your directional keypad controls a r
 The door codes are the same this time around; only the number of robots and directional keypads has changed.
 
 Find the fewest number of button presses you'll need to perform in order to cause the robot in front of the door to type each code. What is the sum of the complexities of the five codes on your list?
+
+</section>

@@ -1,11 +1,14 @@
 # Advent of Code 2024 Day 9
 
-Source: https://adventofcode.com/2024/day/9
+<source>
+https://adventofcode.com/2024/day/9
+</source>
 
-Title: --- Day 9: Disk Fragmenter ---
+<title>
+Day 9: Disk Fragmenter
+</title>
 
---- Day 9: Disk Fragmenter ---
-
+<section data-part="1">
 Another push of the button leaves you in the familiar hallways of some friendly amphipods! Good thing you each somehow got your own personal mini submarine. The Historians jet away in search of the Chief, mostly by driving directly into walls.
 
 While The Historians quickly figure out how to pilot these things, you notice an amphipod in the corner struggling with his computer. He's trying to make more contiguous free space by compacting all of the files, but his program isn't working; you offer to help.
@@ -67,6 +70,9 @@ Continuing the first example, the first few blocks' position multiplied by its f
 
 Compact the amphipod's hard drive using the process he requested. What is the resulting filesystem checksum? (Be careful copy/pasting the input for this puzzle; it is a single, very long line.)
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Upon completion, two things immediately become clear. First, the disk definitely has a lot more contiguous free space, just like the amphipod hoped. Second, the computer is running much more slowly! Maybe introducing all of that file system fragmentation was a bad idea?
@@ -88,3 +94,5 @@ The first example from above now proceeds differently:
 The process of updating the filesystem checksum is the same; now, this example's checksum would be 2858.
 
 Start over, now compacting the amphipod's hard drive using this new method instead. What is the resulting filesystem checksum?
+
+</section>

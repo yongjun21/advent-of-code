@@ -1,11 +1,14 @@
 # Advent of Code 2015 Day 14
 
-Source: https://adventofcode.com/2015/day/14
+<source>
+https://adventofcode.com/2015/day/14
+</source>
 
-Title: --- Day 14: Reindeer Olympics ---
+<title>
+Day 14: Reindeer Olympics
+</title>
 
---- Day 14: Reindeer Olympics ---
-
+<section data-part="1">
 This year is the Reindeer Olympics! Reindeer can fly at high speeds, but must rest occasionally to recover their energy. Santa would like to know which of his reindeer is fastest, and so he has them race.
 
 Reindeer can only either be flying (always at their top speed) or resting (not moving at all), and always spend whole seconds in either state.
@@ -21,6 +24,9 @@ In this example, after the 1000th second, both reindeer are resting, and Comet i
 
 Given the descriptions of each reindeer (in your puzzle input), after exactly 2503 seconds, what distance has the winning reindeer traveled?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Seeing how reindeer move in bursts, Santa decides he's not pleased with the old scoring system.
@@ -32,3 +38,5 @@ Given the example reindeer from above, after the first second, Dancer is in the 
 After the 1000th second, Dancer has accumulated 689 points, while poor Comet, our old champion, only has 312. So, with the new scoring system, Dancer would win (if the race ended at 1000 seconds).
 
 Again given the descriptions of each reindeer (in your puzzle input), after exactly 2503 seconds, how many points does the winning reindeer have?
+
+</section>

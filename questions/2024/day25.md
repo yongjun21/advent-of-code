@@ -1,11 +1,14 @@
 # Advent of Code 2024 Day 25
 
-Source: https://adventofcode.com/2024/day/25
+<source>
+https://adventofcode.com/2024/day/25
+</source>
 
-Title: --- Day 25: Code Chronicle ---
+<title>
+Day 25: Code Chronicle
+</title>
 
---- Day 25: Code Chronicle ---
-
+<section data-part="1">
 Out of ideas and time, The Historians agree that they should go back to check the Chief Historian's office one last time, just in case he went back there without you noticing.
 
 When you get there, you are surprised to discover that the door to his office is locked! You can hear someone inside, but knocking yields no response. The locks on this floor are all fancy, expensive, virtual versions of five-pin tumbler locks, so you contact North Pole security to see if they can help open the door.
@@ -124,6 +127,9 @@ So, in this example, the number of unique lock/key pairs that fit together witho
 
 Analyze your lock and key schematics. How many unique lock/key pairs fit together without overlapping in any column?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You and The Historians crowd into the office, startling the Chief Historian awake! The Historians all take turns looking confused until one asks where he's been for the last few months.
@@ -137,3 +143,5 @@ One of The Historians holds up the list they've been using this whole time to ke
 The Chief's eyes get wide. "With all this, we might just have enough time to finish the chronicle! Santa said he wanted it wrapped up with a bow, so I'll call down to the wrapping department and... hey, could you bring it up to Santa? I'll need to be in my seat to watch the sleigh launch by then."
 
 You nod, and The Historians quickly work to collect their notes into the final set of pages for the chronicle.
+
+</section>

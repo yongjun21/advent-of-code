@@ -1,11 +1,14 @@
 # Advent of Code 2022 Day 16
 
-Source: https://adventofcode.com/2022/day/16
+<source>
+https://adventofcode.com/2022/day/16
+</source>
 
-Title: --- Day 16: Proboscidea Volcanium ---
+<title>
+Day 16: Proboscidea Volcanium
+</title>
 
---- Day 16: Proboscidea Volcanium ---
-
+<section data-part="1">
 The sensors have led you to the origin of the distress signal: yet another handheld device, just like the one the Elves gave you. However, you don't see any Elves around; instead, the device is surrounded by elephants! They must have gotten lost in these tunnels, and one of the elephants apparently figured out how to turn on the distress signal.
 
 The ground rumbles again, much stronger this time. What kind of cave is this, exactly? You scan the cave with your handheld device; it reports mostly igneous rock, some ash, pockets of pressurized gas, magma... this isn't just a cave, it's a volcano!
@@ -155,6 +158,9 @@ This approach lets you release the most pressure possible in 30 minutes with thi
 
 Work out the steps to release the most pressure in 30 minutes. What is the most pressure you can release?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You're worried that even with an optimal approach, the pressure released won't be enough. What if you got one of the elephants to help you?
@@ -236,3 +242,5 @@ Valves BB, CC, DD, EE, HH, and JJ are open, releasing 81 pressure.
 With the elephant helping, after 26 minutes, the best you could do would release a total of 1707 pressure.
 
 With you and an elephant working together for 26 minutes, what is the most pressure you could release?
+
+</section>

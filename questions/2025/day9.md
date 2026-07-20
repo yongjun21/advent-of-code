@@ -1,11 +1,14 @@
 # Advent of Code 2025 Day 9
 
-Source: https://adventofcode.com/2025/day/9
+<source>
+https://adventofcode.com/2025/day/9
+</source>
 
-Title: --- Day 9: Movie Theater ---
+<title>
+Day 9: Movie Theater
+</title>
 
---- Day 9: Movie Theater ---
-
+<section data-part="1">
 You slide down the firepole in the corner of the playground and land in the North Pole base movie theater!
 
 The movie theater has a big tile floor with an interesting pattern. Elves here are redecorating the theater by switching out some of the square tiles in the big grid they form. Some of the tiles are red; the Elves would like to find the largest rectangle that uses red tiles for two of its opposite corners. They even have a list of where the red tiles are located in the grid (your puzzle input).
@@ -97,6 +100,9 @@ Ultimately, the largest rectangle you can make in this example has area 50. One 
 
 Using two red tiles as opposite corners, what is the largest area of any rectangle you can make?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The Elves just remembered: they can only switch out tiles that are red or green. So, your rectangle can only include red or green tiles.
@@ -178,3 +184,5 @@ The largest rectangle you can make in this example using only red and green tile
 ```
 
 Using two red tiles as opposite corners, what is the largest area of any rectangle you can make using only red and green tiles?
+
+</section>

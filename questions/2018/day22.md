@@ -1,11 +1,14 @@
 # Advent of Code 2018 Day 22
 
-Source: https://adventofcode.com/2018/day/22
+<source>
+https://adventofcode.com/2018/day/22
+</source>
 
-Title: --- Day 22: Mode Maze ---
+<title>
+Day 22: Mode Maze
+</title>
 
---- Day 22: Mode Maze ---
-
+<section data-part="1">
 This is it, your final stop: the year -483. It's snowing and dark outside; the only light you can see is coming from a small cottage in the distance. You make your way there and knock on the door.
 
 A portly man with a large, white beard answers the door and invites you inside. For someone living near the North Pole in -483, he must not get many visitors, but he doesn't act surprised to see you. Instead, he offers you some milk and cookies.
@@ -65,6 +68,9 @@ In the cave system above, because the mouth is at 0,0 and the target is at 10,10
 
 What is the total risk level for the smallest rectangle that includes 0,0 and the target's coordinates?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Okay, it's time to go rescue the man's friend.
@@ -344,3 +350,5 @@ M=.|=.|.|=.|=|=.
 This is tied with other routes as the fastest way to reach the target: 45 minutes. In it, 21 minutes are spent switching tools (three times, seven minutes each) and the remaining 24 minutes are spent moving.
 
 What is the fewest number of minutes you can take to reach the target?
+
+</section>

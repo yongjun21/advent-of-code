@@ -1,11 +1,14 @@
 # Advent of Code 2023 Day 9
 
-Source: https://adventofcode.com/2023/day/9
+<source>
+https://adventofcode.com/2023/day/9
+</source>
 
-Title: --- Day 9: Mirage Maintenance ---
+<title>
+Day 9: Mirage Maintenance
+</title>
 
---- Day 9: Mirage Maintenance ---
-
+<section data-part="1">
 You ride the camel through the sandstorm and stop where the ghost's maps told you to stop. The sandstorm subsequently subsides, somehow seeing you standing at an oasis!
 
 The camel goes to get some water and you stretch your neck. As you look up, you discover what must be yet another giant floating island, this one made of metal! That must be where the parts to fix the sand machines come from.
@@ -94,6 +97,9 @@ If you find the next value for each history in this example and add them togethe
 
 Analyze your OASIS report and extrapolate the next value for each history. What is the sum of these extrapolated values?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Of course, it would be nice to have even more history included in your report. Surely it's safe to just extrapolate backwards as well, right?
@@ -115,3 +121,5 @@ Adding the new values on the left side of each sequence from bottom to top event
 Doing this for the remaining example data above results in previous values of -3 for the first history and 0 for the second history. Adding all three new values together produces 2.
 
 Analyze your OASIS report again, this time extrapolating the previous value for each history. What is the sum of these extrapolated values?
+
+</section>

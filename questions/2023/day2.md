@@ -1,11 +1,14 @@
 # Advent of Code 2023 Day 2
 
-Source: https://adventofcode.com/2023/day/2
+<source>
+https://adventofcode.com/2023/day/2
+</source>
 
-Title: --- Day 2: Cube Conundrum ---
+<title>
+Day 2: Cube Conundrum
+</title>
 
---- Day 2: Cube Conundrum ---
-
+<section data-part="1">
 You're launched high into the atmosphere! The apex of your trajectory just barely reaches the surface of a large island floating in the sky. You gently land in a fluffy pile of leaves. It's quite cold, but you don't see much snow. An Elf runs over to greet you.
 
 The Elf explains that you've arrived at Snow Island and apologizes for the lack of snow. He'll be happy to explain the situation, but it's a bit of a walk, so you have some time. They don't get many visitors up here; would you like to play a game in the meantime?
@@ -34,6 +37,9 @@ In the example above, games 1, 2, and 5 would have been possible if the bag had 
 
 Determine which games would have been possible if the bag had been loaded with only 12 red cubes, 13 green cubes, and 14 blue cubes. What is the sum of the IDs of those games?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The Elf says they've stopped producing snow because they aren't getting any water! He isn't sure why the water stopped; however, he can show you how to get to the water source to check it out for yourself. It's just up ahead!
@@ -59,3 +65,5 @@ Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green
 The power of a set of cubes is equal to the numbers of red, green, and blue cubes multiplied together. The power of the minimum set of cubes in game 1 is 48. In games 2-5 it was 12, 1560, 630, and 36, respectively. Adding up these five powers produces the sum 2286.
 
 For each game, find the minimum set of cubes that must have been present. What is the sum of the power of these sets?
+
+</section>

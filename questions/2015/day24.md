@@ -1,11 +1,14 @@
 # Advent of Code 2015 Day 24
 
-Source: https://adventofcode.com/2015/day/24
+<source>
+https://adventofcode.com/2015/day/24
+</source>
 
-Title: --- Day 24: It Hangs in the Balance ---
+<title>
+Day 24: It Hangs in the Balance
+</title>
 
---- Day 24: It Hangs in the Balance ---
-
+<section data-part="1">
 It's Christmas Eve, and Santa is loading up the sleigh for this year's deliveries. However, there's one small problem: he can't get the sleigh to balance. If it isn't balanced, he can't defy physics, and nobody gets presents this year.
 
 No pressure.
@@ -39,6 +42,9 @@ Of these, although 10 9 1 has the smallest quantum entanglement (90), the config
 
 What is the quantum entanglement of the first group of packages in the ideal configuration?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 That's weird... the sleigh still isn't balancing.
@@ -62,3 +68,5 @@ Given the example packages above, this would be some of the new unique first gro
 Of these, there are three arrangements that put the minimum (two) number of packages in the first group: 11 4, 10 5, and 8 7. Of these, 11 4 has the lowest quantum entanglement, and so it is selected.
 
 Now, what is the quantum entanglement of the first group of packages in the ideal configuration?
+
+</section>

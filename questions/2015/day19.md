@@ -1,11 +1,14 @@
 # Advent of Code 2015 Day 19
 
-Source: https://adventofcode.com/2015/day/19
+<source>
+https://adventofcode.com/2015/day/19
+</source>
 
-Title: --- Day 19: Medicine for Rudolph ---
+<title>
+Day 19: Medicine for Rudolph
+</title>
 
---- Day 19: Medicine for Rudolph ---
-
+<section data-part="1">
 Rudolph the Red-Nosed Reindeer is sick! His nose isn't shining very brightly, and he needs medicine.
 
 Red-Nosed Reindeer biology isn't similar to regular reindeer biology; Rudolph is going to need custom-made medicine. Unfortunately, Red-Nosed Reindeer chemistry isn't similar to regular reindeer chemistry, either.
@@ -36,6 +39,9 @@ The machine replaces without regard for the surrounding characters. For example,
 
 Your puzzle input describes all of the possible replacements and, at the bottom, the medicine molecule for which you need to calibrate the machine. How many distinct molecules can be created after all the different ways you can do one replacement on the medicine molecule?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now that the machine is calibrated, you're ready to begin molecule fabrication.
@@ -61,3 +67,5 @@ If you'd like to make HOH, you start with e, and then make the following replace
 So, you could make HOH after 3 steps. Santa's favorite molecule, HOHOHO, can be made in 6 steps.
 
 How long will it take to make the medicine? Given the available replacements and the medicine molecule in your puzzle input, what is the fewest number of steps to go from e to the medicine molecule?
+
+</section>

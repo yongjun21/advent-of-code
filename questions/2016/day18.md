@@ -1,11 +1,14 @@
 # Advent of Code 2016 Day 18
 
-Source: https://adventofcode.com/2016/day/18
+<source>
+https://adventofcode.com/2016/day/18
+</source>
 
-Title: --- Day 18: Like a Rogue ---
+<title>
+Day 18: Like a Rogue
+</title>
 
---- Day 18: Like a Rogue ---
-
+<section data-part="1">
 As you enter this room, you hear a loud click! Some of the tiles in the floor here seem to be pressure plates for traps, and the trap you just triggered has run out of... whatever it tried to do to you. You doubt you'll be so lucky next time.
 
 Upon closer examination, the traps and safe tiles in this room seem to follow a pattern. The tiles are arranged into rows that are all the same width; you take note of the safe tiles (.) and traps (^) in the first row (your puzzle input).
@@ -62,6 +65,11 @@ In ten rows, this larger example has 38 safe tiles.
 
 Starting with the map in your puzzle input, in a total of 40 rows (including the starting row), how many safe tiles are there?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 How many safe tiles are there in a total of 400000 rows?
+
+</section>

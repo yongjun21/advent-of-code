@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 21
 
-Source: https://adventofcode.com/2017/day/21
+<source>
+https://adventofcode.com/2017/day/21
+</source>
 
-Title: --- Day 21: Fractal Art ---
+<title>
+Day 21: Fractal Art
+</title>
 
---- Day 21: Fractal Art ---
-
+<section data-part="1">
 You find a program trying to generate some art. It uses a strange process that involves repeatedly enhancing the detail of an image through a set of rules.
 
 The image consists of a two-dimensional square grid of pixels that are either on (#) or off (.). The program always begins with this pattern:
@@ -110,6 +113,11 @@ Thus, after 2 iterations, the grid contains 12 pixels that are on.
 
 How many pixels stay on after 5 iterations?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 How many pixels stay on after 18 iterations?
+
+</section>

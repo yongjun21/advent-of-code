@@ -1,11 +1,14 @@
 # Advent of Code 2020 Day 13
 
-Source: https://adventofcode.com/2020/day/13
+<source>
+https://adventofcode.com/2020/day/13
+</source>
 
-Title: --- Day 13: Shuttle Search ---
+<title>
+Day 13: Shuttle Search
+</title>
 
---- Day 13: Shuttle Search ---
-
+<section data-part="1">
 Your ferry can make it safely to a nearby port, but it won't get much further. When you call to book another ship, you discover that no ships embark from that port to your vacation island. You'll need to get from the port to the nearest airport.
 
 Fortunately, a shuttle bus service is available to bring you from the sea port to the airport! Each bus has an ID number that also indicates how often the bus leaves for the airport.
@@ -56,6 +59,9 @@ The earliest bus you could take is bus ID 59. It doesn't depart until timestamp 
 
 What is the ID of the earliest bus you can take to the airport multiplied by the number of minutes you'll need to wait for that bus?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The shuttle company is running a contest: one gold coin for anyone that can find the earliest timestamp such that the first bus ID departs at that time and each subsequent listed bus ID departs at that subsequent minute. (The first line in your input is no longer relevant.)
@@ -124,3 +130,5 @@ Here are some other examples:
 However, with so many bus IDs in your list, surely the actual earliest timestamp will be larger than 100000000000000!
 
 What is the earliest timestamp such that all of the listed bus IDs depart at offsets matching their positions in the list?
+
+</section>

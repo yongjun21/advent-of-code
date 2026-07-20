@@ -1,11 +1,14 @@
 # Advent of Code 2016 Day 24
 
-Source: https://adventofcode.com/2016/day/24
+<source>
+https://adventofcode.com/2016/day/24
+</source>
 
-Title: --- Day 24: Air Duct Spelunking ---
+<title>
+Day 24: Air Duct Spelunking
+</title>
 
---- Day 24: Air Duct Spelunking ---
-
+<section data-part="1">
 You've finally met your match; the doors that provide access to the roof are locked tight, and all of the controls and related electronics are inaccessible. You simply can't reach them.
 
 The robot that cleans the air ducts, however, can.
@@ -35,8 +38,13 @@ Since the robot isn't very fast, you need to find it the shortest route. This pa
 
 Given your actual map, and starting from location 0, what is the fewest number of steps required to visit every non-0 number marked on the map at least once?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Of course, if you leave the cleaning robot somewhere weird, someone is bound to notice.
 
 What is the fewest number of steps required to start at 0, visit every non-0 number marked on the map at least once, and then return to 0?
+
+</section>

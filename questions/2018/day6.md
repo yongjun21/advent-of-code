@@ -1,11 +1,14 @@
 # Advent of Code 2018 Day 6
 
-Source: https://adventofcode.com/2018/day/6
+<source>
+https://adventofcode.com/2018/day/6
+</source>
 
-Title: --- Day 6: Chronal Coordinates ---
+<title>
+Day 6: Chronal Coordinates
+</title>
 
---- Day 6: Chronal Coordinates ---
-
+<section data-part="1">
 The device on your wrist beeps several times, and once again you feel like you're falling.
 
 "Situation critical," the device announces. "Destination indeterminate. Chronal interference detected. Please specify new target coordinates."
@@ -63,6 +66,9 @@ In this example, the areas of coordinates A, B, C, and F are infinite - while no
 
 What is the size of the largest area that isn't infinite?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 On the other hand, if the coordinates are safe, maybe the best you can do is try to find a region near as many coordinates as possible.
@@ -99,3 +105,5 @@ This region, which also includes coordinates D and E, has a total size of 16.
 Your actual region will need to be much larger than this example, though, instead including all locations with a total distance of less than 10000.
 
 What is the size of the region containing all locations which have a total distance to all given coordinates of less than 10000?
+
+</section>

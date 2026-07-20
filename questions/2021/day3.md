@@ -1,11 +1,14 @@
 # Advent of Code 2021 Day 3
 
-Source: https://adventofcode.com/2021/day/3
+<source>
+https://adventofcode.com/2021/day/3
+</source>
 
-Title: --- Day 3: Binary Diagnostic ---
+<title>
+Day 3: Binary Diagnostic
+</title>
 
---- Day 3: Binary Diagnostic ---
-
+<section data-part="1">
 The submarine has been making some odd creaking noises, so you ask it to produce a diagnostic report just in case.
 
 The diagnostic report (your puzzle input) consists of a list of binary numbers which, when decoded properly, can tell you many useful things about the conditions of the submarine. The first parameter to check is the power consumption.
@@ -41,6 +44,9 @@ The epsilon rate is calculated in a similar way; rather than use the most common
 
 Use the binary numbers in your diagnostic report to calculate the gamma rate and epsilon rate, then multiply them together. What is the power consumption of the submarine? (Be sure to represent your answer in decimal, not binary.)
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Next, you should verify the life support rating, which can be determined by multiplying the oxygen generator rating by the CO2 scrubber rating.
@@ -75,3 +81,5 @@ Then, to determine the CO2 scrubber rating value from the same example above:
 Finally, to find the life support rating, multiply the oxygen generator rating (23) by the CO2 scrubber rating (10) to get 230.
 
 Use the binary numbers in your diagnostic report to calculate the oxygen generator rating and CO2 scrubber rating, then multiply them together. What is the life support rating of the submarine? (Be sure to represent your answer in decimal, not binary.)
+
+</section>

@@ -1,11 +1,14 @@
 # Advent of Code 2018 Day 24
 
-Source: https://adventofcode.com/2018/day/24
+<source>
+https://adventofcode.com/2018/day/24
+</source>
 
-Title: --- Day 24: Immune System Simulator 20XX ---
+<title>
+Day 24: Immune System Simulator 20XX
+</title>
 
---- Day 24: Immune System Simulator 20XX ---
-
+<section data-part="1">
 After a weird buzzing noise, you appear back at the man's cottage. He seems relieved to see his friend, but quickly notices that the little reindeer caught some kind of cold while out exploring.
 
 The portly man explains that this reindeer's immune system isn't similar to regular reindeer immune systems:
@@ -193,6 +196,9 @@ In the example above, the winning army ends up with 782 + 4434 = 5216 units.
 
 You scan the reindeer's condition (your puzzle input); the white-bearded man looks nervous. As it stands now, how many units would the winning army have?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Things aren't looking good for the reindeer. The man asks whether more milk and cookies would help you think.
@@ -357,3 +363,5 @@ This boost would allow the immune system's armies to win! It would be left with 
 You don't even know how you could boost the reindeer's immune system or what effect it might have, so you need to be cautious and find the smallest boost that would allow the immune system to win.
 
 How many units does the immune system have left after getting the smallest boost it needs to win?
+
+</section>

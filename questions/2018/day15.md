@@ -1,11 +1,14 @@
 # Advent of Code 2018 Day 15
 
-Source: https://adventofcode.com/2018/day/15
+<source>
+https://adventofcode.com/2018/day/15
+</source>
 
-Title: --- Day 15: Beverage Bandits ---
+<title>
+Day 15: Beverage Bandits
+</title>
 
---- Day 15: Beverage Bandits ---
-
+<section data-part="1">
 Having perfected their hot chocolate, the Elves have a new problem: the Goblins that live in these caves will do anything to steal it. Looks like they're here for a fight.
 
 You scan the area, generating a map of the walls (#), open cavern (.), and starting position of every Goblin (G) and Elf (E) (your puzzle input).
@@ -312,6 +315,9 @@ Outcome: 20 * 937 = 18740
 
 What is the outcome of the combat described in your puzzle input?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 According to your calculations, the Elves are going to lose badly. Surely, you won't mess up the timeline too much if you give them just a little advanced technology, right?
@@ -405,3 +411,5 @@ Outcome: 30 * 38 = 1140
 ```
 
 After increasing the Elves' attack power until it is just barely enough for them to win without any Elves dying, what is the outcome of the combat described in your puzzle input?
+
+</section>

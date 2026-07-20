@@ -1,11 +1,14 @@
 # Advent of Code 2020 Day 19
 
-Source: https://adventofcode.com/2020/day/19
+<source>
+https://adventofcode.com/2020/day/19
+</source>
 
-Title: --- Day 19: Monster Messages ---
+<title>
+Day 19: Monster Messages
+</title>
 
---- Day 19: Monster Messages ---
-
+<section data-part="1">
 You land in an airport surrounded by dense forest. As you walk to your high-speed train, the Elves at the Mythical Information Bureau contact you again. They think their satellite has collected an image of a sea monster! Unfortunately, the connection to the satellite is having problems, and many of the messages sent back from the satellite have been corrupted.
 
 They sent you a list of the rules valid messages should obey and a list of received messages they've collected so far (your puzzle input).
@@ -65,6 +68,9 @@ Your goal is to determine the number of messages that completely match rule 0. I
 
 How many messages completely match rule 0?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 As you look over the list of messages, you realize your matching rules aren't quite right. To fix them, completely replace rules 8: 42 and 11: 42 31 with the following:
@@ -150,3 +156,5 @@ However, after updating rules 8 and 11, a total of 12 messages match:
 - aabbbbbaabbbaaaaaabbbbbababaaaaabbaaabba
 
 After updating rules 8 and 11, how many messages completely match rule 0?
+
+</section>

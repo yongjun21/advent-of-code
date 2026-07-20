@@ -1,11 +1,14 @@
 # Advent of Code 2020 Day 8
 
-Source: https://adventofcode.com/2020/day/8
+<source>
+https://adventofcode.com/2020/day/8
+</source>
 
-Title: --- Day 8: Handheld Halting ---
+<title>
+Day 8: Handheld Halting
+</title>
 
---- Day 8: Handheld Halting ---
-
+<section data-part="1">
 Your flight to the major airline hub reaches cruising altitude without incident. While you consider checking the in-flight menu for one of those drinks that come with a little umbrella, you are interrupted by the kid sitting next to you.
 
 Their handheld game console won't turn on! They ask if you can take a look.
@@ -54,6 +57,9 @@ Immediately before the program would run an instruction a second time, the value
 
 Run your copy of the boot code. Immediately before any instruction is executed a second time, what value is in the accumulator?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 After some careful analysis, you believe that exactly one instruction is corrupted.
@@ -95,3 +101,5 @@ acc +6  | 6
 After the last instruction (acc +6), the program terminates by attempting to run the instruction below the last instruction in the file. With this change, after the program terminates, the accumulator contains the value 8 (acc +1, acc +1, acc +6).
 
 Fix the program so that it terminates normally by changing exactly one jmp (to nop) or nop (to jmp). What is the value of the accumulator after the program terminates?
+
+</section>

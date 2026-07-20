@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 13
 
-Source: https://adventofcode.com/2017/day/13
+<source>
+https://adventofcode.com/2017/day/13
+</source>
 
-Title: --- Day 13: Packet Scanners ---
+<title>
+Day 13: Packet Scanners
+</title>
 
---- Day 13: Packet Scanners ---
-
+<section data-part="1">
 You need to cross a vast firewall. The firewall consists of several layers, each with a security scanner that moves back and forth across the layer. To succeed, you must not be detected by a scanner.
 
 By studying the firewall briefly, you are able to record (in your puzzle input) the depth of each layer and the range of the scanning area for the scanner within it, written as depth: range. Each layer has a thickness of exactly 1. A layer at depth 0 begins immediately inside the firewall; a layer at depth 1 would start immediately after that.
@@ -176,6 +179,9 @@ The severity of getting caught on a layer is equal to its depth multiplied by it
 
 Given the details of the firewall you've recorded, if you leave immediately, what is the severity of your whole trip?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now, you need to pass through the firewall without being caught - easier said than done.
@@ -293,3 +299,5 @@ Picosecond 16:
 Because all smaller delays would get you caught, the fewest number of picoseconds you would need to delay to get through safely is 10.
 
 What is the fewest number of picoseconds that you need to delay the packet to pass through the firewall without being caught?
+
+</section>

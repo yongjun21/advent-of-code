@@ -1,11 +1,14 @@
 # Advent of Code 2015 Day 6
 
-Source: https://adventofcode.com/2015/day/6
+<source>
+https://adventofcode.com/2015/day/6
+</source>
 
-Title: --- Day 6: Probably a Fire Hazard ---
+<title>
+Day 6: Probably a Fire Hazard
+</title>
 
---- Day 6: Probably a Fire Hazard ---
-
+<section data-part="1">
 Because your neighbors keep defeating you in the holiday house decorating contest year after year, you've decided to deploy one million lights in a 1000x1000 grid.
 
 Furthermore, because you've been especially nice this year, Santa has mailed you instructions on how to display the ideal lighting configuration.
@@ -22,6 +25,9 @@ For example:
 
 After following the instructions, how many lights are lit?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You just finish implementing your winning light pattern when you realize you mistranslated Santa's message from Ancient Nordic Elvish.
@@ -40,3 +46,5 @@ For example:
 
 - turn on 0,0 through 0,0 would increase the total brightness by 1.
 - toggle 0,0 through 999,999 would increase the total brightness by 2000000.
+
+</section>

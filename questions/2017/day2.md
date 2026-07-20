@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 2
 
-Source: https://adventofcode.com/2017/day/2
+<source>
+https://adventofcode.com/2017/day/2
+</source>
 
-Title: --- Day 2: Corruption Checksum ---
+<title>
+Day 2: Corruption Checksum
+</title>
 
---- Day 2: Corruption Checksum ---
-
+<section data-part="1">
 As you walk through the door, a glowing humanoid shape yells in your direction. "You there! Your state appears to be idle. Come help us repair the corruption in this spreadsheet - if we take another millisecond, we'll have to display an hourglass cursor!"
 
 The spreadsheet consists of rows of apparently-random numbers. To make sure the recovery process is on the right track, they need you to calculate the spreadsheet's checksum. For each row, determine the difference between the largest value and the smallest value; the checksum is the sum of all of these differences.
@@ -26,6 +29,9 @@ In this example, the spreadsheet's checksum would be 8 + 4 + 6 = 18.
 
 What is the checksum for the spreadsheet in your puzzle input?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 "Great work; looks like we're on the right track after all. Here's a star for your effort." However, the program seems a little worried. Can programs be worried?
@@ -49,3 +55,5 @@ For example, given the following spreadsheet:
 In this example, the sum of the results would be 4 + 3 + 2 = 9.
 
 What is the sum of each row's result in your puzzle input?
+
+</section>

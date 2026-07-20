@@ -1,11 +1,14 @@
 # Advent of Code 2019 Day 14
 
-Source: https://adventofcode.com/2019/day/14
+<source>
+https://adventofcode.com/2019/day/14
+</source>
 
-Title: --- Day 14: Space Stoichiometry ---
+<title>
+Day 14: Space Stoichiometry
+</title>
 
---- Day 14: Space Stoichiometry ---
-
+<section data-part="1">
 As you approach the rings of Saturn, your ship's low fuel indicator turns on. There isn't any fuel here, but the rings have plenty of raw material. Perhaps your ship's Inter-Stellar Refinery Union brand nanofactory can turn these raw materials into fuel.
 
 You ask the nanofactory to produce a list of the reactions it can perform that are relevant to this process (your puzzle input). Every reaction turns some quantities of specific input chemicals into some quantity of an output chemical. Almost every chemical is produced by exactly one reaction; the only exception, ORE, is the raw material input to the entire process and is not produced by a reaction.
@@ -95,6 +98,9 @@ Here are some larger examples:
 
 Given the list of reactions in your puzzle input, what is the minimum amount of ORE required to produce exactly 1 FUEL?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 After collecting ORE for a while, you check your cargo hold: 1 trillion (1000000000000) units of ORE.
@@ -106,3 +112,5 @@ With that much ore, given the examples above:
 - The 2210736 ORE-per-FUEL example could produce 460664 FUEL.
 
 Given 1 trillion ORE, what is the maximum amount of FUEL you can produce?
+
+</section>

@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 24
 
-Source: https://adventofcode.com/2017/day/24
+<source>
+https://adventofcode.com/2017/day/24
+</source>
 
-Title: --- Day 24: Electromagnetic Moat ---
+<title>
+Day 24: Electromagnetic Moat
+</title>
 
---- Day 24: Electromagnetic Moat ---
-
+<section data-part="1">
 The CPU itself is a large, black building surrounded by a bottomless pit. Enormous metal tubes extend outward from the side of the building at regular intervals and descend down into the void. There's no way to cross, but you need to get inside.
 
 No way, of course, other than building a bridge out of the magnetic components strewn about nearby.
@@ -49,6 +52,9 @@ Of these bridges, the strongest one is 0/1--10/1--9/10; it has a strength of 0+1
 
 What is the strength of the strongest bridge you can make with the components you have available?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The bridge you've built isn't long enough; you can't jump the rest of the way.
@@ -61,3 +67,5 @@ In the example above, there are two longest bridges:
 Of them, the one which uses the 3/5 component is stronger; its strength is 0+2 + 2+2 + 2+3 + 3+5 = 19.
 
 What is the strength of the longest bridge you can make? If you can make multiple bridges of the longest length, pick the strongest one.
+
+</section>

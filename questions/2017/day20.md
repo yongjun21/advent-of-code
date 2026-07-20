@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 20
 
-Source: https://adventofcode.com/2017/day/20
+<source>
+https://adventofcode.com/2017/day/20
+</source>
 
-Title: --- Day 20: Particle Swarm ---
+<title>
+Day 20: Particle Swarm
+</title>
 
---- Day 20: Particle Swarm ---
-
+<section data-part="1">
 Suddenly, the GPU contacts you, asking for help. Someone has asked it to simulate too many particles, and it won't be able to finish them all in time to render the next frame at this rate.
 
 It transmits to you a buffer (your puzzle input) listing each particle in order (starting with particle 0, then particle 1, particle 2, and so on). For each particle, it provides the X, Y, and Z coordinates for the particle's position (p), velocity (v), and acceleration (a), each in the format <X,Y,Z>.
@@ -41,6 +44,9 @@ At this point, particle 1 will never be closer to <0,0,0> than particle 0, and s
 
 Which particle will stay closest to position <0,0,0> in the long term?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 To simplify the problem further, the GPU would like to remove any particles that collide. Particles collide if their positions ever exactly match. Because particles are updated simultaneously, more than two particles can collide at the same time and place. Once particles collide, they are removed and cannot collide with anything else after that tick.
@@ -72,3 +78,5 @@ p=< 0,0,0>, v=<-1,0,0>, a=< 0,0,0>
 In this example, particles 0, 1, and 2 are simultaneously destroyed at the time and place marked X. On the next tick, particle 3 passes through unharmed.
 
 How many particles are left after all collisions are resolved?
+
+</section>

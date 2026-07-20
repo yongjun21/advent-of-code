@@ -1,11 +1,14 @@
 # Advent of Code 2021 Day 24
 
-Source: https://adventofcode.com/2021/day/24
+<source>
+https://adventofcode.com/2021/day/24
+</source>
 
-Title: --- Day 24: Arithmetic Logic Unit ---
+<title>
+Day 24: Arithmetic Logic Unit
+</title>
 
---- Day 24: Arithmetic Logic Unit ---
-
+<section data-part="1">
 Magic smoke starts leaking from the submarine's arithmetic logic unit (ALU). Without the ability to perform basic arithmetic and logic functions, the submarine can't produce cool patterns with its Christmas lights!
 
 It also can't navigate. Or run the oxygen system.
@@ -71,8 +74,13 @@ MONAD imposes additional, mysterious restrictions on model numbers, and legend s
 
 To enable as many submarine features as possible, find the largest valid fourteen-digit model number that contains no 0 digits. What is the largest model number accepted by MONAD?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 As the submarine starts booting up things like the Retro Encabulator, you realize that maybe you don't need all these submarine features after all.
 
 What is the smallest model number accepted by MONAD?
+
+</section>

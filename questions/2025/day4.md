@@ -1,11 +1,14 @@
 # Advent of Code 2025 Day 4
 
-Source: https://adventofcode.com/2025/day/4
+<source>
+https://adventofcode.com/2025/day/4
+</source>
 
-Title: --- Day 4: Printing Department ---
+<title>
+Day 4: Printing Department
+</title>
 
---- Day 4: Printing Department ---
-
+<section data-part="1">
 You ride the escalator down to the printing department. They're clearly getting ready for Christmas; they have lots of large rolls of paper everywhere, and there's even a massive printer in the corner (to handle the really big print jobs).
 
 Decorating here will be easy: they can make their own decorations. What you really need is a way to get further into the North Pole base while the elevators are offline.
@@ -50,6 +53,9 @@ x.x.@@@.x.
 
 Consider your complete diagram of the paper roll locations. How many rolls of paper can be accessed by a forklift?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now, the Elves just need help accessing as much of the paper as they can.
@@ -183,3 +189,5 @@ Remove 1 roll of paper:
 Stop once no more rolls of paper are accessible by a forklift. In this example, a total of 43 rolls of paper can be removed.
 
 Start with your original diagram. How many rolls of paper in total can be removed by the Elves and their forklifts?
+
+</section>

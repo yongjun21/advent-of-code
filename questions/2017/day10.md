@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 10
 
-Source: https://adventofcode.com/2017/day/10
+<source>
+https://adventofcode.com/2017/day/10
+</source>
 
-Title: --- Day 10: Knot Hash ---
+<title>
+Day 10: Knot Hash
+</title>
 
---- Day 10: Knot Hash ---
-
+<section data-part="1">
 You come across some programs that are trying to implement a software emulation of a hash based on knot-tying. The hash these programs are implementing isn't very strong, but you decide to help them anyway. You make a mental note to remind the Elves later not to invent their own cryptographic functions.
 
 This hash function simulates tying a knot in a circle of string with 256 marks on it. Based on the input to be hashed, the function repeatedly selects a span of string, brings the ends together, and gives the span a half-twist to reverse the order of the marks within it. After doing this many times, the order of the marks is used to build the resulting hash.
@@ -49,6 +52,9 @@ In this example, the first two numbers in the list end up being 3 and 4; to chec
 
 However, you should instead use the standard list size of 256 (with values 0 to 255) and the sequence of lengths in your puzzle input. Once this process is complete, what is the result of multiplying the first two numbers in the list?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The logic you've constructed forms a single round of the Knot Hash algorithm; running the full thing requires many of these rounds. Some input and output processing is also required.
@@ -79,3 +85,5 @@ Here are some example hashes:
 - 1,2,4 becomes 63960835bcdc130f0b66d7ff4f6a5a8e.
 
 Treating your puzzle input as a string of ASCII characters, what is the Knot Hash of your puzzle input? Ignore any leading or trailing whitespace you might encounter.
+
+</section>

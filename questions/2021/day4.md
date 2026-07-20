@@ -1,11 +1,14 @@
 # Advent of Code 2021 Day 4
 
-Source: https://adventofcode.com/2021/day/4
+<source>
+https://adventofcode.com/2021/day/4
+</source>
 
-Title: --- Day 4: Giant Squid ---
+<title>
+Day 4: Giant Squid
+</title>
 
---- Day 4: Giant Squid ---
-
+<section data-part="1">
 You're already almost 1.5km (almost a mile) below the surface of the ocean, already so deep that you can't see any sunlight. What you can see, however, is a giant squid that has attached itself to the outside of your submarine.
 
 Maybe it wants to play bingo?
@@ -72,6 +75,9 @@ The score of the winning board can now be calculated. Start by finding the sum o
 
 To guarantee victory against the giant squid, figure out which board will win first. What will your final score be if you choose that board?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 On the other hand, it might be wise to try a different strategy: let the giant squid win.
@@ -81,3 +87,5 @@ You aren't sure how many bingo boards a giant squid could play at once, so rathe
 In the above example, the second board is the last to win, which happens after 13 is eventually called and its middle column is completely marked. If you were to keep playing until this point, the second board would have a sum of unmarked numbers equal to 148 for a final score of 148 * 13 = 1924.
 
 Figure out which board will win last. Once it wins, what would its final score be?
+
+</section>

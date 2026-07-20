@@ -1,11 +1,14 @@
 # Advent of Code 2023 Day 7
 
-Source: https://adventofcode.com/2023/day/7
+<source>
+https://adventofcode.com/2023/day/7
+</source>
 
-Title: --- Day 7: Camel Cards ---
+<title>
+Day 7: Camel Cards
+</title>
 
---- Day 7: Camel Cards ---
-
+<section data-part="1">
 Your all-expenses-paid trip turns out to be a one-way, five-minute ride in an airship. (At least it's a cool airship!) It drops you off at the edge of a vast desert and descends back to Island Island.
 
 "Did you bring the parts?"
@@ -62,6 +65,9 @@ Now, you can determine the total winnings of this set of hands by adding up the 
 
 Find the rank of every hand in your set. What are the total winnings?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 To make things a little more interesting, the Elf introduces one additional rule. Now, J cards are jokers - wildcards that can act like whatever card would make the hand the strongest type possible.
@@ -87,3 +93,5 @@ QQQJA 483
 With the new joker rule, the total winnings in this example are 5905.
 
 Using the new joker rule, find the rank of every hand in your set. What are the new total winnings?
+
+</section>

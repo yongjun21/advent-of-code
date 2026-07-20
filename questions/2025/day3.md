@@ -1,11 +1,14 @@
 # Advent of Code 2025 Day 3
 
-Source: https://adventofcode.com/2025/day/3
+<source>
+https://adventofcode.com/2025/day/3
+</source>
 
-Title: --- Day 3: Lobby ---
+<title>
+Day 3: Lobby
+</title>
 
---- Day 3: Lobby ---
-
+<section data-part="1">
 You descend a short staircase, enter the surprisingly vast lobby, and are quickly cleared by the security checkpoint. When you get to the main elevators, however, you discover that each one has a red light above it: they're all offline.
 
 "Sorry about that," an Elf apologizes as she tinkers with a nearby control panel. "Some kind of electrical surge seems to have fried them. I'll try to get them online soon."
@@ -36,6 +39,9 @@ The total output joltage is the sum of the maximum joltage from each bank, so in
 
 There are many batteries in front of you. Find the maximum joltage possible from each bank; what is the total output joltage?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The escalator doesn't move. The Elf explains that it probably needs more joltage to overcome the static friction of the system and hits the big red "joltage limit safety override" button. You lose count of the number of times she needs to confirm "yes, I'm sure" and decorate the lobby a bit while you wait.
@@ -63,3 +69,5 @@ Now, the joltages are much larger:
 The total output joltage is now much larger: 987654321111 + 811111111119 + 434234234278 + 888911112111 = 3121910778619.
 
 What is the new total output joltage?
+
+</section>

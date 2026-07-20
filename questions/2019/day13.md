@@ -1,11 +1,14 @@
 # Advent of Code 2019 Day 13
 
-Source: https://adventofcode.com/2019/day/13
+<source>
+https://adventofcode.com/2019/day/13
+</source>
 
-Title: --- Day 13: Care Package ---
+<title>
+Day 13: Care Package
+</title>
 
---- Day 13: Care Package ---
-
+<section data-part="1">
 As you ponder the solitude of space and the ever-increasing three-hour roundtrip for messages between you and Earth, you notice that the Space Mail Indicator Light is blinking. To help keep you sane, the Elves have sent you a care package.
 
 It's a new game for the ship's arcade cabinet! Unfortunately, the arcade is all the way on the other end of the ship. Surely, it won't be hard to build your own - the care package even comes with schematics.
@@ -22,6 +25,9 @@ For example, a sequence of output values like 1,2,3,6,5,4 would draw a horizonta
 
 Start the game. How many block tiles are on the screen when the game exits?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The game didn't run because you didn't put in any quarters. Unfortunately, you did not bring any quarters. Memory address 0 represents the number of quarters that have been inserted; set it to 2 to play for free.
@@ -35,3 +41,5 @@ The arcade cabinet has a joystick that can move left and right. The software rea
 The arcade cabinet also has a segment display capable of showing a single number that represents the player's current score. When three output instructions specify X=-1, Y=0, the third output instruction is not a tile; the value instead specifies the new score to show in the segment display. For example, a sequence of output values like -1,0,12345 would show 12345 as the player's current score.
 
 Beat the game by breaking all the blocks. What is your score after the last block is broken?
+
+</section>

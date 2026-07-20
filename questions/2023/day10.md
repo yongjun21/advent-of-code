@@ -1,11 +1,14 @@
 # Advent of Code 2023 Day 10
 
-Source: https://adventofcode.com/2023/day/10
+<source>
+https://adventofcode.com/2023/day/10
+</source>
 
-Title: --- Day 10: Pipe Maze ---
+<title>
+Day 10: Pipe Maze
+</title>
 
---- Day 10: Pipe Maze ---
-
+<section data-part="1">
 You use the hang glider to ride the hot air from Desert Island all the way up to the floating metal island. This island is surprisingly cold and there definitely aren't any thermals to glide on, so you leave your hang glider behind.
 
 You wander around for a while, but you don't find any people or animals. However, you do occasionally find signposts labeled "Hot Springs" pointing in a seemingly consistent direction; maybe you can find someone at the hot springs and ask them where the desert-machine parts are made.
@@ -127,6 +130,9 @@ Here are the distances for each tile on that loop:
 
 Find the single giant loop starting at S. How many steps along the loop does it take to get from the starting position to the point farthest from the starting position?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You quickly reach the farthest point of the loop, but the animal never emerges. Maybe its nest is within the area enclosed by the loop?
@@ -240,3 +246,5 @@ L7JLJL-JLJLJL--JLJ.L
 In this last example, 10 tiles are enclosed by the loop.
 
 Figure out whether you have time to search for the nest by calculating the area within the loop. How many tiles are enclosed by the loop?
+
+</section>

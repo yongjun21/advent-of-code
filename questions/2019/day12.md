@@ -1,11 +1,14 @@
 # Advent of Code 2019 Day 12
 
-Source: https://adventofcode.com/2019/day/12
+<source>
+https://adventofcode.com/2019/day/12
+</source>
 
-Title: --- Day 12: The N-Body Problem ---
+<title>
+Day 12: The N-Body Problem
+</title>
 
---- Day 12: The N-Body Problem ---
-
+<section data-part="1">
 The space near Jupiter is not a very safe place; you need to be careful of a big distracting red spot, extreme radiation, and a whole lot of moons swirling around. You decide to start by tracking the four largest moons: Io, Europa, Ganymede, and Callisto.
 
 After a brief scan, you calculate the position of each moon (your puzzle input). You just need to simulate their motion so you can avoid them.
@@ -198,6 +201,9 @@ Sum of total energy: 290 + 608 + 574 + 468 = 1940
 
 What is the total energy in the system after simulating the moons given in your scan for 1000 steps?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 All this drifting around in space makes you wonder about the nature of the universe. Does history really repeat itself? You're curious whether the moons will ever return to a previous state.
@@ -244,3 +250,5 @@ Of course, the universe might last for a very long time before repeating. Here's
 This set of initial positions takes 4686774924 steps before it repeats a previous state! Clearly, you might need to find a more efficient way to simulate the universe.
 
 How many steps does it take to reach the first state that exactly matches a previous state?
+
+</section>

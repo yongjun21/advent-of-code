@@ -1,11 +1,14 @@
 # Advent of Code 2015 Day 10
 
-Source: https://adventofcode.com/2015/day/10
+<source>
+https://adventofcode.com/2015/day/10
+</source>
 
-Title: --- Day 10: Elves Look, Elves Say ---
+<title>
+Day 10: Elves Look, Elves Say
+</title>
 
---- Day 10: Elves Look, Elves Say ---
-
+<section data-part="1">
 Today, the Elves are playing a game called look-and-say. They take turns making sequences by reading aloud the previous sequence and using that reading as the next sequence. For example, 211 is read as "one two, two ones", which becomes 1221 (1 2, 2 1s).
 
 Look-and-say sequences are generated iteratively, using the previous value as input for the next step. For each step, take the previous value, and replace each run of digits (like 111) with the number of digits (3) followed by the digit itself (1).
@@ -20,8 +23,13 @@ For example:
 
 Starting with the digits in your puzzle input, apply this process 40 times. What is the length of the result?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Neat, right? You might also enjoy hearing John Conway talking about this sequence (that's Conway of Conway's Game of Life fame).
 
 Now, starting again with the digits in your puzzle input, apply this process 50 times. What is the length of the new result?
+
+</section>

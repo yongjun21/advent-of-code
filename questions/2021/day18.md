@@ -1,11 +1,14 @@
 # Advent of Code 2021 Day 18
 
-Source: https://adventofcode.com/2021/day/18
+<source>
+https://adventofcode.com/2021/day/18
+</source>
 
-Title: --- Day 18: Snailfish ---
+<title>
+Day 18: Snailfish
+</title>
 
---- Day 18: Snailfish ---
-
+<section data-part="1">
 You descend into the ocean trench and encounter some snailfish. They say they saw the sleigh keys! They'll even tell you which direction the keys went if you help one of the smaller snailfish with his math homework.
 
 Snailfish numbers aren't like regular numbers. Instead, every snailfish number is a pair - an ordered list of two elements. Each element of the pair can be either a regular number or another pair.
@@ -185,6 +188,9 @@ The magnitude of this final sum is 4140.
 
 Add up all of the snailfish numbers from the homework assignment in the order they appear. What is the magnitude of the final sum?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You notice a second question on the back of the homework assignment:
@@ -211,3 +217,5 @@ Again considering the last example homework assignment above:
 The largest magnitude of the sum of any two snailfish numbers in this list is 3993. This is the magnitude of [[2,[[7,7],7]],[[5,8],[[9,3],[0,2]]]] + [[[0,[5,8]],[[1,7],[9,6]]],[[4,[1,2]],[[1,4],2]]], which reduces to [[[[7,8],[6,6]],[[6,0],[7,7]]],[[[7,8],[8,8]],[[7,9],[0,6]]]].
 
 What is the largest magnitude of any sum of two different snailfish numbers from the homework assignment?
+
+</section>

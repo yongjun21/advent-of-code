@@ -1,11 +1,14 @@
 # Advent of Code 2024 Day 13
 
-Source: https://adventofcode.com/2024/day/13
+<source>
+https://adventofcode.com/2024/day/13
+</source>
 
-Title: --- Day 13: Claw Contraption ---
+<title>
+Day 13: Claw Contraption
+</title>
 
---- Day 13: Claw Contraption ---
-
+<section data-part="1">
 Next up: the lobby of a resort on a tropical island. The Historians take a moment to admire the hexagonal floor tiles before spreading out.
 
 Fortunately, it looks like the resort has a new arcade! Maybe you can win some prizes from the claw machines?
@@ -56,6 +59,9 @@ You estimate that each button would need to be pressed no more than 100 times to
 
 Figure out how to win as many prizes as possible. What is the fewest tokens you would have to spend to win all possible prizes?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 As you go to win the first prize, you discover that the claw is nowhere near where you expected it would be. Due to a unit conversion error in your measurements, the position of every prize is actually 10000000000000 higher on both the X and Y axis!
@@ -83,3 +89,5 @@ Prize: X=10000000018641, Y=10000000010279
 Now, it is only possible to win a prize on the second and fourth claw machines. Unfortunately, it will take many more than 100 presses to do so.
 
 Using the corrected prize coordinates, figure out how to win as many prizes as possible. What is the fewest tokens you would have to spend to win all possible prizes?
+
+</section>

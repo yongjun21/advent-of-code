@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 23
 
-Source: https://adventofcode.com/2017/day/23
+<source>
+https://adventofcode.com/2017/day/23
+</source>
 
-Title: --- Day 23: Coprocessor Conflagration ---
+<title>
+Day 23: Coprocessor Conflagration
+</title>
 
---- Day 23: Coprocessor Conflagration ---
-
+<section data-part="1">
 You decide to head directly to the CPU and fix the printer from there. As you get close, you find an experimental coprocessor doing so much work that the local programs are afraid it will halt and catch fire. This would cause serious issues for the rest of the computer, so you head in and see what you can do.
 
 The code it's running seems to be a variant of the kind you saw recently on that tablet. The general functionality seems very similar, but some of the instructions are different:
@@ -19,6 +22,9 @@ The coprocessor is currently set to some kind of debug mode, which allows for te
 
 If you run the program (your puzzle input), how many times is the mul instruction invoked?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now, it's time to fix the problem.
@@ -30,3 +36,5 @@ Immediately, the coprocessor begins to overheat. Whoever wrote this program obvi
 The coprocessor's ultimate goal is to determine the final value left in register h once the program completes. Technically, if it had that... it wouldn't even need to run the program.
 
 After setting register a to 1, if the program were to run to completion, what value would be left in register h?
+
+</section>

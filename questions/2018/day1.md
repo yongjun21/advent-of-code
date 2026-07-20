@@ -1,11 +1,14 @@
 # Advent of Code 2018 Day 1
 
-Source: https://adventofcode.com/2018/day/1
+<source>
+https://adventofcode.com/2018/day/1
+</source>
 
-Title: --- Day 1: Chronal Calibration ---
+<title>
+Day 1: Chronal Calibration
+</title>
 
---- Day 1: Chronal Calibration ---
-
+<section data-part="1">
 "We've detected some temporal anomalies," one of Santa's Elves at the Temporal Anomaly Research and Detection Instrument Station tells you. She sounded pretty worried when she called you down here. "At 500-year intervals into the past, someone has been changing Santa's history!"
 
 "The good news is that the changes won't propagate to our time stream for another 25 days, and we have a device" - she attaches something to your wrist - "that will let you fix the changes with no such propagation delay. It's configured to send you 500 years further into the past every few days; that was the best we could do on such short notice."
@@ -33,6 +36,9 @@ Here are other example situations:
 
 Starting with a frequency of zero, what is the resulting frequency after all of the changes in frequency have been applied?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You notice that the device repeats the same frequency change list over and over. To calibrate the device, you need to find the first frequency it reaches twice.
@@ -57,3 +63,5 @@ Here are other examples:
 - +7, +7, -2, -7, -4 first reaches 14 twice.
 
 What is the first frequency your device reaches twice?
+
+</section>

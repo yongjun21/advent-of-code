@@ -1,11 +1,14 @@
 # Advent of Code 2019 Day 4
 
-Source: https://adventofcode.com/2019/day/4
+<source>
+https://adventofcode.com/2019/day/4
+</source>
 
-Title: --- Day 4: Secure Container ---
+<title>
+Day 4: Secure Container
+</title>
 
---- Day 4: Secure Container ---
-
+<section data-part="1">
 You arrive at the Venus fuel depot only to discover it's protected by a password. The Elves had written the password on a sticky note, but someone threw it out.
 
 However, they do remember a few key facts about the password:
@@ -23,6 +26,9 @@ Other than the range rule, the following are true:
 
 How many different passwords within the range given in your puzzle input meet these criteria?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 An Elf just remembered one more important detail: the two adjacent matching digits are not part of a larger group of matching digits.
@@ -34,3 +40,5 @@ Given this additional criterion, but still ignoring the range rule, the followin
 - 111122 meets the criteria (even though 1 is repeated more than twice, it still contains a double 22).
 
 How many different passwords within the range given in your puzzle input meet all of the criteria?
+
+</section>

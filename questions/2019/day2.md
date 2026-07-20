@@ -1,11 +1,14 @@
 # Advent of Code 2019 Day 2
 
-Source: https://adventofcode.com/2019/day/2
+<source>
+https://adventofcode.com/2019/day/2
+</source>
 
-Title: --- Day 2: 1202 Program Alarm ---
+<title>
+Day 2: 1202 Program Alarm
+</title>
 
---- Day 2: 1202 Program Alarm ---
-
+<section data-part="1">
 On the way to your gravity assist around the Moon, your ship computer beeps angrily about a "1202 program alarm". On the radio, an Elf is already explaining how to handle the situation: "Don't worry, that's perfectly norma--" The ship computer bursts into flames.
 
 You notify the Elves that the computer's magic smoke seems to have escaped. "That computer ran Intcode programs like the gravity assist program it was working on; surely there are enough spare parts up there to build a new Intcode computer!"
@@ -64,6 +67,9 @@ Here are the initial and final states of a few more small programs:
 
 Once you have a working computer, the first step is to restore the gravity assist program (your puzzle input) to the "1202 program alarm" state it had just before the last computer caught fire. To do this, before running the program, replace position 1 with the value 12 and replace position 2 with the value 2. What value is left at position 0 after the program halts?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 "Good, the new computer seems to be working correctly! Keep it nearby during this mission - you'll probably use it again. Real Intcode computers support many more features than your new one, but we'll let you know what they are as you need them."
@@ -83,3 +89,5 @@ The inputs should still be provided to the program by replacing the values at ad
 Once the program has halted, its output is available at address 0, also just like before. Each time you try a pair of inputs, make sure you first reset the computer's memory to the values in the program (your puzzle input) - in other words, don't reuse memory from a previous attempt.
 
 Find the input noun and verb that cause the program to produce the output 19690720. What is 100 * noun + verb? (For example, if noun=12 and verb=2, the answer would be 1202.)
+
+</section>

@@ -1,11 +1,14 @@
 # Advent of Code 2022 Day 22
 
-Source: https://adventofcode.com/2022/day/22
+<source>
+https://adventofcode.com/2022/day/22
+</source>
 
-Title: --- Day 22: Monkey Map ---
+<title>
+Day 22: Monkey Map
+</title>
 
---- Day 22: Monkey Map ---
-
+<section data-part="1">
 The monkeys take you on a surprisingly easy trail through the jungle. They're even going in roughly the right direction according to your handheld device's Grove Positioning System.
 
 As you walk, the monkeys explain that the grove is protected by a force field. To pass through the force field, you have to enter a password; doing so involves tracing a specific path on a strangely-shaped board.
@@ -88,6 +91,9 @@ In the above example, the final row is 6, the final column is 8, and the final f
 
 Follow the path given in the monkeys' notes. What is the final password?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 As you reach the force field, you think you hear some Elves in the distance. Perhaps they've already arrived?
@@ -167,3 +173,5 @@ Using the same method of drawing the last facing you had with an arrow on each t
 The final password is still calculated from your final position and facing from the perspective of the map. In this example, the final row is 5, the final column is 7, and the final facing is 3, so the final password is 1000 * 5 + 4 * 7 + 3 = 5031.
 
 Fold the map into a cube, then follow the path given in the monkeys' notes. What is the final password?
+
+</section>

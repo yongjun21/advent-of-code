@@ -1,11 +1,14 @@
 # Advent of Code 2022 Day 18
 
-Source: https://adventofcode.com/2022/day/18
+<source>
+https://adventofcode.com/2022/day/18
+</source>
 
-Title: --- Day 18: Boiling Boulders ---
+<title>
+Day 18: Boiling Boulders
+</title>
 
---- Day 18: Boiling Boulders ---
-
+<section data-part="1">
 You and the elephants finally reach fresh air. You've emerged near the base of a large volcano that seems to be actively erupting! Fortunately, the lava seems to be flowing away from you and toward the ocean.
 
 Bits of lava are still being ejected toward you, so you're sheltering in the cavern exit a little longer. Outside the cave, you can see the lava landing in a pond and hear it loudly hissing as it solidifies.
@@ -38,6 +41,9 @@ In the above example, after counting up all the sides that aren't connected to a
 
 What is the surface area of your scanned lava droplet?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Something seems off about your calculation. The cooling rate depends on exterior surface area, but your calculation also included the surface area of air pockets trapped in the lava droplet.
@@ -47,3 +53,5 @@ Instead, consider only cube sides that could be reached by the water and steam a
 In the larger example above, exactly one cube of air is trapped within the lava droplet (at 2,2,5), so the exterior surface area of the lava droplet is 58.
 
 What is the exterior surface area of your scanned lava droplet?
+
+</section>

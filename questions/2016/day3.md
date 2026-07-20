@@ -1,11 +1,14 @@
 # Advent of Code 2016 Day 3
 
-Source: https://adventofcode.com/2016/day/3
+<source>
+https://adventofcode.com/2016/day/3
+</source>
 
-Title: --- Day 3: Squares With Three Sides ---
+<title>
+Day 3: Squares With Three Sides
+</title>
 
---- Day 3: Squares With Three Sides ---
-
+<section data-part="1">
 Now that you can think clearly, you move deeper into the labyrinth of hallways and office furniture that makes up this part of Easter Bunny HQ. This must be a graphic design department; the walls are covered in specifications for triangles.
 
 Or are they?
@@ -16,6 +19,9 @@ In a valid triangle, the sum of any two sides must be larger than the remaining 
 
 In your puzzle input, how many of the listed triangles are possible?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Now that you've helpfully marked up their design documents, it occurs to you that triangles are specified in groups of three vertically. Each set of three numbers in a column specifies a triangle. Rows are unrelated.
@@ -32,3 +38,5 @@ For example, given the following specification, numbers with the same hundreds d
 ```
 
 In your puzzle input, and instead reading by columns, how many of the listed triangles are possible?
+
+</section>

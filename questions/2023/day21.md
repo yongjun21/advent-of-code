@@ -1,11 +1,14 @@
 # Advent of Code 2023 Day 21
 
-Source: https://adventofcode.com/2023/day/21
+<source>
+https://adventofcode.com/2023/day/21
+</source>
 
-Title: --- Day 21: Step Counter ---
+<title>
+Day 21: Step Counter
+</title>
 
---- Day 21: Step Counter ---
-
+<section data-part="1">
 You manage to catch the airship right as it's dropping someone else off on their all-expenses-paid trip to Desert Island! It even helpfully drops you off near the gardener and his massive farm.
 
 "You got the sand flowing again! Great work! Now we just need to wait until we have enough sand to filter the water for Snow Island and we'll have snow again in no time."
@@ -100,6 +103,9 @@ However, the Elf actually needs to get 64 steps today, and the map he's handed y
 
 Starting from the garden plot marked S on your map, how many garden plots could the Elf reach in exactly 64 steps?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The Elf seems confused by your answer until he realizes his mistake: he was reading from a list of his favorite numbers that are both perfect squares and perfect cubes, not his step counter.
@@ -159,3 +165,5 @@ Here are the number of reachable garden plots in this new infinite version of th
 - In exactly 5000 steps, he can reach 16733044 garden plots.
 
 However, the step count the Elf needs is much larger! Starting from the garden plot marked S on your infinite map, how many garden plots could the Elf reach in exactly 26501365 steps?
+
+</section>

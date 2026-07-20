@@ -1,11 +1,14 @@
 # Advent of Code 2023 Day 15
 
-Source: https://adventofcode.com/2023/day/15
+<source>
+https://adventofcode.com/2023/day/15
+</source>
 
-Title: --- Day 15: Lens Library ---
+<title>
+Day 15: Lens Library
+</title>
 
---- Day 15: Lens Library ---
-
+<section data-part="1">
 The newly-focused parabolic reflector dish is sending all of the collected light to a point on the side of yet another mountain - the largest mountain on Lava Island. As you approach the mountain, you find that the light is being collected by the wall of a large facility embedded in the mountainside.
 
 You find a door under a large sign that says "Lava Production Facility" and next to a smaller sign that says "Danger - Personal Protective Equipment required beyond this point".
@@ -75,6 +78,9 @@ In this example, the sum of these results is 1320. Unfortunately, the reindeer h
 
 Run the HASH algorithm on each step in the initialization sequence. What is the sum of the results? (The initialization sequence is one long line; be careful when copy-pasting it.)
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You convince the reindeer to bring you the page; the page confirms that your HASH algorithm is working.
@@ -170,3 +176,5 @@ At the end of the above example, the focusing power of each lens is as follows:
 So, the above example ends up with a total focusing power of 145.
 
 With the help of an over-enthusiastic reindeer in a hard hat, follow the initialization sequence. What is the focusing power of the resulting lens configuration?
+
+</section>

@@ -1,11 +1,14 @@
 # Advent of Code 2019 Day 10
 
-Source: https://adventofcode.com/2019/day/10
+<source>
+https://adventofcode.com/2019/day/10
+</source>
 
-Title: --- Day 10: Monitoring Station ---
+<title>
+Day 10: Monitoring Station
+</title>
 
---- Day 10: Monitoring Station ---
-
+<section data-part="1">
 You fly into the asteroid belt and reach the Ceres monitoring station. The Elves here have an emergency: they're having trouble tracking all of the asteroids and can't be sure they're safe.
 
 The Elves would like to build a new monitoring station in a nearby area of space; they hand you a map of all of the asteroids in that region (your puzzle input).
@@ -108,6 +111,9 @@ Here are some larger examples:
 
 Find the best location for a new monitoring station. How many other asteroids can be detected from that location?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Once you give them the coordinates, the Elves quickly deploy an Instant Monitoring Station to the location and discover the worst: there are simply too many asteroids.
@@ -183,3 +189,5 @@ In the large example above (the one with the best monitoring station location at
 - The 299th and final asteroid to be vaporized is at 11,1.
 
 The Elves are placing bets on which will be the 200th asteroid to be vaporized. Win the bet by determining which asteroid that will be; what do you get if you multiply its X coordinate by 100 and then add its Y coordinate? (For example, 8,2 becomes 802.)
+
+</section>

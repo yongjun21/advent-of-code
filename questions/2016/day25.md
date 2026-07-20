@@ -1,11 +1,14 @@
 # Advent of Code 2016 Day 25
 
-Source: https://adventofcode.com/2016/day/25
+<source>
+https://adventofcode.com/2016/day/25
+</source>
 
-Title: --- Day 25: Clock Signal ---
+<title>
+Day 25: Clock Signal
+</title>
 
---- Day 25: Clock Signal ---
-
+<section data-part="1">
 You open the door and find yourself on the roof. The city sprawls away from you for miles and miles.
 
 There's not much time now - it's already Christmas, but you're nowhere near the North Pole, much too far to deliver these stars to the sleigh in time.
@@ -32,8 +35,13 @@ The code takes a value (via register a) that describes the signal to generate, b
 
 What is the lowest positive integer that can be used to initialize register a and cause the code to output a clock signal of 0, 1, 0, 1... repeating forever?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The antenna is ready. Now, all you need is the fifty stars required to generate the signal for the sleigh, but you don't have enough.
 
 You look toward the sky in desperation... suddenly noticing that a lone star has been installed at the top of the antenna! Only 49 more to go.
+
+</section>

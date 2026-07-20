@@ -1,11 +1,14 @@
 # Advent of Code 2017 Day 4
 
-Source: https://adventofcode.com/2017/day/4
+<source>
+https://adventofcode.com/2017/day/4
+</source>
 
-Title: --- Day 4: High-Entropy Passphrases ---
+<title>
+Day 4: High-Entropy Passphrases
+</title>
 
---- Day 4: High-Entropy Passphrases ---
-
+<section data-part="1">
 A new system policy has been put in place that requires all accounts to use a passphrase instead of simply a password. A passphrase consists of a series of words (lowercase letters) separated by spaces.
 
 To ensure security, a valid passphrase must contain no duplicate words.
@@ -18,6 +21,9 @@ For example:
 
 The system's full passphrase list is available as your puzzle input. How many passphrases are valid?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 For added security, yet another system policy has been put in place. Now, a valid passphrase must contain no two words that are anagrams of each other - that is, a passphrase is invalid if any word's letters can be rearranged to form any other word in the passphrase.
@@ -31,3 +37,5 @@ For example:
 - oiii ioii iioi iiio is not valid - any of these words can be rearranged to form any other word.
 
 Under this new system policy, how many passphrases are valid?
+
+</section>

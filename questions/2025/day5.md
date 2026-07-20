@@ -1,11 +1,14 @@
 # Advent of Code 2025 Day 5
 
-Source: https://adventofcode.com/2025/day/5
+<source>
+https://adventofcode.com/2025/day/5
+</source>
 
-Title: --- Day 5: Cafeteria ---
+<title>
+Day 5: Cafeteria
+</title>
 
---- Day 5: Cafeteria ---
-
+<section data-part="1">
 As the forklifts break through the wall, the Elves are delighted to discover that there was a cafeteria on the other side after all.
 
 You can hear a commotion coming from the kitchen. "At this rate, we won't have any time left to put the wreaths up in the dining hall!" Resolute in your quest, you investigate.
@@ -45,6 +48,9 @@ So, in this example, 3 of the available ingredient IDs are fresh.
 
 Process the database file from the new inventory management system. How many of the available ingredient IDs are fresh?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The Elves start bringing their spoiled inventory to the trash chute at the back of the kitchen.
@@ -63,3 +69,5 @@ Now, the second section of the database (the available ingredient IDs) is irrele
 The ingredient IDs that these ranges consider to be fresh are 3, 4, 5, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, and 20. So, in this example, the fresh ingredient ID ranges consider a total of 14 ingredient IDs to be fresh.
 
 Process the database file again. How many ingredient IDs are considered to be fresh according to the fresh ingredient ID ranges?
+
+</section>

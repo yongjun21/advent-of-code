@@ -1,11 +1,14 @@
 # Advent of Code 2021 Day 19
 
-Source: https://adventofcode.com/2021/day/19
+<source>
+https://adventofcode.com/2021/day/19
+</source>
 
-Title: --- Day 19: Beacon Scanner ---
+<title>
+Day 19: Beacon Scanner
+</title>
 
---- Day 19: Beacon Scanner ---
-
+<section data-part="1">
 As your probe drifted down through this area, it released an assortment of beacons and scanners into the water. It's difficult to navigate in the pitch black open waters of the ocean trench, but if you can build a map of the trench using data from the scanners, you should be able to safely reach the bottom.
 
 The beacons and scanners float motionless in the water; they're designed to maintain the same position for long periods of time. Each scanner is capable of detecting all beacons in a large cube centered on the scanner; beacons that are at most 1000 units away from the scanner in each of the three axes (x, y, and z) have their precise position determined relative to the scanner. However, scanners cannot detect other scanners. The submarine has automatically summarized the relative positions of beacons detected by each scanner (your puzzle input).
@@ -390,6 +393,9 @@ In total, there are 79 beacons.
 
 Assemble the full map of beacons. How many beacons are there?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 Sometimes, it's a good idea to appreciate just how big the ocean is. Using the Manhattan distance, how far apart do the scanners get?
@@ -397,3 +403,5 @@ Sometimes, it's a good idea to appreciate just how big the ocean is. Using the M
 In the above example, scanners 2 (1105,-1205,1229) and 3 (-92,-2380,-20) are the largest Manhattan distance apart. In total, they are 1197 + 1175 + 1249 = 3621 units apart.
 
 What is the largest Manhattan distance between any two scanners?
+
+</section>

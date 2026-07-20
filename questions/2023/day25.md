@@ -1,11 +1,14 @@
 # Advent of Code 2023 Day 25
 
-Source: https://adventofcode.com/2023/day/25
+<source>
+https://adventofcode.com/2023/day/25
+</source>
 
-Title: --- Day 25: Snowverload ---
+<title>
+Day 25: Snowverload
+</title>
 
---- Day 25: Snowverload ---
-
+<section data-part="1">
 Still somehow without snow, you go to the last place you haven't checked: the center of Snow Island, directly below the waterfall.
 
 Here, someone has clearly been trying to fix the problem. Scattered everywhere are hundreds of weather machines, almanacs, communication modules, hoof prints, machine parts, mirrors, lenses, and so on.
@@ -58,6 +61,9 @@ Multiplying the sizes of these groups together produces 54.
 
 Find the three wires you need to disconnect in order to divide the components into two separate groups. What do you get if you multiply the sizes of these two groups together?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 You climb over weather machines, under giant springs, and narrowly avoid a pile of pipes as you find and disconnect the three wires.
@@ -77,3 +83,5 @@ Power required is now 49 stars.
 Please supply the necessary stars and
 push the button to restart the system.
 ```
+
+</section>

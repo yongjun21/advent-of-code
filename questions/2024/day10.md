@@ -1,11 +1,14 @@
 # Advent of Code 2024 Day 10
 
-Source: https://adventofcode.com/2024/day/10
+<source>
+https://adventofcode.com/2024/day/10
+</source>
 
-Title: --- Day 10: Hoof It ---
+<title>
+Day 10: Hoof It
+</title>
 
---- Day 10: Hoof It ---
-
+<section data-part="1">
 You all arrive at a Lava Production Facility on a floating island in the sky. As the others begin to search the massive industrial complex, you feel a small nose boop your leg and look down to discover a reindeer wearing a hard hat.
 
 The reindeer is holding a book titled "Lava Island Hiking Guide". However, when you open the book, you discover that most of it seems to have been scorched by lava! As you're about to ask how you can help, the reindeer brings you a blank topographic map of the surrounding area (your puzzle input) and looks up at you excitedly.
@@ -82,6 +85,9 @@ This larger example has 9 trailheads. Considering the trailheads in reading orde
 
 The reindeer gleefully carries over a protractor and adds it to the pile. What is the sum of the scores of all trailheads on your topographic map?
 
+</section>
+
+<section data-part="2">
 --- Part Two ---
 
 The reindeer spends a few minutes reviewing your hiking trail map before realizing something, disappearing for a few minutes, and finally returning with yet another slightly-charred piece of paper.
@@ -149,3 +155,5 @@ Here's the larger example from before:
 Considering its trailheads in reading order, they have ratings of 20, 24, 10, 4, 1, 4, 5, 8, and 5. The sum of all trailhead ratings in this larger example topographic map is 81.
 
 You're not sure how, but the reindeer seems to have crafted some tiny flags out of toothpicks and bits of paper and is using them to mark trailheads on your topographic map. What is the sum of the ratings of all trailheads?
+
+</section>
